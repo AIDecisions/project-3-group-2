@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_305025bc99a03c64ca4f59ed9ab6d0e3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_305025bc99a03c64ca4f59ed9ab6d0e3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_305025bc99a03c64ca4f59ed9ab6d0e3 = L.map(
+                "map_305025bc99a03c64ca4f59ed9ab6d0e3",
+                {
+                    center: [51.01494186315487, -113.88957892847066],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_526976e968e5716bd9ff6d5016e2e71d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_526976e968e5716bd9ff6d5016e2e71d.addTo(map_305025bc99a03c64ca4f59ed9ab6d0e3);
+        
+    
+            var marker_c1919c382c60ef48add1a6049f5727b8 = L.marker(
+                [48.69705000000005, -113.71983999999998],
+                {}
+            ).addTo(map_305025bc99a03c64ca4f59ed9ab6d0e3);
+        
+    
+            var icon_411f14db29fb7d8d356e48661ffe488e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1919c382c60ef48add1a6049f5727b8.setIcon(icon_411f14db29fb7d8d356e48661ffe488e);
+        
+    
+        var popup_47cf58813ec38981e90f3e689007a08c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_036bcec4ae0611e89517074ddac167bc = $(`<div id="html_036bcec4ae0611e89517074ddac167bc" style="width: 100.0%; height: 100.0%;">Highest Attack Rate Location: Glacier National Park, Montana Attacks: 10</div>`)[0];
+                popup_47cf58813ec38981e90f3e689007a08c.setContent(html_036bcec4ae0611e89517074ddac167bc);
+            
+        
+
+        marker_c1919c382c60ef48add1a6049f5727b8.bindPopup(popup_47cf58813ec38981e90f3e689007a08c)
+        ;
+
+        
+    
+    
+            var marker_dbc581e9f9a8b53644f4a0849bbbd1f7 = L.marker(
+                [66.53416000000004, -83.88216999999997],
+                {}
+            ).addTo(map_305025bc99a03c64ca4f59ed9ab6d0e3);
+        
+    
+            var icon_346d0ab1014b886faa5a622c7709585c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dbc581e9f9a8b53644f4a0849bbbd1f7.setIcon(icon_346d0ab1014b886faa5a622c7709585c);
+        
+    
+        var popup_5e2c92ebbdfc05812e2d2d05ce151bb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36633c6c9c8812201aaaa903d8fe6e06 = $(`<div id="html_36633c6c9c8812201aaaa903d8fe6e06" style="width: 100.0%; height: 100.0%;">Lowest Attack Rate Location: Lyon Inlet, Nunavut   Attacks: 1</div>`)[0];
+                popup_5e2c92ebbdfc05812e2d2d05ce151bb7.setContent(html_36633c6c9c8812201aaaa903d8fe6e06);
+            
+        
+
+        marker_dbc581e9f9a8b53644f4a0849bbbd1f7.bindPopup(popup_5e2c92ebbdfc05812e2d2d05ce151bb7)
+        ;
+
+        
+    
+</script>
+</html>
