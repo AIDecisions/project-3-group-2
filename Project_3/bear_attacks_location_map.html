@@ -1,0 +1,2571 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0c5ae38f429d714ac1dbe52287417082 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0c5ae38f429d714ac1dbe52287417082" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0c5ae38f429d714ac1dbe52287417082 = L.map(
+                "map_0c5ae38f429d714ac1dbe52287417082",
+                {
+                    center: [51.0, -114.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_154ba4e0325fa7b65f82b71f2635eadc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_154ba4e0325fa7b65f82b71f2635eadc.addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+            var circle_marker_97d41e21cfe8c5a46472b47e433e8844 = L.circleMarker(
+                [51.30313600000005, -121.39576899999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_82a4b151fad0eda1d7b8a64e1cff5922 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_681a683cdaba5ea2ef3418a4612da766 = $(`<div id="html_681a683cdaba5ea2ef3418a4612da766" style="width: 100.0%; height: 100.0%;">Location: 70 Mile House, British Columbia<br>Number of Attacks: 1</div>`)[0];
+                popup_82a4b151fad0eda1d7b8a64e1cff5922.setContent(html_681a683cdaba5ea2ef3418a4612da766);
+            
+        
+
+        circle_marker_97d41e21cfe8c5a46472b47e433e8844.bindPopup(popup_82a4b151fad0eda1d7b8a64e1cff5922)
+        ;
+
+        
+    
+    
+            var circle_marker_1adfaf671fe0298cd0526076073e03c2 = L.circleMarker(
+                [45.29577000000006, -110.83466],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_8a11f0438571fc33880462dfd96063d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39e2e4da8a19f58417ca2e0602e49fda = $(`<div id="html_39e2e4da8a19f58417ca2e0602e49fda" style="width: 100.0%; height: 100.0%;">Location: Absaroka-Beartooth Wilderness, Montana<br>Number of Attacks: 1</div>`)[0];
+                popup_8a11f0438571fc33880462dfd96063d0.setContent(html_39e2e4da8a19f58417ca2e0602e49fda);
+            
+        
+
+        circle_marker_1adfaf671fe0298cd0526076073e03c2.bindPopup(popup_8a11f0438571fc33880462dfd96063d0)
+        ;
+
+        
+    
+    
+            var circle_marker_d9d33306a909589fae89d015299fced0 = L.circleMarker(
+                [57.66667000000007, -134.33333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_010fffa59f376e9ba182c868893b09bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37aea19bd09c8b137fc2c717f02ce63e = $(`<div id="html_37aea19bd09c8b137fc2c717f02ce63e" style="width: 100.0%; height: 100.0%;">Location: Admiralty Island, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_010fffa59f376e9ba182c868893b09bc.setContent(html_37aea19bd09c8b137fc2c717f02ce63e);
+            
+        
+
+        circle_marker_d9d33306a909589fae89d015299fced0.bindPopup(popup_010fffa59f376e9ba182c868893b09bc)
+        ;
+
+        
+    
+    
+            var circle_marker_3a95edbcbb425534bd0b4f73c05955a0 = L.circleMarker(
+                [46.53338000000008, -93.70736999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_794b8a4616089955e94a2f338dff3124 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e49dfc2ad3dbe9061bfa06d54f83bbbd = $(`<div id="html_e49dfc2ad3dbe9061bfa06d54f83bbbd" style="width: 100.0%; height: 100.0%;">Location: Aitkin, Minnesota<br>Number of Attacks: 1</div>`)[0];
+                popup_794b8a4616089955e94a2f338dff3124.setContent(html_e49dfc2ad3dbe9061bfa06d54f83bbbd);
+            
+        
+
+        circle_marker_3a95edbcbb425534bd0b4f73c05955a0.bindPopup(popup_794b8a4616089955e94a2f338dff3124)
+        ;
+
+        
+    
+    
+            var circle_marker_eb68b28fc6ebf1c885a7249b33d6d992 = L.circleMarker(
+                [45.75012000000004, -78.49955999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_3cdb15351e68cf9bb51d3ffedb20b890 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca2109e54514c275a8f133d6e71c7206 = $(`<div id="html_ca2109e54514c275a8f133d6e71c7206" style="width: 100.0%; height: 100.0%;">Location: Algonquin Provincial Park, Ontario<br>Number of Attacks: 6</div>`)[0];
+                popup_3cdb15351e68cf9bb51d3ffedb20b890.setContent(html_ca2109e54514c275a8f133d6e71c7206);
+            
+        
+
+        circle_marker_eb68b28fc6ebf1c885a7249b33d6d992.bindPopup(popup_3cdb15351e68cf9bb51d3ffedb20b890)
+        ;
+
+        
+    
+    
+            var circle_marker_8047f77e6de1c9e0df60203b1e3c0e13 = L.circleMarker(
+                [68.89667000000003, -148.86888999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_4b1dcf97809bb8f65c6cce4994636fb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_208bf13f394246218d372f7eaae5b397 = $(`<div id="html_208bf13f394246218d372f7eaae5b397" style="width: 100.0%; height: 100.0%;">Location: Arctic National Wildlife Refuge, Alaska<br>Number of Attacks: 2</div>`)[0];
+                popup_4b1dcf97809bb8f65c6cce4994636fb3.setContent(html_208bf13f394246218d372f7eaae5b397);
+            
+        
+
+        circle_marker_8047f77e6de1c9e0df60203b1e3c0e13.bindPopup(popup_4b1dcf97809bb8f65c6cce4994636fb3)
+        ;
+
+        
+    
+    
+            var circle_marker_ca681a3aedb5941da2c3bc63cf596397 = L.circleMarker(
+                [51.17801000000003, -115.57034999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_2d94f0c9943e2b6d8a9c4d8f8000e5ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_096b2aadf55d40b6442427c4bee1e993 = $(`<div id="html_096b2aadf55d40b6442427c4bee1e993" style="width: 100.0%; height: 100.0%;">Location: Banff National Park, Alberta<br>Number of Attacks: 1</div>`)[0];
+                popup_2d94f0c9943e2b6d8a9c4d8f8000e5ca.setContent(html_096b2aadf55d40b6442427c4bee1e993);
+            
+        
+
+        circle_marker_ca681a3aedb5941da2c3bc63cf596397.bindPopup(popup_2d94f0c9943e2b6d8a9c4d8f8000e5ca)
+        ;
+
+        
+    
+    
+            var circle_marker_2802dde326db75a623da4e3450442179 = L.circleMarker(
+                [37.18522000000007, -122.22968999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_054abd2fde9e22117a2680bb80eb0c07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a469d58edead04fc786764378ffe2098 = $(`<div id="html_a469d58edead04fc786764378ffe2098" style="width: 100.0%; height: 100.0%;">Location: Big Basin Redwoods State Park, California<br>Number of Attacks: 1</div>`)[0];
+                popup_054abd2fde9e22117a2680bb80eb0c07.setContent(html_a469d58edead04fc786764378ffe2098);
+            
+        
+
+        circle_marker_2802dde326db75a623da4e3450442179.bindPopup(popup_054abd2fde9e22117a2680bb80eb0c07)
+        ;
+
+        
+    
+    
+            var circle_marker_b21cbd4486ceaa7aace6eb246a8af33c = L.circleMarker(
+                [43.58328000000006, -110.12600999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_1fd1954132e34c9b5cd406b8df5bbb1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de8a9537647621994a24d6b67c929f2a = $(`<div id="html_de8a9537647621994a24d6b67c929f2a" style="width: 100.0%; height: 100.0%;">Location: Bridger-Teton National Forest, Wyoming<br>Number of Attacks: 1</div>`)[0];
+                popup_1fd1954132e34c9b5cd406b8df5bbb1c.setContent(html_de8a9537647621994a24d6b67c929f2a);
+            
+        
+
+        circle_marker_b21cbd4486ceaa7aace6eb246a8af33c.bindPopup(popup_1fd1954132e34c9b5cd406b8df5bbb1c)
+        ;
+
+        
+    
+    
+            var circle_marker_e4922434117e18674869f6ebee4a92ba = L.circleMarker(
+                [41.72244511900004, -111.74354625399997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_be11e755fcde62c13ce833918439636b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a8d2bfa95f69f96caf8d5748dfe69b5 = $(`<div id="html_1a8d2bfa95f69f96caf8d5748dfe69b5" style="width: 100.0%; height: 100.0%;">Location: Cache County, Utah<br>Number of Attacks: 1</div>`)[0];
+                popup_be11e755fcde62c13ce833918439636b.setContent(html_1a8d2bfa95f69f96caf8d5748dfe69b5);
+            
+        
+
+        circle_marker_e4922434117e18674869f6ebee4a92ba.bindPopup(popup_be11e755fcde62c13ce833918439636b)
+        ;
+
+        
+    
+    
+            var circle_marker_ac9b6dfc41e9ad67cb33dbe5f06dde30 = L.circleMarker(
+                [51.08367900000008, -115.368069],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_01693144c0ae17882b7f49d2d1dddbeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07533f46d9785f35ab6773b4966238a9 = $(`<div id="html_07533f46d9785f35ab6773b4966238a9" style="width: 100.0%; height: 100.0%;">Location: Canmore, Alberta<br>Number of Attacks: 1</div>`)[0];
+                popup_01693144c0ae17882b7f49d2d1dddbeb.setContent(html_07533f46d9785f35ab6773b4966238a9);
+            
+        
+
+        circle_marker_ac9b6dfc41e9ad67cb33dbe5f06dde30.bindPopup(popup_01693144c0ae17882b7f49d2d1dddbeb)
+        ;
+
+        
+    
+    
+            var circle_marker_7059538b049b44a35829f5950d6c3be2 = L.circleMarker(
+                [45.645830000000046, -84.47575999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_1c5c130c80f059cc67cbf4d5a12731cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_935da3a50da405c9b345457b25331b0e = $(`<div id="html_935da3a50da405c9b345457b25331b0e" style="width: 100.0%; height: 100.0%;">Location: Cheboygan, Michigan<br>Number of Attacks: 1</div>`)[0];
+                popup_1c5c130c80f059cc67cbf4d5a12731cb.setContent(html_935da3a50da405c9b345457b25331b0e);
+            
+        
+
+        circle_marker_7059538b049b44a35829f5950d6c3be2.bindPopup(popup_1c5c130c80f059cc67cbf4d5a12731cb)
+        ;
+
+        
+    
+    
+            var circle_marker_b1dba046703209486cdcada15fe8ba92 = L.circleMarker(
+                [35.83343000000008, -83.00014999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_269c298e4bd9a582d5ae585d32d6c6df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08d265011e36c37902431c79b47ae4a0 = $(`<div id="html_08d265011e36c37902431c79b47ae4a0" style="width: 100.0%; height: 100.0%;">Location: Cherokee National Forest, Tennessee<br>Number of Attacks: 1</div>`)[0];
+                popup_269c298e4bd9a582d5ae585d32d6c6df.setContent(html_08d265011e36c37902431c79b47ae4a0);
+            
+        
+
+        circle_marker_b1dba046703209486cdcada15fe8ba92.bindPopup(popup_269c298e4bd9a582d5ae585d32d6c6df)
+        ;
+
+        
+    
+    
+            var circle_marker_f6223fe14d72ccfff88b867e4f6900e9 = L.circleMarker(
+                [57.87361000000004, -135.77639],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_1e8cc047286de6a81c75b56ea8cfb724 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_674dde43ee4d45a854a5b415a651cabd = $(`<div id="html_674dde43ee4d45a854a5b415a651cabd" style="width: 100.0%; height: 100.0%;">Location: Chichagof Island, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_1e8cc047286de6a81c75b56ea8cfb724.setContent(html_674dde43ee4d45a854a5b415a651cabd);
+            
+        
+
+        circle_marker_f6223fe14d72ccfff88b867e4f6900e9.bindPopup(popup_1e8cc047286de6a81c75b56ea8cfb724)
+        ;
+
+        
+    
+    
+            var circle_marker_9ecb8d427ae53054037d6679f026bb3d = L.circleMarker(
+                [58.76775500000008, -94.16399799999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_0ab4334da760448732fdf405ec229e63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc78916ae521d808077e4308c0f1ae26 = $(`<div id="html_fc78916ae521d808077e4308c0f1ae26" style="width: 100.0%; height: 100.0%;">Location: Churchill, Manitoba<br>Number of Attacks: 2</div>`)[0];
+                popup_0ab4334da760448732fdf405ec229e63.setContent(html_fc78916ae521d808077e4308c0f1ae26);
+            
+        
+
+        circle_marker_9ecb8d427ae53054037d6679f026bb3d.bindPopup(popup_0ab4334da760448732fdf405ec229e63)
+        ;
+
+        
+    
+    
+            var circle_marker_9933764cb709e94a2b60e5e950136f53 = L.circleMarker(
+                [28.647837734345817, -106.0644070884174],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_1a613ba5920b69d32d917b02dcca5dfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1310f37acae490f86c75d6acef361ca = $(`<div id="html_d1310f37acae490f86c75d6acef361ca" style="width: 100.0%; height: 100.0%;">Location: Colonia Pacheco, Chihuahua, Mexico<br>Number of Attacks: 1</div>`)[0];
+                popup_1a613ba5920b69d32d917b02dcca5dfd.setContent(html_d1310f37acae490f86c75d6acef361ca);
+            
+        
+
+        circle_marker_9933764cb709e94a2b60e5e950136f53.bindPopup(popup_1a613ba5920b69d32d917b02dcca5dfd)
+        ;
+
+        
+    
+    
+            var circle_marker_8c4d677e8216ea6b62f8fc2ecc929f76 = L.circleMarker(
+                [63.73183000000006, -148.89197999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_685941ea53d836d7b7c14c4ab3fb1627 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa6eba7ce2ad0ab0f49df33f86f1e408 = $(`<div id="html_fa6eba7ce2ad0ab0f49df33f86f1e408" style="width: 100.0%; height: 100.0%;">Location: Denali National Park, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_685941ea53d836d7b7c14c4ab3fb1627.setContent(html_fa6eba7ce2ad0ab0f49df33f86f1e408);
+            
+        
+
+        circle_marker_8c4d677e8216ea6b62f8fc2ecc929f76.bindPopup(popup_685941ea53d836d7b7c14c4ab3fb1627)
+        ;
+
+        
+    
+    
+            var circle_marker_6ccaa92026977fccc6ab62c9dfa5b613 = L.circleMarker(
+                [61.32157000000007, -149.56711999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_9e747aee752785eb6c656ffad1ebaed6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f45fce6b7e9ad284868c4fe8d7c752ce = $(`<div id="html_f45fce6b7e9ad284868c4fe8d7c752ce" style="width: 100.0%; height: 100.0%;">Location: Eagle River, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_9e747aee752785eb6c656ffad1ebaed6.setContent(html_f45fce6b7e9ad284868c4fe8d7c752ce);
+            
+        
+
+        circle_marker_6ccaa92026977fccc6ab62c9dfa5b613.bindPopup(popup_9e747aee752785eb6c656ffad1ebaed6)
+        ;
+
+        
+    
+    
+            var circle_marker_4a3cc2109ea6f3b9cff63834ddfbe53b = L.circleMarker(
+                [63.91916000000003, -131.58722999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_d833c0af0d109d8a372f1317143f6e16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de61200e59de552fbb4f181745ad6a11 = $(`<div id="html_de61200e59de552fbb4f181745ad6a11" style="width: 100.0%; height: 100.0%;">Location: Einarson Lake, Yukon<br>Number of Attacks: 2</div>`)[0];
+                popup_d833c0af0d109d8a372f1317143f6e16.setContent(html_de61200e59de552fbb4f181745ad6a11);
+            
+        
+
+        circle_marker_4a3cc2109ea6f3b9cff63834ddfbe53b.bindPopup(popup_d833c0af0d109d8a372f1317143f6e16)
+        ;
+
+        
+    
+    
+            var circle_marker_ca58a520cc64cc61db46544fdd321586 = L.circleMarker(
+                [41.42520780800004, -78.64909092099998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_c71d41d9ce9b55e032f00aa0ef84e224 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e885033ab3e784d24fe41b6548ad803 = $(`<div id="html_0e885033ab3e784d24fe41b6548ad803" style="width: 100.0%; height: 100.0%;">Location: Elk County, Pennsylvania<br>Number of Attacks: 1</div>`)[0];
+                popup_c71d41d9ce9b55e032f00aa0ef84e224.setContent(html_0e885033ab3e784d24fe41b6548ad803);
+            
+        
+
+        circle_marker_ca58a520cc64cc61db46544fdd321586.bindPopup(popup_c71d41d9ce9b55e032f00aa0ef84e224)
+        ;
+
+        
+    
+    
+            var circle_marker_a4864ad1424a0aea0a0c7799dedeba64 = L.circleMarker(
+                [41.73250000000007, -74.60517999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_ce9fd65df81d149786319a1aa2845b76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85f1afd243eab0fc038bbfbb81641562 = $(`<div id="html_85f1afd243eab0fc038bbfbb81641562" style="width: 100.0%; height: 100.0%;">Location: Fallsburg, New York<br>Number of Attacks: 1</div>`)[0];
+                popup_ce9fd65df81d149786319a1aa2845b76.setContent(html_85f1afd243eab0fc038bbfbb81641562);
+            
+        
+
+        circle_marker_a4864ad1424a0aea0a0c7799dedeba64.bindPopup(popup_ce9fd65df81d149786319a1aa2845b76)
+        ;
+
+        
+    
+    
+            var circle_marker_18e61c9a53c6caf43572b1e00ed88a1b = L.circleMarker(
+                [47.75022000000007, -113.50119999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_3318803f5cd246a28e2bdf986cc91e19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ec5bac5d3796d32b51ce9bc734d5ede = $(`<div id="html_3ec5bac5d3796d32b51ce9bc734d5ede" style="width: 100.0%; height: 100.0%;">Location: Flathead National Forest, Montana<br>Number of Attacks: 1</div>`)[0];
+                popup_3318803f5cd246a28e2bdf986cc91e19.setContent(html_3ec5bac5d3796d32b51ce9bc734d5ede);
+            
+        
+
+        circle_marker_18e61c9a53c6caf43572b1e00ed88a1b.bindPopup(popup_3318803f5cd246a28e2bdf986cc91e19)
+        ;
+
+        
+    
+    
+            var circle_marker_7d830f586f57a8f8458e344c8a15a2b2 = L.circleMarker(
+                [34.87404000000004, -118.89168999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_48984685d97236b30140f6effbe161e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96e0536af22a6f683c2fe6786817b6a7 = $(`<div id="html_96e0536af22a6f683c2fe6786817b6a7" style="width: 100.0%; height: 100.0%;">Location: Fort Tejon, California<br>Number of Attacks: 1</div>`)[0];
+                popup_48984685d97236b30140f6effbe161e8.setContent(html_96e0536af22a6f683c2fe6786817b6a7);
+            
+        
+
+        circle_marker_7d830f586f57a8f8458e344c8a15a2b2.bindPopup(popup_48984685d97236b30140f6effbe161e8)
+        ;
+
+        
+    
+    
+            var circle_marker_3a89904c3542bac32f2a15890ddebb5c = L.circleMarker(
+                [38.47295667700007, -105.43954705799996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_9e6e49e41f6dc6ef18f4dacb07f804c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7a9273c57c202c2dfebf1ed98d9ad45 = $(`<div id="html_c7a9273c57c202c2dfebf1ed98d9ad45" style="width: 100.0%; height: 100.0%;">Location: Fremont County, Colorado<br>Number of Attacks: 1</div>`)[0];
+                popup_9e6e49e41f6dc6ef18f4dacb07f804c0.setContent(html_c7a9273c57c202c2dfebf1ed98d9ad45);
+            
+        
+
+        circle_marker_3a89904c3542bac32f2a15890ddebb5c.bindPopup(popup_9e6e49e41f6dc6ef18f4dacb07f804c0)
+        ;
+
+        
+    
+    
+            var circle_marker_1e2b493781a47bf3fd909cc391a34e53 = L.circleMarker(
+                [45.25021000000004, -111.00105999999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_8de8a658092b30ed1dcdd371e53d84e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_109c643ae0cedb06548853a1fc1dc609 = $(`<div id="html_109c643ae0cedb06548853a1fc1dc609" style="width: 100.0%; height: 100.0%;">Location: Gallatin National Forest, Montana<br>Number of Attacks: 2</div>`)[0];
+                popup_8de8a658092b30ed1dcdd371e53d84e2.setContent(html_109c643ae0cedb06548853a1fc1dc609);
+            
+        
+
+        circle_marker_1e2b493781a47bf3fd909cc391a34e53.bindPopup(popup_8de8a658092b30ed1dcdd371e53d84e2)
+        ;
+
+        
+    
+    
+            var circle_marker_1f1b697a0af23952f14d59a60cd7156e = L.circleMarker(
+                [67.54805000000005, -152.20895999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_1687c0d9f6f1852ed6b8fbb77658b6f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a398e944af72de6f5d39c9c5d3bdd333 = $(`<div id="html_a398e944af72de6f5d39c9c5d3bdd333" style="width: 100.0%; height: 100.0%;">Location: Gates of the Arctic National Park, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_1687c0d9f6f1852ed6b8fbb77658b6f0.setContent(html_a398e944af72de6f5d39c9c5d3bdd333);
+            
+        
+
+        circle_marker_1f1b697a0af23952f14d59a60cd7156e.bindPopup(popup_1687c0d9f6f1852ed6b8fbb77658b6f0)
+        ;
+
+        
+    
+    
+            var circle_marker_54057dc21efd458ddfdf9c44c62d4d6d = L.circleMarker(
+                [58.45194000000004, -135.77563999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_313ea8694b8424fadaa04cdb3ce73565 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29c83b2e093da575ab72d6c6349669b3 = $(`<div id="html_29c83b2e093da575ab72d6c6349669b3" style="width: 100.0%; height: 100.0%;">Location: Glacier Bay National Park and Preserve, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_313ea8694b8424fadaa04cdb3ce73565.setContent(html_29c83b2e093da575ab72d6c6349669b3);
+            
+        
+
+        circle_marker_54057dc21efd458ddfdf9c44c62d4d6d.bindPopup(popup_313ea8694b8424fadaa04cdb3ce73565)
+        ;
+
+        
+    
+    
+            var circle_marker_e5773f45f0ab031cf9220cfdb2a37129 = L.circleMarker(
+                [51.30123000000003, -117.52015999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_103c98e48f874a6ed80c46a513a8f6b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_667faaa275fccec4a49049387d04eed3 = $(`<div id="html_667faaa275fccec4a49049387d04eed3" style="width: 100.0%; height: 100.0%;">Location: Glacier National Park of Canada, British Columbia<br>Number of Attacks: 1</div>`)[0];
+                popup_103c98e48f874a6ed80c46a513a8f6b3.setContent(html_667faaa275fccec4a49049387d04eed3);
+            
+        
+
+        circle_marker_e5773f45f0ab031cf9220cfdb2a37129.bindPopup(popup_103c98e48f874a6ed80c46a513a8f6b3)
+        ;
+
+        
+    
+    
+            var circle_marker_781cb6b33b1370f58b0dba1511d689f6 = L.circleMarker(
+                [48.69705000000005, -113.71983999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_8b79186f442170c72c951202f48feb77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79025cd16fb883a694100210365c542f = $(`<div id="html_79025cd16fb883a694100210365c542f" style="width: 100.0%; height: 100.0%;">Location: Glacier National Park, Montana<br>Number of Attacks: 10</div>`)[0];
+                popup_8b79186f442170c72c951202f48feb77.setContent(html_79025cd16fb883a694100210365c542f);
+            
+        
+
+        circle_marker_781cb6b33b1370f58b0dba1511d689f6.bindPopup(popup_8b79186f442170c72c951202f48feb77)
+        ;
+
+        
+    
+    
+            var circle_marker_ef3517858360c4eddd7068848d91578b = L.circleMarker(
+                [62.10792000000004, -145.53294999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_10877794abae9e0ac95d66a9ad002bd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6239340eb7716913acae15eabc59c564 = $(`<div id="html_6239340eb7716913acae15eabc59c564" style="width: 100.0%; height: 100.0%;">Location: Glennallen, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_10877794abae9e0ac95d66a9ad002bd3.setContent(html_6239340eb7716913acae15eabc59c564);
+            
+        
+
+        circle_marker_ef3517858360c4eddd7068848d91578b.bindPopup(popup_10877794abae9e0ac95d66a9ad002bd3)
+        ;
+
+        
+    
+    
+            var circle_marker_5a70b02218b1ab54b8faa691b2bb0204 = L.circleMarker(
+                [46.01842000000005, -121.29271999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_7e431e34c53893d76e9162f176ec461b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_166aa2951c70339e0a9f20ebf55325be = $(`<div id="html_166aa2951c70339e0a9f20ebf55325be" style="width: 100.0%; height: 100.0%;">Location: Glenwood, Washington<br>Number of Attacks: 1</div>`)[0];
+                popup_7e431e34c53893d76e9162f176ec461b.setContent(html_166aa2951c70339e0a9f20ebf55325be);
+            
+        
+
+        circle_marker_5a70b02218b1ab54b8faa691b2bb0204.bindPopup(popup_7e431e34c53893d76e9162f176ec461b)
+        ;
+
+        
+    
+    
+            var circle_marker_febf563f577d2a933a9465ddbbc22315 = L.circleMarker(
+                [35.60065000000003, -83.50876999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_abad728e3920b8f1de3b2695e7630eae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e202b0c258e73998751c20ac5131c3d2 = $(`<div id="html_e202b0c258e73998751c20ac5131c3d2" style="width: 100.0%; height: 100.0%;">Location: Great Smoky Mountains National Park, Tennessee<br>Number of Attacks: 1</div>`)[0];
+                popup_abad728e3920b8f1de3b2695e7630eae.setContent(html_e202b0c258e73998751c20ac5131c3d2);
+            
+        
+
+        circle_marker_febf563f577d2a933a9465ddbbc22315.bindPopup(popup_abad728e3920b8f1de3b2695e7630eae)
+        ;
+
+        
+    
+    
+            var circle_marker_a4868a6c8dd05ebdcefe8a98914afd5f = L.circleMarker(
+                [46.58976000000007, -112.02065],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_b1f49306404aed4810ad85e7e57dbb16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3d860fac82d8076d39f83a759dc26f2 = $(`<div id="html_a3d860fac82d8076d39f83a759dc26f2" style="width: 100.0%; height: 100.0%;">Location: Helena, Montana<br>Number of Attacks: 1</div>`)[0];
+                popup_b1f49306404aed4810ad85e7e57dbb16.setContent(html_a3d860fac82d8076d39f83a759dc26f2);
+            
+        
+
+        circle_marker_a4868a6c8dd05ebdcefe8a98914afd5f.bindPopup(popup_b1f49306404aed4810ad85e7e57dbb16)
+        ;
+
+        
+    
+    
+            var circle_marker_ff4b59df1ef52ca8c68a554a1309131f = L.circleMarker(
+                [55.91126000000003, -130.02081999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_fa0d96ee7fdaf7d74a97b3e00beddd9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd51a68abced18b61f44a05c6289caf6 = $(`<div id="html_dd51a68abced18b61f44a05c6289caf6" style="width: 100.0%; height: 100.0%;">Location: Hyder, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_fa0d96ee7fdaf7d74a97b3e00beddd9f.setContent(html_dd51a68abced18b61f44a05c6289caf6);
+            
+        
+
+        circle_marker_ff4b59df1ef52ca8c68a554a1309131f.bindPopup(popup_fa0d96ee7fdaf7d74a97b3e00beddd9f)
+        ;
+
+        
+    
+    
+            var circle_marker_b92426e65cc4ef738576e5d2ac90b10f = L.circleMarker(
+                [60.98663000000005, -149.51276999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_9ae155d39e1c50be4bf0d9c109197fae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21b8a85f7a5f76cb8170595192309a79 = $(`<div id="html_21b8a85f7a5f76cb8170595192309a79" style="width: 100.0%; height: 100.0%;">Location: Indian, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_9ae155d39e1c50be4bf0d9c109197fae.setContent(html_21b8a85f7a5f76cb8170595192309a79);
+            
+        
+
+        circle_marker_b92426e65cc4ef738576e5d2ac90b10f.bindPopup(popup_9ae155d39e1c50be4bf0d9c109197fae)
+        ;
+
+        
+    
+    
+            var circle_marker_3e40dfd72b2a2e8e13233e7caff4118d = L.circleMarker(
+                [68.36060500000008, -133.72036699999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_8f25cb56f4314deb2f574c575e0d6282 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4316df7b99c1f624fad36e1f6ce3795 = $(`<div id="html_c4316df7b99c1f624fad36e1f6ce3795" style="width: 100.0%; height: 100.0%;">Location: Inuvik, Northwest Territories<br>Number of Attacks: 1</div>`)[0];
+                popup_8f25cb56f4314deb2f574c575e0d6282.setContent(html_c4316df7b99c1f624fad36e1f6ce3795);
+            
+        
+
+        circle_marker_3e40dfd72b2a2e8e13233e7caff4118d.bindPopup(popup_8f25cb56f4314deb2f574c575e0d6282)
+        ;
+
+        
+    
+    
+            var circle_marker_a642358e781b25a1acbb3426627de6c0 = L.circleMarker(
+                [55.250560000000064, -162.75055999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_815b184fa8e3d30935b0fd223241b6f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_223bcc4599733359bd4642d2692dc753 = $(`<div id="html_223bcc4599733359bd4642d2692dc753" style="width: 100.0%; height: 100.0%;">Location: Izembek National Wildlife Refuge, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_815b184fa8e3d30935b0fd223241b6f6.setContent(html_223bcc4599733359bd4642d2692dc753);
+            
+        
+
+        circle_marker_a642358e781b25a1acbb3426627de6c0.bindPopup(popup_815b184fa8e3d30935b0fd223241b6f6)
+        ;
+
+        
+    
+    
+            var circle_marker_4499852b66f37f5e3265a08858984ffb = L.circleMarker(
+                [52.87608000000006, -118.07926999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_d8245092d52688fe1fbe1d52769c14a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aed352d98356b195ca3ad1543ba25b19 = $(`<div id="html_aed352d98356b195ca3ad1543ba25b19" style="width: 100.0%; height: 100.0%;">Location: Jasper National Park, Alberta<br>Number of Attacks: 3</div>`)[0];
+                popup_d8245092d52688fe1fbe1d52769c14a0.setContent(html_aed352d98356b195ca3ad1543ba25b19);
+            
+        
+
+        circle_marker_4499852b66f37f5e3265a08858984ffb.bindPopup(popup_d8245092d52688fe1fbe1d52769c14a0)
+        ;
+
+        
+    
+    
+            var circle_marker_bfce895cb36ef4e90f48584b3ba30944 = L.circleMarker(
+                [38.87118000000004, -79.55773999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_b1beb144dca37fd72110f9bcac014cb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27c7995c75317e30f6119592e91a7264 = $(`<div id="html_27c7995c75317e30f6119592e91a7264" style="width: 100.0%; height: 100.0%;">Location: Job, West Virginia<br>Number of Attacks: 3</div>`)[0];
+                popup_b1beb144dca37fd72110f9bcac014cb3.setContent(html_27c7995c75317e30f6119592e91a7264);
+            
+        
+
+        circle_marker_bfce895cb36ef4e90f48584b3ba30944.bindPopup(popup_b1beb144dca37fd72110f9bcac014cb3)
+        ;
+
+        
+    
+    
+            var circle_marker_b46ed351cf84deec0f5135c4c0711ddb = L.circleMarker(
+                [50.90303000000006, -115.14322999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_df01fe0607415801e0b0f48b2766a340 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54d2b3299a07158d9ab71360155264df = $(`<div id="html_54d2b3299a07158d9ab71360155264df" style="width: 100.0%; height: 100.0%;">Location: Kananaskis Country, Alberta<br>Number of Attacks: 1</div>`)[0];
+                popup_df01fe0607415801e0b0f48b2766a340.setContent(html_54d2b3299a07158d9ab71360155264df);
+            
+        
+
+        circle_marker_b46ed351cf84deec0f5135c4c0711ddb.bindPopup(popup_df01fe0607415801e0b0f48b2766a340)
+        ;
+
+        
+    
+    
+            var circle_marker_9e22640612587ce2e7485e4ee30fd8a7 = L.circleMarker(
+                [58.41667000000007, -154.91666999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_a09583a5aac2069b5cb90eb176539b52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc90b5a8318147a9fcb75a8a47a1bee8 = $(`<div id="html_fc90b5a8318147a9fcb75a8a47a1bee8" style="width: 100.0%; height: 100.0%;">Location: Katmai National Park, Alaska<br>Number of Attacks: 2</div>`)[0];
+                popup_a09583a5aac2069b5cb90eb176539b52.setContent(html_fc90b5a8318147a9fcb75a8a47a1bee8);
+            
+        
+
+        circle_marker_9e22640612587ce2e7485e4ee30fd8a7.bindPopup(popup_a09583a5aac2069b5cb90eb176539b52)
+        ;
+
+        
+    
+    
+            var circle_marker_17ce2dfdb675c19b8468cbc958e5aa4c = L.circleMarker(
+                [60.25149000000005, -151.21140999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_7e18a83d47ee44e729d623262f4d19a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e78ddf56add07df16471c37f78d7ff4f = $(`<div id="html_e78ddf56add07df16471c37f78d7ff4f" style="width: 100.0%; height: 100.0%;">Location: Kenai National Wildlife Refuge, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_7e18a83d47ee44e729d623262f4d19a6.setContent(html_e78ddf56add07df16471c37f78d7ff4f);
+            
+        
+
+        circle_marker_17ce2dfdb675c19b8468cbc958e5aa4c.bindPopup(popup_7e18a83d47ee44e729d623262f4d19a6)
+        ;
+
+        
+    
+    
+            var circle_marker_76890cee300193233f9f7c22327f378f = L.circleMarker(
+                [61.01362000000006, -138.52461999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_a096254faa0f174222d5e1d21e20ed69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d957b6556e0c6e8b26eab7a40bd766fa = $(`<div id="html_d957b6556e0c6e8b26eab7a40bd766fa" style="width: 100.0%; height: 100.0%;">Location: Kluane National Park, Yukon<br>Number of Attacks: 1</div>`)[0];
+                popup_a096254faa0f174222d5e1d21e20ed69.setContent(html_d957b6556e0c6e8b26eab7a40bd766fa);
+            
+        
+
+        circle_marker_76890cee300193233f9f7c22327f378f.bindPopup(popup_a096254faa0f174222d5e1d21e20ed69)
+        ;
+
+        
+    
+    
+            var circle_marker_ab66e8910f8a590b3cde55a68f7b6488 = L.circleMarker(
+                [48.345556000000045, -67.05388899999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_4b8c2b0d53cd288eb75ee124c680e5ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41080c3e52b5669dcd7ec346a02f7121 = $(`<div id="html_41080c3e52b5669dcd7ec346a02f7121" style="width: 100.0%; height: 100.0%;">Location: La Vérendrye Wildlife Reserve, Quebec<br>Number of Attacks: 1</div>`)[0];
+                popup_4b8c2b0d53cd288eb75ee124c680e5ba.setContent(html_41080c3e52b5669dcd7ec346a02f7121);
+            
+        
+
+        circle_marker_ab66e8910f8a590b3cde55a68f7b6488.bindPopup(popup_4b8c2b0d53cd288eb75ee124c680e5ba)
+        ;
+
+        
+    
+    
+            var circle_marker_8a91b98fccb5d8856eeec73d18a73314 = L.circleMarker(
+                [55.45012000000003, -115.45236999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_1b145b35583c392b85d7c3254d5796d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c588ca09a806388ff6e4d86c9b49723a = $(`<div id="html_c588ca09a806388ff6e4d86c9b49723a" style="width: 100.0%; height: 100.0%;">Location: Lesser Slave Lake, Alberta<br>Number of Attacks: 1</div>`)[0];
+                popup_1b145b35583c392b85d7c3254d5796d7.setContent(html_c588ca09a806388ff6e4d86c9b49723a);
+            
+        
+
+        circle_marker_8a91b98fccb5d8856eeec73d18a73314.bindPopup(popup_1b145b35583c392b85d7c3254d5796d7)
+        ;
+
+        
+    
+    
+            var circle_marker_796d7185d2b8eddc59405f4930996c47 = L.circleMarker(
+                [57.30601000000007, -130.24918999999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_d746c85deb885e7f704b3e194742c03a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b64c2c7cd6090968f0959e15b212fade = $(`<div id="html_b64c2c7cd6090968f0959e15b212fade" style="width: 100.0%; height: 100.0%;">Location: Liard River Hot Springs Provincial Park, British Columbia<br>Number of Attacks: 2</div>`)[0];
+                popup_d746c85deb885e7f704b3e194742c03a.setContent(html_b64c2c7cd6090968f0959e15b212fade);
+            
+        
+
+        circle_marker_796d7185d2b8eddc59405f4930996c47.bindPopup(popup_d746c85deb885e7f704b3e194742c03a)
+        ;
+
+        
+    
+    
+            var circle_marker_6738af31b9bfa2571af75e2bb1f37b38 = L.circleMarker(
+                [66.53416000000004, -83.88216999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_11f63e0ed75bb78126745c9b977faca1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_feb56b104fbeb060dda2b37bf970fc19 = $(`<div id="html_feb56b104fbeb060dda2b37bf970fc19" style="width: 100.0%; height: 100.0%;">Location: Lyon Inlet, Nunavut  <br>Number of Attacks: 1</div>`)[0];
+                popup_11f63e0ed75bb78126745c9b977faca1.setContent(html_feb56b104fbeb060dda2b37bf970fc19);
+            
+        
+
+        circle_marker_6738af31b9bfa2571af75e2bb1f37b38.bindPopup(popup_11f63e0ed75bb78126745c9b977faca1)
+        ;
+
+        
+    
+    
+            var circle_marker_6cdc8eed0d36bd39614ec5a6826cfb65 = L.circleMarker(
+                [46.545840000000055, -87.41262999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_9a7a95f887310c1056ee300b2286f3b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb8c07bb99a63771acc8c99acc753f77 = $(`<div id="html_fb8c07bb99a63771acc8c99acc753f77" style="width: 100.0%; height: 100.0%;">Location: Marquette National Forest, Michigan<br>Number of Attacks: 1</div>`)[0];
+                popup_9a7a95f887310c1056ee300b2286f3b3.setContent(html_fb8c07bb99a63771acc8c99acc753f77);
+            
+        
+
+        circle_marker_6cdc8eed0d36bd39614ec5a6826cfb65.bindPopup(popup_9a7a95f887310c1056ee300b2286f3b3)
+        ;
+
+        
+    
+    
+            var circle_marker_ea125975cb7aa9e3071866447be9253e = L.circleMarker(
+                [49.38475518032094, -82.14074460962294],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_4f32ea08daa2863b7d9bf511026abf6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54c4bd3e1968a00c36b4759e63e9ada0 = $(`<div id="html_54c4bd3e1968a00c36b4759e63e9ada0" style="width: 100.0%; height: 100.0%;">Location: Missinaibi Lake Provincial Park, Ontario<br>Number of Attacks: 1</div>`)[0];
+                popup_4f32ea08daa2863b7d9bf511026abf6e.setContent(html_54c4bd3e1968a00c36b4759e63e9ada0);
+            
+        
+
+        circle_marker_ea125975cb7aa9e3071866447be9253e.bindPopup(popup_4f32ea08daa2863b7d9bf511026abf6e)
+        ;
+
+        
+    
+    
+            var circle_marker_6622e7e2ef5d7aece03193dbf7cef75e = L.circleMarker(
+                [35.97416000000004, -105.32978999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_b834f21ee7a758766a548d890ea2f381 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7c55029c199a3f41644550b6e7892e8 = $(`<div id="html_e7c55029c199a3f41644550b6e7892e8" style="width: 100.0%; height: 100.0%;">Location: Mora, New Mexico<br>Number of Attacks: 1</div>`)[0];
+                popup_b834f21ee7a758766a548d890ea2f381.setContent(html_e7c55029c199a3f41644550b6e7892e8);
+            
+        
+
+        circle_marker_6622e7e2ef5d7aece03193dbf7cef75e.bindPopup(popup_b834f21ee7a758766a548d890ea2f381)
+        ;
+
+        
+    
+    
+            var circle_marker_5a3dfc00a57ddd8c2cd16a7dd980c781 = L.circleMarker(
+                [43.75914000000006, -71.38405999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_eaca2c8294f204b1e6ec0e82fa1c689f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a02c07da52cd5ee7f95d66a353e970d = $(`<div id="html_7a02c07da52cd5ee7f95d66a353e970d" style="width: 100.0%; height: 100.0%;">Location: Moultonborough, New Hampshire<br>Number of Attacks: 1</div>`)[0];
+                popup_eaca2c8294f204b1e6ec0e82fa1c689f.setContent(html_7a02c07da52cd5ee7f95d66a353e970d);
+            
+        
+
+        circle_marker_5a3dfc00a57ddd8c2cd16a7dd980c781.bindPopup(popup_eaca2c8294f204b1e6ec0e82fa1c689f)
+        ;
+
+        
+    
+    
+            var circle_marker_98589275d3afb57b83fa55053c47c015 = L.circleMarker(
+                [34.28889000000004, -117.64671999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_c24c51e4a2c287301ccb519b8083e782 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98c6e7fd4930b4ab8680d41990db937f = $(`<div id="html_98c6e7fd4930b4ab8680d41990db937f" style="width: 100.0%; height: 100.0%;">Location: Mount San Antonio, California<br>Number of Attacks: 1</div>`)[0];
+                popup_c24c51e4a2c287301ccb519b8083e782.setContent(html_98c6e7fd4930b4ab8680d41990db937f);
+            
+        
+
+        circle_marker_98589275d3afb57b83fa55053c47c015.bindPopup(popup_c24c51e4a2c287301ccb519b8083e782)
+        ;
+
+        
+    
+    
+            var circle_marker_b0a824a908f619d34fc896b7db3381bc = L.circleMarker(
+                [44.47079000000008, -108.04981999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_72e31ab196c5a9adb91efe8e759c3672 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce1d065724e4dd0f659f7549b582e37f = $(`<div id="html_ce1d065724e4dd0f659f7549b582e37f" style="width: 100.0%; height: 100.0%;">Location: Near Greybull River, Wyoming<br>Number of Attacks: 1</div>`)[0];
+                popup_72e31ab196c5a9adb91efe8e759c3672.setContent(html_ce1d065724e4dd0f659f7549b582e37f);
+            
+        
+
+        circle_marker_b0a824a908f619d34fc896b7db3381bc.bindPopup(popup_72e31ab196c5a9adb91efe8e759c3672)
+        ;
+
+        
+    
+    
+            var circle_marker_a4a903084c89bac8d06ac43d29535388 = L.circleMarker(
+                [61.98377000000005, -109.46846],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_3900d7b494f4de67d3608889f17cc9f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_537145560bae264a6d6e4e4aa71f32a1 = $(`<div id="html_537145560bae264a6d6e4e4aa71f32a1" style="width: 100.0%; height: 100.0%;">Location: Nonacho Lake, Northwest Territories<br>Number of Attacks: 1</div>`)[0];
+                popup_3900d7b494f4de67d3608889f17cc9f4.setContent(html_537145560bae264a6d6e4e4aa71f32a1);
+            
+        
+
+        circle_marker_a4a903084c89bac8d06ac43d29535388.bindPopup(popup_3900d7b494f4de67d3608889f17cc9f4)
+        ;
+
+        
+    
+    
+            var circle_marker_183527a2aca3f2d549700a5187e613b2 = L.circleMarker(
+                [38.02480000000003, -107.67145999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_f265b251dbefd46ffec32f0cf0d07e77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68f11542c8742ccdef95aa48689d5f17 = $(`<div id="html_68f11542c8742ccdef95aa48689d5f17" style="width: 100.0%; height: 100.0%;">Location: Ouray, Colorado<br>Number of Attacks: 1</div>`)[0];
+                popup_f265b251dbefd46ffec32f0cf0d07e77.setContent(html_68f11542c8742ccdef95aa48689d5f17);
+            
+        
+
+        circle_marker_183527a2aca3f2d549700a5187e613b2.bindPopup(popup_f265b251dbefd46ffec32f0cf0d07e77)
+        ;
+
+        
+    
+    
+            var circle_marker_95109f2ee7d9db08112fdb76b85591ae = L.circleMarker(
+                [50.46028000000007, -116.23829999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_9a5845eb0a0cdd0d7d616c48b4458040 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4aa15fb9213fcccf0cd0035d5cead195 = $(`<div id="html_4aa15fb9213fcccf0cd0035d5cead195" style="width: 100.0%; height: 100.0%;">Location: Panorama Mountain Resort, British Columbia<br>Number of Attacks: 1</div>`)[0];
+                popup_9a5845eb0a0cdd0d7d616c48b4458040.setContent(html_4aa15fb9213fcccf0cd0035d5cead195);
+            
+        
+
+        circle_marker_95109f2ee7d9db08112fdb76b85591ae.bindPopup(popup_9a5845eb0a0cdd0d7d616c48b4458040)
+        ;
+
+        
+    
+    
+            var circle_marker_68a7740331a237659ec7f66236e63d36 = L.circleMarker(
+                [34.13576000000006, -109.95016999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_7011cbff507bfe2596e7ce35e2ebc2b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1d1b3e9692d4880405b57c48c3fc52c = $(`<div id="html_a1d1b3e9692d4880405b57c48c3fc52c" style="width: 100.0%; height: 100.0%;">Location: Pinetop-Lakeside, Arizona<br>Number of Attacks: 1</div>`)[0];
+                popup_7011cbff507bfe2596e7ce35e2ebc2b4.setContent(html_a1d1b3e9692d4880405b57c48c3fc52c);
+            
+        
+
+        circle_marker_68a7740331a237659ec7f66236e63d36.bindPopup(popup_7011cbff507bfe2596e7ce35e2ebc2b4)
+        ;
+
+        
+    
+    
+            var circle_marker_9fc56674ccd07367d48d0c40aa659c64 = L.circleMarker(
+                [64.80808789800005, -151.00415781499996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_193e720e2ede34031049268bb93f8b66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dad9fd05513669fa86b108f97a1b2265 = $(`<div id="html_dad9fd05513669fa86b108f97a1b2265" style="width: 100.0%; height: 100.0%;">Location: Pogo mine, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_193e720e2ede34031049268bb93f8b66.setContent(html_dad9fd05513669fa86b108f97a1b2265);
+            
+        
+
+        circle_marker_9fc56674ccd07367d48d0c40aa659c64.bindPopup(popup_193e720e2ede34031049268bb93f8b66)
+        ;
+
+        
+    
+    
+            var circle_marker_4803adda1332eb97e2483bf3a9941a75 = L.circleMarker(
+                [69.74280000000005, -163.01124999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_24d6448a20a126d76ed8415ef958b161 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_becf3fe3e4d3e3ef644f853853479298 = $(`<div id="html_becf3fe3e4d3e3ef644f853853479298" style="width: 100.0%; height: 100.0%;">Location: Point Lay, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_24d6448a20a126d76ed8415ef958b161.setContent(html_becf3fe3e4d3e3ef644f853853479298);
+            
+        
+
+        circle_marker_4803adda1332eb97e2483bf3a9941a75.bindPopup(popup_24d6448a20a126d76ed8415ef958b161)
+        ;
+
+        
+    
+    
+            var circle_marker_fbc911598498078d573dd15d1d9faa7c = L.circleMarker(
+                [56.25049000000007, -134.64647999999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_7fbfac3706f3c7a678ab13a54ef30bea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_918bbccfdae0b2760eeed032bffe63a1 = $(`<div id="html_918bbccfdae0b2760eeed032bffe63a1" style="width: 100.0%; height: 100.0%;">Location: Port Alexander, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_7fbfac3706f3c7a678ab13a54ef30bea.setContent(html_918bbccfdae0b2760eeed032bffe63a1);
+            
+        
+
+        circle_marker_fbc911598498078d573dd15d1d9faa7c.bindPopup(popup_7fbfac3706f3c7a678ab13a54ef30bea)
+        ;
+
+        
+    
+    
+            var circle_marker_f395ebfbb0bcdac92176cfbe259f6b1d = L.circleMarker(
+                [46.13340000000005, -79.53292999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_174d54e5140a1f583310ad3beb972a08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34be95596b3c530d78e81e69a8b55090 = $(`<div id="html_34be95596b3c530d78e81e69a8b55090" style="width: 100.0%; height: 100.0%;">Location: Red Pine Island, Ontario<br>Number of Attacks: 1</div>`)[0];
+                popup_174d54e5140a1f583310ad3beb972a08.setContent(html_34be95596b3c530d78e81e69a8b55090);
+            
+        
+
+        circle_marker_f395ebfbb0bcdac92176cfbe259f6b1d.bindPopup(popup_174d54e5140a1f583310ad3beb972a08)
+        ;
+
+        
+    
+    
+            var circle_marker_41e80b55aa4e956e065b6da52b3571fb = L.circleMarker(
+                [38.45047000000005, -123.12944999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_3857b417dec1384e2d0417add6997c78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0282a416d32073e2622245dd9107a073 = $(`<div id="html_0282a416d32073e2622245dd9107a073" style="width: 100.0%; height: 100.0%;">Location: Russian River, California<br>Number of Attacks: 1</div>`)[0];
+                popup_3857b417dec1384e2d0417add6997c78.setContent(html_0282a416d32073e2622245dd9107a073);
+            
+        
+
+        circle_marker_41e80b55aa4e956e065b6da52b3571fb.bindPopup(popup_3857b417dec1384e2d0417add6997c78)
+        ;
+
+        
+    
+    
+            var circle_marker_2be88d25251e8a7171f899f75690660a = L.circleMarker(
+                [48.30708400000003, -67.57923399999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_1640d962819e2e01e0a43bb9d043abad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_853ff124a118b27c672e86cc591616ef = $(`<div id="html_853ff124a118b27c672e86cc591616ef" style="width: 100.0%; height: 100.0%;">Location: Saint-Zénon-du-Lac-Humqui, Quebec<br>Number of Attacks: 1</div>`)[0];
+                popup_1640d962819e2e01e0a43bb9d043abad.setContent(html_853ff124a118b27c672e86cc591616ef);
+            
+        
+
+        circle_marker_2be88d25251e8a7171f899f75690660a.bindPopup(popup_1640d962819e2e01e0a43bb9d043abad)
+        ;
+
+        
+    
+    
+            var circle_marker_948e5da10ec4e503d914760a0db078d6 = L.circleMarker(
+                [45.85627000000005, -116.79348],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_92fcf128a622207daf4f744467a157e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8741211aefb343a8faafc166bd1eca7d = $(`<div id="html_8741211aefb343a8faafc166bd1eca7d" style="width: 100.0%; height: 100.0%;">Location: Salmon River, Idaho<br>Number of Attacks: 1</div>`)[0];
+                popup_92fcf128a622207daf4f744467a157e2.setContent(html_8741211aefb343a8faafc166bd1eca7d);
+            
+        
+
+        circle_marker_948e5da10ec4e503d914760a0db078d6.bindPopup(popup_92fcf128a622207daf4f744467a157e2)
+        ;
+
+        
+    
+    
+            var circle_marker_93c24e8091e6654315967a1953e2fe2a = L.circleMarker(
+                [34.01158000000004, -118.49226999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_bb9af5f8279285a3cce7475dd502a23f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7b582800dea57790ee5ae1d9922a78d = $(`<div id="html_c7b582800dea57790ee5ae1d9922a78d" style="width: 100.0%; height: 100.0%;">Location: Santa Monica, California<br>Number of Attacks: 1</div>`)[0];
+                popup_bb9af5f8279285a3cce7475dd502a23f.setContent(html_c7b582800dea57790ee5ae1d9922a78d);
+            
+        
+
+        circle_marker_93c24e8091e6654315967a1953e2fe2a.bindPopup(popup_bb9af5f8279285a3cce7475dd502a23f)
+        ;
+
+        
+    
+    
+            var circle_marker_0d2451b289ab0496d59abd4c46111cd4 = L.circleMarker(
+                [34.86597000000006, -111.76380999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_32125c0b18b783ec38facb6a952b5e04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc953101834962e95ac644cab7e3598e = $(`<div id="html_fc953101834962e95ac644cab7e3598e" style="width: 100.0%; height: 100.0%;">Location: Sedona, Arizona<br>Number of Attacks: 1</div>`)[0];
+                popup_32125c0b18b783ec38facb6a952b5e04.setContent(html_fc953101834962e95ac644cab7e3598e);
+            
+        
+
+        circle_marker_0d2451b289ab0496d59abd4c46111cd4.bindPopup(popup_32125c0b18b783ec38facb6a952b5e04)
+        ;
+
+        
+    
+    
+            var circle_marker_42b5417c5fc76ca65e09509f96fb65e3 = L.circleMarker(
+                [50.14250400000003, -96.87071599999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_081394373b7d536aa73afa318b7e4a1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_387815b2c50b6e5575b4828000691d95 = $(`<div id="html_387815b2c50b6e5575b4828000691d95" style="width: 100.0%; height: 100.0%;">Location: Selkirk, Manitoba<br>Number of Attacks: 1</div>`)[0];
+                popup_081394373b7d536aa73afa318b7e4a1a.setContent(html_387815b2c50b6e5575b4828000691d95);
+            
+        
+
+        circle_marker_42b5417c5fc76ca65e09509f96fb65e3.bindPopup(popup_081394373b7d536aa73afa318b7e4a1a)
+        ;
+
+        
+    
+    
+            var circle_marker_9288919830c1ea3153056b2558f9b6e9 = L.circleMarker(
+                [61.16723000000008, -93.85015],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_9c178186791848deb3bb89861c301335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3fb9f36570d94c90dc44435a889c7e6 = $(`<div id="html_b3fb9f36570d94c90dc44435a889c7e6" style="width: 100.0%; height: 100.0%;">Location: Sentry Island, Nunavut<br>Number of Attacks: 1</div>`)[0];
+                popup_9c178186791848deb3bb89861c301335.setContent(html_b3fb9f36570d94c90dc44435a889c7e6);
+            
+        
+
+        circle_marker_9288919830c1ea3153056b2558f9b6e9.bindPopup(popup_9c178186791848deb3bb89861c301335)
+        ;
+
+        
+    
+    
+            var circle_marker_a568577bb156b45ca407c0fd5c51b6e0 = L.circleMarker(
+                [44.03967000000006, -109.54127999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_a6d9248a0c6a04ab641474c0a78e1f7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27e297f497c21fc6ef09fee2ead412d8 = $(`<div id="html_27e297f497c21fc6ef09fee2ead412d8" style="width: 100.0%; height: 100.0%;">Location: Shoshone National Forest, Wyoming<br>Number of Attacks: 1</div>`)[0];
+                popup_a6d9248a0c6a04ab641474c0a78e1f7f.setContent(html_27e297f497c21fc6ef09fee2ead412d8);
+            
+        
+
+        circle_marker_a568577bb156b45ca407c0fd5c51b6e0.bindPopup(popup_a6d9248a0c6a04ab641474c0a78e1f7f)
+        ;
+
+        
+    
+    
+            var circle_marker_59e14df5672785d9fc98f576be808ef7 = L.circleMarker(
+                [36.578550000000064, -118.29341999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_e8bda856ae73fad4f865913df526abaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_524cee28acc8c27a75d1651beef5ccae = $(`<div id="html_524cee28acc8c27a75d1651beef5ccae" style="width: 100.0%; height: 100.0%;">Location: Sierra Nevada, California<br>Number of Attacks: 1</div>`)[0];
+                popup_e8bda856ae73fad4f865913df526abaf.setContent(html_524cee28acc8c27a75d1651beef5ccae);
+            
+        
+
+        circle_marker_59e14df5672785d9fc98f576be808ef7.bindPopup(popup_e8bda856ae73fad4f865913df526abaf)
+        ;
+
+        
+    
+    
+            var circle_marker_377f5be8dd901319a1139ea3c8b55d65 = L.circleMarker(
+                [41.61008970248539, -75.979873240386],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_25936821aa50c6eefb26d2dd7c129962 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ebb7e6ea538330884bb4199f2a88e4c = $(`<div id="html_1ebb7e6ea538330884bb4199f2a88e4c" style="width: 100.0%; height: 100.0%;">Location: Teton Wilderness, Wyoming<br>Number of Attacks: 1</div>`)[0];
+                popup_25936821aa50c6eefb26d2dd7c129962.setContent(html_1ebb7e6ea538330884bb4199f2a88e4c);
+            
+        
+
+        circle_marker_377f5be8dd901319a1139ea3c8b55d65.bindPopup(popup_25936821aa50c6eefb26d2dd7c129962)
+        ;
+
+        
+    
+    
+            var circle_marker_ca439db527e27e5b436a564cc2082e86 = L.circleMarker(
+                [64.93082000000004, -125.50025999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_f7bac7eebaff181631957ee7c97cc3a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_567629479d645f7b969b719d1b4ab941 = $(`<div id="html_567629479d645f7b969b719d1b4ab941" style="width: 100.0%; height: 100.0%;">Location: Tulita, Northwest Territories<br>Number of Attacks: 1</div>`)[0];
+                popup_f7bac7eebaff181631957ee7c97cc3a3.setContent(html_567629479d645f7b969b719d1b4ab941);
+            
+        
+
+        circle_marker_ca439db527e27e5b436a564cc2082e86.bindPopup(popup_f7bac7eebaff181631957ee7c97cc3a3)
+        ;
+
+        
+    
+    
+            var circle_marker_d7a47a6cfc3048c93b2b80be2737f0ba = L.circleMarker(
+                [57.88694000000004, -153.35610999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_9774f758f5adeb08ea2b9b47b4543dad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_716dbaebdd4aa0df24384127893bd03c = $(`<div id="html_716dbaebdd4aa0df24384127893bd03c" style="width: 100.0%; height: 100.0%;">Location: Uganik Island, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_9774f758f5adeb08ea2b9b47b4543dad.setContent(html_716dbaebdd4aa0df24384127893bd03c);
+            
+        
+
+        circle_marker_d7a47a6cfc3048c93b2b80be2737f0ba.bindPopup(popup_9774f758f5adeb08ea2b9b47b4543dad)
+        ;
+
+        
+    
+    
+            var circle_marker_1679e8e7f5551941788086845ec879f9 = L.circleMarker(
+                [40.125230000000045, -111.25100999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_1d1b30b57786bb164da2c1d1e556b9d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9552504de9dd25fbb72718d6f881056 = $(`<div id="html_a9552504de9dd25fbb72718d6f881056" style="width: 100.0%; height: 100.0%;">Location: Uinta National Forest, Utah<br>Number of Attacks: 1</div>`)[0];
+                popup_1d1b30b57786bb164da2c1d1e556b9d0.setContent(html_a9552504de9dd25fbb72718d6f881056);
+            
+        
+
+        circle_marker_1679e8e7f5551941788086845ec879f9.bindPopup(popup_1d1b30b57786bb164da2c1d1e556b9d0)
+        ;
+
+        
+    
+    
+            var circle_marker_fe0003c4edd83ee930f54032184c8090 = L.circleMarker(
+                [49.11311000000006, -113.84110999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_e7cc48df6cad0d08b6d6f11b6622c0c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_443d80001a0d4b3225834874eb2dc2f9 = $(`<div id="html_443d80001a0d4b3225834874eb2dc2f9" style="width: 100.0%; height: 100.0%;">Location: Waterton Lakes National Park, Alberta<br>Number of Attacks: 1</div>`)[0];
+                popup_e7cc48df6cad0d08b6d6f11b6622c0c6.setContent(html_443d80001a0d4b3225834874eb2dc2f9);
+            
+        
+
+        circle_marker_fe0003c4edd83ee930f54032184c8090.bindPopup(popup_e7cc48df6cad0d08b6d6f11b6622c0c6)
+        ;
+
+        
+    
+    
+            var circle_marker_d4c98e728220d12e3e40bd39b8b51091 = L.circleMarker(
+                [43.08427000000006, -72.71127999999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_af0a6127a7a5f87679f89a6431048de7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be2eb1448af2b57e4054f15295e3c3c1 = $(`<div id="html_be2eb1448af2b57e4054f15295e3c3c1" style="width: 100.0%; height: 100.0%;">Location: West Townshend, Vermont<br>Number of Attacks: 1</div>`)[0];
+                popup_af0a6127a7a5f87679f89a6431048de7.setContent(html_be2eb1448af2b57e4054f15295e3c3c1);
+            
+        
+
+        circle_marker_d4c98e728220d12e3e40bd39b8b51091.bindPopup(popup_af0a6127a7a5f87679f89a6431048de7)
+        ;
+
+        
+    
+    
+            var circle_marker_29290e49a23203be9fda8e06ea0b23de = L.circleMarker(
+                [41.242950000000064, -75.87662999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_c2442847f0e0b40cfe278d4eee069bfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_103cf1801fd65291eb1c7389af2d2c45 = $(`<div id="html_103cf1801fd65291eb1c7389af2d2c45" style="width: 100.0%; height: 100.0%;">Location: Wilkes-Barre, Pennsylvania<br>Number of Attacks: 1</div>`)[0];
+                popup_c2442847f0e0b40cfe278d4eee069bfb.setContent(html_103cf1801fd65291eb1c7389af2d2c45);
+            
+        
+
+        circle_marker_29290e49a23203be9fda8e06ea0b23de.bindPopup(popup_c2442847f0e0b40cfe278d4eee069bfb)
+        ;
+
+        
+    
+    
+            var circle_marker_f0b3a44a5969ec9d7873f92241002c38 = L.circleMarker(
+                [44.976350000000025, -110.69993999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_e6b0128f1531d2b03252b92a9406c3fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce7c189d6d7ec54fc35cd6e9013994b7 = $(`<div id="html_ce7c189d6d7ec54fc35cd6e9013994b7" style="width: 100.0%; height: 100.0%;">Location: Yellowstone National Park<br>Number of Attacks: 1</div>`)[0];
+                popup_e6b0128f1531d2b03252b92a9406c3fe.setContent(html_ce7c189d6d7ec54fc35cd6e9013994b7);
+            
+        
+
+        circle_marker_f0b3a44a5969ec9d7873f92241002c38.bindPopup(popup_e6b0128f1531d2b03252b92a9406c3fe)
+        ;
+
+        
+    
+    
+            var circle_marker_64b2bdd77d456087f3ac39f116a5d5a2 = L.circleMarker(
+                [44.976350000000025, -110.69993999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_02a8cad52765358446875fb805c33d58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02ee706bc6351a8c7191fd54b8fee64b = $(`<div id="html_02ee706bc6351a8c7191fd54b8fee64b" style="width: 100.0%; height: 100.0%;">Location: Yellowstone National Park, Wyoming<br>Number of Attacks: 7</div>`)[0];
+                popup_02a8cad52765358446875fb805c33d58.setContent(html_02ee706bc6351a8c7191fd54b8fee64b);
+            
+        
+
+        circle_marker_64b2bdd77d456087f3ac39f116a5d5a2.bindPopup(popup_02a8cad52765358446875fb805c33d58)
+        ;
+
+        
+    
+    
+            var circle_marker_54b8fca5f50fb55e3289800588ad3e81 = L.circleMarker(
+                [61.21753000000007, -149.85824999999997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_54cb990a9c6d94ac6ad48d22367921a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78e613195a0d24fb4e8520e2ae4db859 = $(`<div id="html_78e613195a0d24fb4e8520e2ae4db859" style="width: 100.0%; height: 100.0%;">Location: near Anchorage, Alaska<br>Number of Attacks: 3</div>`)[0];
+                popup_54cb990a9c6d94ac6ad48d22367921a3.setContent(html_78e613195a0d24fb4e8520e2ae4db859);
+            
+        
+
+        circle_marker_54b8fca5f50fb55e3289800588ad3e81.bindPopup(popup_54cb990a9c6d94ac6ad48d22367921a3)
+        ;
+
+        
+    
+    
+            var circle_marker_2f6e8199c830761f7ad87548826c6a4c = L.circleMarker(
+                [48.75716900000003, -91.62552099999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_184a642df535d2f789d2df53aa368895 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e11712374144a7bdc9ac8635c71d30f8 = $(`<div id="html_e11712374144a7bdc9ac8635c71d30f8" style="width: 100.0%; height: 100.0%;">Location: near Atikokan, Ontario<br>Number of Attacks: 1</div>`)[0];
+                popup_184a642df535d2f789d2df53aa368895.setContent(html_e11712374144a7bdc9ac8635c71d30f8);
+            
+        
+
+        circle_marker_2f6e8199c830761f7ad87548826c6a4c.bindPopup(popup_184a642df535d2f789d2df53aa368895)
+        ;
+
+        
+    
+    
+            var circle_marker_05da594dcab8087807807a7fa98aa6cc = L.circleMarker(
+                [47.49128000000008, -112.39328999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_e7128c56da6f56b0d297765c77e371b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bedd5575a221cfe9184e0eee130e22d9 = $(`<div id="html_bedd5575a221cfe9184e0eee130e22d9" style="width: 100.0%; height: 100.0%;">Location: near Augusta, Montana<br>Number of Attacks: 1</div>`)[0];
+                popup_e7128c56da6f56b0d297765c77e371b7.setContent(html_bedd5575a221cfe9184e0eee130e22d9);
+            
+        
+
+        circle_marker_05da594dcab8087807807a7fa98aa6cc.bindPopup(popup_e7128c56da6f56b0d297765c77e371b7)
+        ;
+
+        
+    
+    
+            var circle_marker_8ae7c0b37ed0045c8e97815c263647c5 = L.circleMarker(
+                [51.18036300000006, -115.56962499999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_8afa8d82b4fc186ea0e0bd551d34e55c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f15211a1a3c6bed8f3108c8d8a2598f = $(`<div id="html_2f15211a1a3c6bed8f3108c8d8a2598f" style="width: 100.0%; height: 100.0%;">Location: near Banff, Alberta<br>Number of Attacks: 1</div>`)[0];
+                popup_8afa8d82b4fc186ea0e0bd551d34e55c.setContent(html_2f15211a1a3c6bed8f3108c8d8a2598f);
+            
+        
+
+        circle_marker_8ae7c0b37ed0045c8e97815c263647c5.bindPopup(popup_8afa8d82b4fc186ea0e0bd551d34e55c)
+        ;
+
+        
+    
+    
+            var circle_marker_3e08a1e6cabc1b0f3e40de4e4d04b826 = L.circleMarker(
+                [49.465779000000055, -114.19194],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_e5924acb6c2a51cbf2de9d1f8669fa72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_996535f330c70aec8097972389eb192f = $(`<div id="html_996535f330c70aec8097972389eb192f" style="width: 100.0%; height: 100.0%;">Location: near Beaver Mines, Alberta<br>Number of Attacks: 1</div>`)[0];
+                popup_e5924acb6c2a51cbf2de9d1f8669fa72.setContent(html_996535f330c70aec8097972389eb192f);
+            
+        
+
+        circle_marker_3e08a1e6cabc1b0f3e40de4e4d04b826.bindPopup(popup_e5924acb6c2a51cbf2de9d1f8669fa72)
+        ;
+
+        
+    
+    
+            var circle_marker_c756d699950fad65439bda8d02ff287e = L.circleMarker(
+                [54.05683000000005, -121.82512999999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_3f4ef18eca5af3341afaa3d3af2fad87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06be73c9e0a544269646db0fc10e5f9a = $(`<div id="html_06be73c9e0a544269646db0fc10e5f9a" style="width: 100.0%; height: 100.0%;">Location: near Bowron River, British Columbia<br>Number of Attacks: 1</div>`)[0];
+                popup_3f4ef18eca5af3341afaa3d3af2fad87.setContent(html_06be73c9e0a544269646db0fc10e5f9a);
+            
+        
+
+        circle_marker_c756d699950fad65439bda8d02ff287e.bindPopup(popup_3f4ef18eca5af3341afaa3d3af2fad87)
+        ;
+
+        
+    
+    
+            var circle_marker_f0c25dfa00d4c054406a4dc0d4da07e5 = L.circleMarker(
+                [53.03247200000004, -117.326529],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_5853a811092c4c740ec503c6c332ec9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3a945d94630d1dcd707de8833518d28 = $(`<div id="html_d3a945d94630d1dcd707de8833518d28" style="width: 100.0%; height: 100.0%;">Location: near Cadomin, Alberta<br>Number of Attacks: 1</div>`)[0];
+                popup_5853a811092c4c740ec503c6c332ec9f.setContent(html_d3a945d94630d1dcd707de8833518d28);
+            
+        
+
+        circle_marker_f0c25dfa00d4c054406a4dc0d4da07e5.bindPopup(popup_5853a811092c4c740ec503c6c332ec9f)
+        ;
+
+        
+    
+    
+            var circle_marker_caea5a514c431af0752892fd75b15ffe = L.circleMarker(
+                [53.36680000000007, -106.60110999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_0cbc1900f329f5ff278591e0ce067734 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a62e81828682cce544b1c35ba777712d = $(`<div id="html_a62e81828682cce544b1c35ba777712d" style="width: 100.0%; height: 100.0%;">Location: near Canwood, Saskatchewan<br>Number of Attacks: 1</div>`)[0];
+                popup_0cbc1900f329f5ff278591e0ce067734.setContent(html_a62e81828682cce544b1c35ba777712d);
+            
+        
+
+        circle_marker_caea5a514c431af0752892fd75b15ffe.bindPopup(popup_0cbc1900f329f5ff278591e0ce067734)
+        ;
+
+        
+    
+    
+            var circle_marker_a7beae1d0555a9d950e5d44830c7fa51 = L.circleMarker(
+                [49.06512300000003, -81.02981599999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_0b5125a819bc4b02fd03af776fcaa495 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b12f7567896062ffd3e5448ba6ad7e9e = $(`<div id="html_b12f7567896062ffd3e5448ba6ad7e9e" style="width: 100.0%; height: 100.0%;">Location: near Cochrane, Ontario<br>Number of Attacks: 1</div>`)[0];
+                popup_0b5125a819bc4b02fd03af776fcaa495.setContent(html_b12f7567896062ffd3e5448ba6ad7e9e);
+            
+        
+
+        circle_marker_a7beae1d0555a9d950e5d44830c7fa51.bindPopup(popup_0b5125a819bc4b02fd03af776fcaa495)
+        ;
+
+        
+    
+    
+            var circle_marker_c213b7d80eaf933db01b9e762665f84c = L.circleMarker(
+                [64.06025900000003, -139.430255],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_28f510653157cd25e1930b4f12c98a86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36559b7adc31ce78e9798c5689ae9aae = $(`<div id="html_36559b7adc31ce78e9798c5689ae9aae" style="width: 100.0%; height: 100.0%;">Location: near Dawson, Yukon<br>Number of Attacks: 1</div>`)[0];
+                popup_28f510653157cd25e1930b4f12c98a86.setContent(html_36559b7adc31ce78e9798c5689ae9aae);
+            
+        
+
+        circle_marker_c213b7d80eaf933db01b9e762665f84c.bindPopup(popup_28f510653157cd25e1930b4f12c98a86)
+        ;
+
+        
+    
+    
+            var circle_marker_b67d21780a6421a5cabfb9b140953390 = L.circleMarker(
+                [64.04668000000004, -145.73623999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_943b004f3c7ee3fb069b7e817a50d4b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3146a7d27375283ec6633cc2cbc41087 = $(`<div id="html_3146a7d27375283ec6633cc2cbc41087" style="width: 100.0%; height: 100.0%;">Location: near Delta Junction, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_943b004f3c7ee3fb069b7e817a50d4b2.setContent(html_3146a7d27375283ec6633cc2cbc41087);
+            
+        
+
+        circle_marker_b67d21780a6421a5cabfb9b140953390.bindPopup(popup_943b004f3c7ee3fb069b7e817a50d4b2)
+        ;
+
+        
+    
+    
+            var circle_marker_fcb28c8eae4f7143261908330f1fb81c = L.circleMarker(
+                [65.19087000000007, -150.16105999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_3678827f8ced94f156d66fda5034d7d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8ab026fa1c0154246ab0025fd1f1674 = $(`<div id="html_d8ab026fa1c0154246ab0025fd1f1674" style="width: 100.0%; height: 100.0%;">Location: near Eureka, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_3678827f8ced94f156d66fda5034d7d5.setContent(html_d8ab026fa1c0154246ab0025fd1f1674);
+            
+        
+
+        circle_marker_fcb28c8eae4f7143261908330f1fb81c.bindPopup(popup_3678827f8ced94f156d66fda5034d7d5)
+        ;
+
+        
+    
+    
+            var circle_marker_9666ab4d5d27ebf6a34b6d3c32cee8dd = L.circleMarker(
+                [64.84525000000008, -147.72209999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_d28ddea6ba58cbb1d4e67c6bfbae010b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1276afb257211789d2459a992e9dc16c = $(`<div id="html_1276afb257211789d2459a992e9dc16c" style="width: 100.0%; height: 100.0%;">Location: near Fairbanks, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_d28ddea6ba58cbb1d4e67c6bfbae010b.setContent(html_1276afb257211789d2459a992e9dc16c);
+            
+        
+
+        circle_marker_9666ab4d5d27ebf6a34b6d3c32cee8dd.bindPopup(popup_d28ddea6ba58cbb1d4e67c6bfbae010b)
+        ;
+
+        
+    
+    
+            var circle_marker_6fd1bb88fe83d12cfea59a0e1151683d = L.circleMarker(
+                [56.72037300000005, -111.362779],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_f8a102516e889dccbde952ea5b737098 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4efa636bdff8a39d92cfc5a3a68994b1 = $(`<div id="html_4efa636bdff8a39d92cfc5a3a68994b1" style="width: 100.0%; height: 100.0%;">Location: near Fort McMurray, Alberta<br>Number of Attacks: 1</div>`)[0];
+                popup_f8a102516e889dccbde952ea5b737098.setContent(html_4efa636bdff8a39d92cfc5a3a68994b1);
+            
+        
+
+        circle_marker_6fd1bb88fe83d12cfea59a0e1151683d.bindPopup(popup_f8a102516e889dccbde952ea5b737098)
+        ;
+
+        
+    
+    
+            var circle_marker_7648730840594fa3202c955333516316 = L.circleMarker(
+                [58.80498200000005, -122.696781],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_87d666872c53d20e8b100c185dfc0875 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42e9fdb7e39bbf96bde11b4ab5907f1d = $(`<div id="html_42e9fdb7e39bbf96bde11b4ab5907f1d" style="width: 100.0%; height: 100.0%;">Location: near Fort Nelson, British Columbia<br>Number of Attacks: 2</div>`)[0];
+                popup_87d666872c53d20e8b100c185dfc0875.setContent(html_42e9fdb7e39bbf96bde11b4ab5907f1d);
+            
+        
+
+        circle_marker_7648730840594fa3202c955333516316.bindPopup(popup_87d666872c53d20e8b100c185dfc0875)
+        ;
+
+        
+    
+    
+            var circle_marker_f280b679f777a8c10d41e3f2f0e72739 = L.circleMarker(
+                [56.25242300000008, -120.846409],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_5b003252a8303fb238c84dc509f616d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04fb10c271e465ec0b6cfdf855796a79 = $(`<div id="html_04fb10c271e465ec0b6cfdf855796a79" style="width: 100.0%; height: 100.0%;">Location: near Fort St. John, British Columbia<br>Number of Attacks: 1</div>`)[0];
+                popup_5b003252a8303fb238c84dc509f616d7.setContent(html_04fb10c271e465ec0b6cfdf855796a79);
+            
+        
+
+        circle_marker_f280b679f777a8c10d41e3f2f0e72739.bindPopup(popup_5b003252a8303fb238c84dc509f616d7)
+        ;
+
+        
+    
+    
+            var circle_marker_38757a3dbd63e68173d90aef5292c540 = L.circleMarker(
+                [54.88681500000007, -126.20702699999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_cee204300fe01744444e23a1c7cc1c09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf8adf58b9b335357493b728d3a858bb = $(`<div id="html_cf8adf58b9b335357493b728d3a858bb" style="width: 100.0%; height: 100.0%;">Location: near Granisle, British Columbia<br>Number of Attacks: 1</div>`)[0];
+                popup_cee204300fe01744444e23a1c7cc1c09.setContent(html_cf8adf58b9b335357493b728d3a858bb);
+            
+        
+
+        circle_marker_38757a3dbd63e68173d90aef5292c540.bindPopup(popup_cee204300fe01744444e23a1c7cc1c09)
+        ;
+
+        
+    
+    
+            var circle_marker_b4cc28ee9f04c7e4b5940d858730bacd = L.circleMarker(
+                [60.55308000000008, -151.25971999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_425c29a378ae8d8af8cbe3b0b49de217 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88b989e979e7a7df3bc11aacee74ea19 = $(`<div id="html_88b989e979e7a7df3bc11aacee74ea19" style="width: 100.0%; height: 100.0%;">Location: near Kenai, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_425c29a378ae8d8af8cbe3b0b49de217.setContent(html_88b989e979e7a7df3bc11aacee74ea19);
+            
+        
+
+        circle_marker_b4cc28ee9f04c7e4b5940d858730bacd.bindPopup(popup_425c29a378ae8d8af8cbe3b0b49de217)
+        ;
+
+        
+    
+    
+            var circle_marker_5bde29e35064a5c35948673dbf50fff6 = L.circleMarker(
+                [55.05551000000003, -162.31003999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_5bfca58d2f91a192f251b335681aa913 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_091ea7efddef0621b1c4e0708a4b67b1 = $(`<div id="html_091ea7efddef0621b1c4e0708a4b67b1" style="width: 100.0%; height: 100.0%;">Location: near King Cove, Alaska<br>Number of Attacks: 1</div>`)[0];
+                popup_5bfca58d2f91a192f251b335681aa913.setContent(html_091ea7efddef0621b1c4e0708a4b67b1);
+            
+        
+
+        circle_marker_5bde29e35064a5c35948673dbf50fff6.bindPopup(popup_5bfca58d2f91a192f251b335681aa913)
+        ;
+
+        
+    
+    
+            var circle_marker_77d9f63b01ee89e33035ced0181b8597 = L.circleMarker(
+                [48.80708200000004, -79.20493599999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_77ef1384b03fcf3ec572cda4cd95ab90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5caac554044524a50c9334bc8b7e425c = $(`<div id="html_5caac554044524a50c9334bc8b7e425c" style="width: 100.0%; height: 100.0%;">Location: near La Sarre, Quebec<br>Number of Attacks: 1</div>`)[0];
+                popup_77ef1384b03fcf3ec572cda4cd95ab90.setContent(html_5caac554044524a50c9334bc8b7e425c);
+            
+        
+
+        circle_marker_77d9f63b01ee89e33035ced0181b8597.bindPopup(popup_77ef1384b03fcf3ec572cda4cd95ab90)
+        ;
+
+        
+    
+    
+            var circle_marker_4dd0f42c22e1cadfa4b52239e061e257 = L.circleMarker(
+                [50.68333288800005, -121.933329889],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_027b7d12d9ae7d87c9ff22286a5e5957 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27a968806f92d664fad8dc03d3f788f1 = $(`<div id="html_27a968806f92d664fad8dc03d3f788f1" style="width: 100.0%; height: 100.0%;">Location: near Lillooet, British Columbia<br>Number of Attacks: 1</div>`)[0];
+                popup_027b7d12d9ae7d87c9ff22286a5e5957.setContent(html_27a968806f92d664fad8dc03d3f788f1);
+            
+        
+
+        circle_marker_4dd0f42c22e1cadfa4b52239e061e257.bindPopup(popup_027b7d12d9ae7d87c9ff22286a5e5957)
+        ;
+
+        
+    
+    
+            var circle_marker_5cffa5343f5e7d3e603bf359ecaa5e74 = L.circleMarker(
+                [55.33575159100008, -123.090103044],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_a0d3580e56d364bfe5b345ea51c816aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce501b0625ede293a5d8fde3ad562fdb = $(`<div id="html_ce501b0625ede293a5d8fde3ad562fdb" style="width: 100.0%; height: 100.0%;">Location: near Mackenzie, British Columbia<br>Number of Attacks: 1</div>`)[0];
+                popup_a0d3580e56d364bfe5b345ea51c816aa.setContent(html_ce501b0625ede293a5d8fde3ad562fdb);
+            
+        
+
+        circle_marker_5cffa5343f5e7d3e603bf359ecaa5e74.bindPopup(popup_a0d3580e56d364bfe5b345ea51c816aa)
+        ;
+
+        
+    
+    
+            var circle_marker_f0c69195e3da69151bf940202c1e32e8 = L.circleMarker(
+                [53.36199800000003, -104.01284399999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_93730753b46ab2d62a550cf3c7f5a46a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a19cb56e0bedf75c60d788474fb26d4d = $(`<div id="html_a19cb56e0bedf75c60d788474fb26d4d" style="width: 100.0%; height: 100.0%;">Location: near Nipawin Provincial Park, Saskatchewan<br>Number of Attacks: 1</div>`)[0];
+                popup_93730753b46ab2d62a550cf3c7f5a46a.setContent(html_a19cb56e0bedf75c60d788474fb26d4d);
+            
+        
+
+        circle_marker_f0c69195e3da69151bf940202c1e32e8.bindPopup(popup_93730753b46ab2d62a550cf3c7f5a46a)
+        ;
+
+        
+    
+    
+            var circle_marker_5f2795414bef4ccddc20f77386e8f1a3 = L.circleMarker(
+                [65.28089800000004, -126.83013799999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_f0da8a3a6089745dd1be7cf23c3f7fa6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64bbb15cd30036b1328d595e7be2164d = $(`<div id="html_64bbb15cd30036b1328d595e7be2164d" style="width: 100.0%; height: 100.0%;">Location: near Norman Wells, Northwest Territories<br>Number of Attacks: 1</div>`)[0];
+                popup_f0da8a3a6089745dd1be7cf23c3f7fa6.setContent(html_64bbb15cd30036b1328d595e7be2164d);
+            
+        
+
+        circle_marker_5f2795414bef4ccddc20f77386e8f1a3.bindPopup(popup_f0da8a3a6089745dd1be7cf23c3f7fa6)
+        ;
+
+        
+    
+    
+            var circle_marker_ab912940a37ee13b234ee33f8acb5e9b = L.circleMarker(
+                [50.239576000000056, -119.33885399999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_348305e5fa86fba35a3aa24bb80c87da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bd1d929404a684e6c01ea0cc307092e = $(`<div id="html_2bd1d929404a684e6c01ea0cc307092e" style="width: 100.0%; height: 100.0%;">Location: near Okanagan Landing, British Columbia<br>Number of Attacks: 1</div>`)[0];
+                popup_348305e5fa86fba35a3aa24bb80c87da.setContent(html_2bd1d929404a684e6c01ea0cc307092e);
+            
+        
+
+        circle_marker_ab912940a37ee13b234ee33f8acb5e9b.bindPopup(popup_348305e5fa86fba35a3aa24bb80c87da)
+        ;
+
+        
+    
+    
+            var circle_marker_cd367034034f53ac5403961b7ff575d8 = L.circleMarker(
+                [47.02019000000007, -113.13304],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_d56580357fdf64531e3e41613dc7ddb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2e3e89f2577a04e1ab4b17843d46b02 = $(`<div id="html_c2e3e89f2577a04e1ab4b17843d46b02" style="width: 100.0%; height: 100.0%;">Location: near Ovando, Montana<br>Number of Attacks: 2</div>`)[0];
+                popup_d56580357fdf64531e3e41613dc7ddb2.setContent(html_c2e3e89f2577a04e1ab4b17843d46b02);
+            
+        
+
+        circle_marker_cd367034034f53ac5403961b7ff575d8.bindPopup(popup_d56580357fdf64531e3e41613dc7ddb2)
+        ;
+
+        
+    
+    
+            var circle_marker_d693b88dd12849e8d0b081fd84d6db7a = L.circleMarker(
+                [49.48565300000007, -113.948244],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_92e90423e47608e08e9425befc35ff14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90c8f1aa97ae0bcb46949bef0eca7ff2 = $(`<div id="html_90c8f1aa97ae0bcb46949bef0eca7ff2" style="width: 100.0%; height: 100.0%;">Location: near Pincher Creek, Alberta<br>Number of Attacks: 1</div>`)[0];
+                popup_92e90423e47608e08e9425befc35ff14.setContent(html_90c8f1aa97ae0bcb46949bef0eca7ff2);
+            
+        
+
+        circle_marker_d693b88dd12849e8d0b081fd84d6db7a.bindPopup(popup_92e90423e47608e08e9425befc35ff14)
+        ;
+
+        
+    
+    
+            var circle_marker_6230c4150c51e82488762c8a21605b17 = L.circleMarker(
+                [53.91355400000003, -122.75021799999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_9a967348e08bfafde4f6e5f766ff5151 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7127f7c5f11b41d58eda856fa86cdc15 = $(`<div id="html_7127f7c5f11b41d58eda856fa86cdc15" style="width: 100.0%; height: 100.0%;">Location: near Prince George, British Columbia<br>Number of Attacks: 1</div>`)[0];
+                popup_9a967348e08bfafde4f6e5f766ff5151.setContent(html_7127f7c5f11b41d58eda856fa86cdc15);
+            
+        
+
+        circle_marker_6230c4150c51e82488762c8a21605b17.bindPopup(popup_9a967348e08bfafde4f6e5f766ff5151)
+        ;
+
+        
+    
+    
+            var circle_marker_141a1f7ae335a8c9ca127720128dc200 = L.circleMarker(
+                [50.616670000000056, -116.06877999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_9c7cc978f7ddbb74b30b08f15c0702ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3acccef54dc988a2e81e323bb9f00e08 = $(`<div id="html_3acccef54dc988a2e81e323bb9f00e08" style="width: 100.0%; height: 100.0%;">Location: near Radium Hot Springs, British Columbia<br>Number of Attacks: 2</div>`)[0];
+                popup_9c7cc978f7ddbb74b30b08f15c0702ae.setContent(html_3acccef54dc988a2e81e323bb9f00e08);
+            
+        
+
+        circle_marker_141a1f7ae335a8c9ca127720128dc200.bindPopup(popup_9c7cc978f7ddbb74b30b08f15c0702ae)
+        ;
+
+        
+    
+    
+            var circle_marker_ae3e2650844e370235f7f2ce4c47d1ca = L.circleMarker(
+                [62.80891300000008, -92.08774099999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_a74ec1a3ed7dbcbc64e08d8024a5ddb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91bf18e81887adf5b90b48739a70b51f = $(`<div id="html_91bf18e81887adf5b90b48739a70b51f" style="width: 100.0%; height: 100.0%;">Location: near Rankin Inlet, Nunavut<br>Number of Attacks: 1</div>`)[0];
+                popup_a74ec1a3ed7dbcbc64e08d8024a5ddb6.setContent(html_91bf18e81887adf5b90b48739a70b51f);
+            
+        
+
+        circle_marker_ae3e2650844e370235f7f2ce4c47d1ca.bindPopup(popup_a74ec1a3ed7dbcbc64e08d8024a5ddb6)
+        ;
+
+        
+    
+    
+            var circle_marker_a32d4b6b99125bf4df85a89b434a6aec = L.circleMarker(
+                [40.36513000000008, -105.55406999999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_31cc1e023ec2d567d3548b55d6acd5f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b1197ee6ab43e3507c80fb2bb8f1a24 = $(`<div id="html_2b1197ee6ab43e3507c80fb2bb8f1a24" style="width: 100.0%; height: 100.0%;">Location: near Rocky Mountain National Park, Colorado<br>Number of Attacks: 1</div>`)[0];
+                popup_31cc1e023ec2d567d3548b55d6acd5f4.setContent(html_2b1197ee6ab43e3507c80fb2bb8f1a24);
+            
+        
+
+        circle_marker_a32d4b6b99125bf4df85a89b434a6aec.bindPopup(popup_31cc1e023ec2d567d3548b55d6acd5f4)
+        ;
+
+        
+    
+    
+            var circle_marker_abb2baa01718d14690f9de8e34f89103 = L.circleMarker(
+                [61.98962000000006, -132.41202999999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_8f010dea797c8d73bfbc8e2178ce1b30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b700a3a33adfc3e5759a7ef4f50c28e = $(`<div id="html_4b700a3a33adfc3e5759a7ef4f50c28e" style="width: 100.0%; height: 100.0%;">Location: near Ross River, Yukon<br>Number of Attacks: 1</div>`)[0];
+                popup_8f010dea797c8d73bfbc8e2178ce1b30.setContent(html_4b700a3a33adfc3e5759a7ef4f50c28e);
+            
+        
+
+        circle_marker_abb2baa01718d14690f9de8e34f89103.bindPopup(popup_8f010dea797c8d73bfbc8e2178ce1b30)
+        ;
+
+        
+    
+    
+            var circle_marker_2bca311053b431aacbb8220d8538fc2f = L.circleMarker(
+                [54.82057200000003, -66.82542199999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_9b3a9ceb110cd7f5d58a62b6f71a24d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5a080925fba0c64301c08c12adf49c8 = $(`<div id="html_b5a080925fba0c64301c08c12adf49c8" style="width: 100.0%; height: 100.0%;">Location: near Schefferville, Quebec<br>Number of Attacks: 1</div>`)[0];
+                popup_9b3a9ceb110cd7f5d58a62b6f71a24d3.setContent(html_b5a080925fba0c64301c08c12adf49c8);
+            
+        
+
+        circle_marker_2bca311053b431aacbb8220d8538fc2f.bindPopup(popup_9b3a9ceb110cd7f5d58a62b6f71a24d3)
+        ;
+
+        
+    
+    
+            var circle_marker_f527eba5c73a82bf8698248304d56d9e = L.circleMarker(
+                [51.79721500000005, -114.64050099999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_d3324940995600c4c32e29a7dcde24b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afeebfbd84de6f7353a2de38f7aa4d3d = $(`<div id="html_afeebfbd84de6f7353a2de38f7aa4d3d" style="width: 100.0%; height: 100.0%;">Location: near Sundre, Alberta<br>Number of Attacks: 2</div>`)[0];
+                popup_d3324940995600c4c32e29a7dcde24b3.setContent(html_afeebfbd84de6f7353a2de38f7aa4d3d);
+            
+        
+
+        circle_marker_f527eba5c73a82bf8698248304d56d9e.bindPopup(popup_d3324940995600c4c32e29a7dcde24b3)
+        ;
+
+        
+    
+    
+            var circle_marker_eacb8c121a821e401d8787afaea353c8 = L.circleMarker(
+                [51.68612500000006, -124.41482399999995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_99754a510df3bc950ebf5593da52bd54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a49f8e94f623b2ce35490887e4dbe353 = $(`<div id="html_a49f8e94f623b2ce35490887e4dbe353" style="width: 100.0%; height: 100.0%;">Location: near Tatlayoko Lake, British Columbia<br>Number of Attacks: 1</div>`)[0];
+                popup_99754a510df3bc950ebf5593da52bd54.setContent(html_a49f8e94f623b2ce35490887e4dbe353);
+            
+        
+
+        circle_marker_eacb8c121a821e401d8787afaea353c8.bindPopup(popup_99754a510df3bc950ebf5593da52bd54)
+        ;
+
+        
+    
+    
+            var circle_marker_52378a91bc2f8eba7b0683c5cf5785be = L.circleMarker(
+                [60.16808800000007, -132.710132],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_dbe4060e476c367ff212c4bb0ac47375 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d8d88f64d3d5630ed2a7e3802cc0f66 = $(`<div id="html_4d8d88f64d3d5630ed2a7e3802cc0f66" style="width: 100.0%; height: 100.0%;">Location: near Teslin, Yukon<br>Number of Attacks: 1</div>`)[0];
+                popup_dbe4060e476c367ff212c4bb0ac47375.setContent(html_4d8d88f64d3d5630ed2a7e3802cc0f66);
+            
+        
+
+        circle_marker_52378a91bc2f8eba7b0683c5cf5785be.bindPopup(popup_dbe4060e476c367ff212c4bb0ac47375)
+        ;
+
+        
+    
+    
+            var circle_marker_93d5bb06e9159555bf491dc6db6cb1be = L.circleMarker(
+                [46.889593054000045, -71.51146192199997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_b974a70664b3084c569333aef38f1f40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3942bf7b01c442c7d5711a67fa45e975 = $(`<div id="html_3942bf7b01c442c7d5711a67fa45e975" style="width: 100.0%; height: 100.0%;">Location: near Valcartier, Quebec<br>Number of Attacks: 1</div>`)[0];
+                popup_b974a70664b3084c569333aef38f1f40.setContent(html_3942bf7b01c442c7d5711a67fa45e975);
+            
+        
+
+        circle_marker_93d5bb06e9159555bf491dc6db6cb1be.bindPopup(popup_b974a70664b3084c569333aef38f1f40)
+        ;
+
+        
+    
+    
+            var circle_marker_47ec567047a167e500b872d173f0bf64 = L.circleMarker(
+                [41.13448000000005, -74.36741999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_1434f58dbedbe020e10f4ed94b89085b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c7ba905317ceaf003266fc5cf480be8 = $(`<div id="html_4c7ba905317ceaf003266fc5cf480be8" style="width: 100.0%; height: 100.0%;">Location: near West Milford, New Jersey<br>Number of Attacks: 1</div>`)[0];
+                popup_1434f58dbedbe020e10f4ed94b89085b.setContent(html_4c7ba905317ceaf003266fc5cf480be8);
+            
+        
+
+        circle_marker_47ec567047a167e500b872d173f0bf64.bindPopup(popup_1434f58dbedbe020e10f4ed94b89085b)
+        ;
+
+        
+    
+    
+            var circle_marker_4363506407467fdb67de93474eb9dc60 = L.circleMarker(
+                [62.45464800000008, -114.376469],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_12311ed1c521c0586adc1ef094921e61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24a2b92d2ff00345b9d2d1546ba7356b = $(`<div id="html_24a2b92d2ff00345b9d2d1546ba7356b" style="width: 100.0%; height: 100.0%;">Location: near Yellowknife, Northwest Territories<br>Number of Attacks: 1</div>`)[0];
+                popup_12311ed1c521c0586adc1ef094921e61.setContent(html_24a2b92d2ff00345b9d2d1546ba7356b);
+            
+        
+
+        circle_marker_4363506407467fdb67de93474eb9dc60.bindPopup(popup_12311ed1c521c0586adc1ef094921e61)
+        ;
+
+        
+    
+    
+            var circle_marker_736f7f94735323a7618cb8781becc59d = L.circleMarker(
+                [59.12503100000004, -118.62686199999996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_0c5ae38f429d714ac1dbe52287417082);
+        
+    
+        var popup_347c6ff3d1a29686ff4bedcf5019da34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddf422c69c37971ef87523cd7f2e0599 = $(`<div id="html_ddf422c69c37971ef87523cd7f2e0599" style="width: 100.0%; height: 100.0%;">Location: near Zama City, Alberta<br>Number of Attacks: 2</div>`)[0];
+                popup_347c6ff3d1a29686ff4bedcf5019da34.setContent(html_ddf422c69c37971ef87523cd7f2e0599);
+            
+        
+
+        circle_marker_736f7f94735323a7618cb8781becc59d.bindPopup(popup_347c6ff3d1a29686ff4bedcf5019da34)
+        ;
+
+        
+    
+</script>
+</html>

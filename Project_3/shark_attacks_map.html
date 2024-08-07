@@ -1,0 +1,3257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7df6cd8ed498ffc43ad5abeb67f2c6ec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7df6cd8ed498ffc43ad5abeb67f2c6ec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7df6cd8ed498ffc43ad5abeb67f2c6ec = L.map(
+                "map_7df6cd8ed498ffc43ad5abeb67f2c6ec",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4dc1b25c641fce02a515aeafb444230c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4dc1b25c641fce02a515aeafb444230c.addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var marker_617cbc1aac124fb54839fc471f1b674d = L.marker(
+                [33.1223743108999, -80.59099004235318],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_45fc2ca4f3a521514b5f0f76b1ffb759 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_617cbc1aac124fb54839fc471f1b674d.setIcon(icon_45fc2ca4f3a521514b5f0f76b1ffb759);
+        
+    
+        var popup_4dbc70962c3547755c1b5bb58e4bf0b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb2b25e234270234d666f54b9551da8f = $(`<div id="html_eb2b25e234270234d666f54b9551da8f" style="width: 100.0%; height: 100.0%;">Date: 1900-02-26<br>Type: Unprovoked<br>Shark: Reef</div>`)[0];
+                popup_4dbc70962c3547755c1b5bb58e4bf0b4.setContent(html_eb2b25e234270234d666f54b9551da8f);
+            
+        
+
+        marker_617cbc1aac124fb54839fc471f1b674d.bindPopup(popup_4dbc70962c3547755c1b5bb58e4bf0b4)
+        ;
+
+        
+    
+    
+            marker_617cbc1aac124fb54839fc471f1b674d.bindTooltip(
+                `<div>
+                     Case: 2643
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63e6edbbae1272bb4822e4aadc861d07 = L.marker(
+                [26.914553737319206, -81.15816573931798],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_5ce06ee27be7d39176072f92c26e2c42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_63e6edbbae1272bb4822e4aadc861d07.setIcon(icon_5ce06ee27be7d39176072f92c26e2c42);
+        
+    
+        var popup_99a0683b2a5dfdb1b478785fdba8c6cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d39822363f74467df8c9a71969246d6d = $(`<div id="html_d39822363f74467df8c9a71969246d6d" style="width: 100.0%; height: 100.0%;">Date: 1900-10-05<br>Type: Provoked<br>Shark: Bull</div>`)[0];
+                popup_99a0683b2a5dfdb1b478785fdba8c6cd.setContent(html_d39822363f74467df8c9a71969246d6d);
+            
+        
+
+        marker_63e6edbbae1272bb4822e4aadc861d07.bindPopup(popup_99a0683b2a5dfdb1b478785fdba8c6cd)
+        ;
+
+        
+    
+    
+            marker_63e6edbbae1272bb4822e4aadc861d07.bindTooltip(
+                `<div>
+                     Case: 3670
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bab99cd1c7df203e54c0eb9324e86947 = L.marker(
+                [36.62677804645376, -106.16742116184187],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_c3643c5a67f3d9ea6d11f9bfa7738f42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bab99cd1c7df203e54c0eb9324e86947.setIcon(icon_c3643c5a67f3d9ea6d11f9bfa7738f42);
+        
+    
+        var popup_d0f405ceb750b65d434946773f187861 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2526e49f54ae20c55c322016873dc71 = $(`<div id="html_d2526e49f54ae20c55c322016873dc71" style="width: 100.0%; height: 100.0%;">Date: 1906-11-20<br>Type: Unprovoked<br>Shark: Mako</div>`)[0];
+                popup_d0f405ceb750b65d434946773f187861.setContent(html_d2526e49f54ae20c55c322016873dc71);
+            
+        
+
+        marker_bab99cd1c7df203e54c0eb9324e86947.bindPopup(popup_d0f405ceb750b65d434946773f187861)
+        ;
+
+        
+    
+    
+            marker_bab99cd1c7df203e54c0eb9324e86947.bindTooltip(
+                `<div>
+                     Case: 5661
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_045ac1d7820132593224e5c7079cbe40 = L.marker(
+                [32.36688699856202, -102.82251058950955],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_9a9d7e9903c5f2890803bac9637a6711 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_045ac1d7820132593224e5c7079cbe40.setIcon(icon_9a9d7e9903c5f2890803bac9637a6711);
+        
+    
+        var popup_786af53b0cfea27fa75d56d1c8397d6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f46db0b15caaf04251a72e459e46881a = $(`<div id="html_f46db0b15caaf04251a72e459e46881a" style="width: 100.0%; height: 100.0%;">Date: 1907-08-17<br>Type: Provoked<br>Shark: Great White</div>`)[0];
+                popup_786af53b0cfea27fa75d56d1c8397d6d.setContent(html_f46db0b15caaf04251a72e459e46881a);
+            
+        
+
+        marker_045ac1d7820132593224e5c7079cbe40.bindPopup(popup_786af53b0cfea27fa75d56d1c8397d6d)
+        ;
+
+        
+    
+    
+            marker_045ac1d7820132593224e5c7079cbe40.bindTooltip(
+                `<div>
+                     Case: 2723
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93d5aa7e34f0e1cbbadeab82c0b8923b = L.marker(
+                [34.92688574143287, -112.27124556204059],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_6f986b1bea68607742504fae968f5620 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_93d5aa7e34f0e1cbbadeab82c0b8923b.setIcon(icon_6f986b1bea68607742504fae968f5620);
+        
+    
+        var popup_5328677a76e453cc72e94014f5848dcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57109e5bd91b953af6cbe6c1bc6baf64 = $(`<div id="html_57109e5bd91b953af6cbe6c1bc6baf64" style="width: 100.0%; height: 100.0%;">Date: 1908-01-21<br>Type: Unprovoked<br>Shark: Reef</div>`)[0];
+                popup_5328677a76e453cc72e94014f5848dcb.setContent(html_57109e5bd91b953af6cbe6c1bc6baf64);
+            
+        
+
+        marker_93d5aa7e34f0e1cbbadeab82c0b8923b.bindPopup(popup_5328677a76e453cc72e94014f5848dcb)
+        ;
+
+        
+    
+    
+            marker_93d5aa7e34f0e1cbbadeab82c0b8923b.bindTooltip(
+                `<div>
+                     Case: 7851
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8ec2726855a85c209c26695da5f06b5 = L.marker(
+                [28.724284985404957, -98.59533474448205],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_fcc5e85daf2ce10cc5721b741218bfe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a8ec2726855a85c209c26695da5f06b5.setIcon(icon_fcc5e85daf2ce10cc5721b741218bfe9);
+        
+    
+        var popup_4ad7249b1eb6831a836d6612991c62d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bee758e2a3990b6777cf5b0f4ac2394 = $(`<div id="html_9bee758e2a3990b6777cf5b0f4ac2394" style="width: 100.0%; height: 100.0%;">Date: 1908-01-02<br>Type: Provoked<br>Shark: Reef</div>`)[0];
+                popup_4ad7249b1eb6831a836d6612991c62d4.setContent(html_9bee758e2a3990b6777cf5b0f4ac2394);
+            
+        
+
+        marker_a8ec2726855a85c209c26695da5f06b5.bindPopup(popup_4ad7249b1eb6831a836d6612991c62d4)
+        ;
+
+        
+    
+    
+            marker_a8ec2726855a85c209c26695da5f06b5.bindTooltip(
+                `<div>
+                     Case: 9250
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ff246525d16c3cf52835a0a937cbb52 = L.marker(
+                [44.01632418208669, -102.82251058950955],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_29ab7efd5e4ef26125d3fa3c60464c48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ff246525d16c3cf52835a0a937cbb52.setIcon(icon_29ab7efd5e4ef26125d3fa3c60464c48);
+        
+    
+        var popup_789d7ce504a3f7471eba7dc07f9fb7cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a4161102852b623284623dbc5f3a356 = $(`<div id="html_4a4161102852b623284623dbc5f3a356" style="width: 100.0%; height: 100.0%;">Date: 1909-12-14<br>Type: Unprovoked<br>Shark: Bull</div>`)[0];
+                popup_789d7ce504a3f7471eba7dc07f9fb7cd.setContent(html_4a4161102852b623284623dbc5f3a356);
+            
+        
+
+        marker_9ff246525d16c3cf52835a0a937cbb52.bindPopup(popup_789d7ce504a3f7471eba7dc07f9fb7cd)
+        ;
+
+        
+    
+    
+            marker_9ff246525d16c3cf52835a0a937cbb52.bindTooltip(
+                `<div>
+                     Case: 6581
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca8c6f5e1aa5d562645ed81e3f151afb = L.marker(
+                [25.76469456896686, -90.93832734407692],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_3969db584dbbe9ed3ccbe65153468f7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ca8c6f5e1aa5d562645ed81e3f151afb.setIcon(icon_3969db584dbbe9ed3ccbe65153468f7e);
+        
+    
+        var popup_e5e3c8f1ec87b4c3cc6935df200238fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1b13f7eb1085304ceef263b98080f31 = $(`<div id="html_e1b13f7eb1085304ceef263b98080f31" style="width: 100.0%; height: 100.0%;">Date: 1911-05-17<br>Type: Unprovoked<br>Shark: Reef</div>`)[0];
+                popup_e5e3c8f1ec87b4c3cc6935df200238fa.setContent(html_e1b13f7eb1085304ceef263b98080f31);
+            
+        
+
+        marker_ca8c6f5e1aa5d562645ed81e3f151afb.bindPopup(popup_e5e3c8f1ec87b4c3cc6935df200238fa)
+        ;
+
+        
+    
+    
+            marker_ca8c6f5e1aa5d562645ed81e3f151afb.bindTooltip(
+                `<div>
+                     Case: 5463
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e60c52f3833a6a8e4cb8ee0c044bfb98 = L.marker(
+                [28.55140513264535, -83.40637445308349],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_9533d85fa639895a39663816bfdd65c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e60c52f3833a6a8e4cb8ee0c044bfb98.setIcon(icon_9533d85fa639895a39663816bfdd65c9);
+        
+    
+        var popup_5454584ba690084d2539df5decade0ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59d1d5be5967084824d83f352dd68084 = $(`<div id="html_59d1d5be5967084824d83f352dd68084" style="width: 100.0%; height: 100.0%;">Date: 1912-10-19<br>Type: Unprovoked<br>Shark: Tiger</div>`)[0];
+                popup_5454584ba690084d2539df5decade0ef.setContent(html_59d1d5be5967084824d83f352dd68084);
+            
+        
+
+        marker_e60c52f3833a6a8e4cb8ee0c044bfb98.bindPopup(popup_5454584ba690084d2539df5decade0ef)
+        ;
+
+        
+    
+    
+            marker_e60c52f3833a6a8e4cb8ee0c044bfb98.bindTooltip(
+                `<div>
+                     Case: 331
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a4d5a7b39aa4dd05121239e90e44253 = L.marker(
+                [46.1889838428919, -110.94555207458552],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_03cee373e50b9af43160f52f084252e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9a4d5a7b39aa4dd05121239e90e44253.setIcon(icon_03cee373e50b9af43160f52f084252e4);
+        
+    
+        var popup_f016862a7e4ef859922b7ea5327ecb32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa0a55098ae38dfcc74bd9afd1a19631 = $(`<div id="html_aa0a55098ae38dfcc74bd9afd1a19631" style="width: 100.0%; height: 100.0%;">Date: 1914-09-23<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_f016862a7e4ef859922b7ea5327ecb32.setContent(html_aa0a55098ae38dfcc74bd9afd1a19631);
+            
+        
+
+        marker_9a4d5a7b39aa4dd05121239e90e44253.bindPopup(popup_f016862a7e4ef859922b7ea5327ecb32)
+        ;
+
+        
+    
+    
+            marker_9a4d5a7b39aa4dd05121239e90e44253.bindTooltip(
+                `<div>
+                     Case: 9342
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21f49d71ae39165829c97f5bfe257f2a = L.marker(
+                [47.68812624861463, -102.6839079722148],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_e81ccf986b4d35b8175b6492f425a932 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21f49d71ae39165829c97f5bfe257f2a.setIcon(icon_e81ccf986b4d35b8175b6492f425a932);
+        
+    
+        var popup_8b0a0a6fda1a8c0cee2e5addbc30684c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6db9a60420781fb1a0d28046f9599e23 = $(`<div id="html_6db9a60420781fb1a0d28046f9599e23" style="width: 100.0%; height: 100.0%;">Date: 1918-04-18<br>Type: Provoked<br>Shark: Great White</div>`)[0];
+                popup_8b0a0a6fda1a8c0cee2e5addbc30684c.setContent(html_6db9a60420781fb1a0d28046f9599e23);
+            
+        
+
+        marker_21f49d71ae39165829c97f5bfe257f2a.bindPopup(popup_8b0a0a6fda1a8c0cee2e5addbc30684c)
+        ;
+
+        
+    
+    
+            marker_21f49d71ae39165829c97f5bfe257f2a.bindTooltip(
+                `<div>
+                     Case: 6789
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b85e27a38505717d762c88f8bc5b055b = L.marker(
+                [39.62813205570636, -75.56164371579918],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_f449abbf273d8d5ee558abf7c5277d57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b85e27a38505717d762c88f8bc5b055b.setIcon(icon_f449abbf273d8d5ee558abf7c5277d57);
+        
+    
+        var popup_e8bc3144af962b7d5ae2197ebf941614 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8025a81efb71dc0c71fc626415f0afff = $(`<div id="html_8025a81efb71dc0c71fc626415f0afff" style="width: 100.0%; height: 100.0%;">Date: 1922-10-12<br>Type: Provoked<br>Shark: Bull</div>`)[0];
+                popup_e8bc3144af962b7d5ae2197ebf941614.setContent(html_8025a81efb71dc0c71fc626415f0afff);
+            
+        
+
+        marker_b85e27a38505717d762c88f8bc5b055b.bindPopup(popup_e8bc3144af962b7d5ae2197ebf941614)
+        ;
+
+        
+    
+    
+            marker_b85e27a38505717d762c88f8bc5b055b.bindTooltip(
+                `<div>
+                     Case: 1960
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34836bbd52d14b92f2397051bd87ebcd = L.marker(
+                [34.202745966532184, -93.35277759267414],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_1a90276cfd73d3ab14966ef0598b986c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34836bbd52d14b92f2397051bd87ebcd.setIcon(icon_1a90276cfd73d3ab14966ef0598b986c);
+        
+    
+        var popup_ae6ad870e529f603e611c2882e1222fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ece754900f69dae38642ad295cca85dd = $(`<div id="html_ece754900f69dae38642ad295cca85dd" style="width: 100.0%; height: 100.0%;">Date: 1922-04-13<br>Type: Unprovoked<br>Shark: Great White</div>`)[0];
+                popup_ae6ad870e529f603e611c2882e1222fb.setContent(html_ece754900f69dae38642ad295cca85dd);
+            
+        
+
+        marker_34836bbd52d14b92f2397051bd87ebcd.bindPopup(popup_ae6ad870e529f603e611c2882e1222fb)
+        ;
+
+        
+    
+    
+            marker_34836bbd52d14b92f2397051bd87ebcd.bindTooltip(
+                `<div>
+                     Case: 1863
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5c44e3d1e4ab0e105dc0b2cf898fbe4 = L.marker(
+                [38.81201111423769, -77.5344311730843],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_8ee36dcd865741baad84e8aae6613fdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b5c44e3d1e4ab0e105dc0b2cf898fbe4.setIcon(icon_8ee36dcd865741baad84e8aae6613fdb);
+        
+    
+        var popup_6f62c8799edaaacaf19eaf920fda1795 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e5f8775c80eba91c18752232e657919 = $(`<div id="html_7e5f8775c80eba91c18752232e657919" style="width: 100.0%; height: 100.0%;">Date: 1924-07-21<br>Type: Unprovoked<br>Shark: Great White</div>`)[0];
+                popup_6f62c8799edaaacaf19eaf920fda1795.setContent(html_7e5f8775c80eba91c18752232e657919);
+            
+        
+
+        marker_b5c44e3d1e4ab0e105dc0b2cf898fbe4.bindPopup(popup_6f62c8799edaaacaf19eaf920fda1795)
+        ;
+
+        
+    
+    
+            marker_b5c44e3d1e4ab0e105dc0b2cf898fbe4.bindTooltip(
+                `<div>
+                     Case: 3701
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc304e0adafec6162deb0d13960ce8ae = L.marker(
+                [48.256529376475925, -120.52557788700503],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_ecf09ac79ffd8c3fe9698a16f10f872d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc304e0adafec6162deb0d13960ce8ae.setIcon(icon_ecf09ac79ffd8c3fe9698a16f10f872d);
+        
+    
+        var popup_a09784a9a5a8cdcbead0dd9c2f0b2d91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f5d41ec5e6cb0122b78d94a48c48a88 = $(`<div id="html_6f5d41ec5e6cb0122b78d94a48c48a88" style="width: 100.0%; height: 100.0%;">Date: 1927-07-24<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_a09784a9a5a8cdcbead0dd9c2f0b2d91.setContent(html_6f5d41ec5e6cb0122b78d94a48c48a88);
+            
+        
+
+        marker_bc304e0adafec6162deb0d13960ce8ae.bindPopup(popup_a09784a9a5a8cdcbead0dd9c2f0b2d91)
+        ;
+
+        
+    
+    
+            marker_bc304e0adafec6162deb0d13960ce8ae.bindTooltip(
+                `<div>
+                     Case: 6352
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1f50707c50245834cacc4b831e12d82 = L.marker(
+                [40.536520322256116, -75.57430451678519],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_9f65eec3d831acd0d2b9985ce6994de5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e1f50707c50245834cacc4b831e12d82.setIcon(icon_9f65eec3d831acd0d2b9985ce6994de5);
+        
+    
+        var popup_670244fc442f35bb982424b238d4c390 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_537adf7bc46ab000ce56fad7f751a6d0 = $(`<div id="html_537adf7bc46ab000ce56fad7f751a6d0" style="width: 100.0%; height: 100.0%;">Date: 1927-12-11<br>Type: Unprovoked<br>Shark: Bull</div>`)[0];
+                popup_670244fc442f35bb982424b238d4c390.setContent(html_537adf7bc46ab000ce56fad7f751a6d0);
+            
+        
+
+        marker_e1f50707c50245834cacc4b831e12d82.bindPopup(popup_670244fc442f35bb982424b238d4c390)
+        ;
+
+        
+    
+    
+            marker_e1f50707c50245834cacc4b831e12d82.bindTooltip(
+                `<div>
+                     Case: 9080
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a8f0bb21c897d80f53f832a262dd8ed = L.marker(
+                [36.18007737830079, -83.41640315644034],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_278cab3916dba2075670d4978f25a16d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a8f0bb21c897d80f53f832a262dd8ed.setIcon(icon_278cab3916dba2075670d4978f25a16d);
+        
+    
+        var popup_2ec089db9fe5d44b2f397e9e1d709457 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5910e1437461e2d27678736c22d12832 = $(`<div id="html_5910e1437461e2d27678736c22d12832" style="width: 100.0%; height: 100.0%;">Date: 1928-11-17<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_2ec089db9fe5d44b2f397e9e1d709457.setContent(html_5910e1437461e2d27678736c22d12832);
+            
+        
+
+        marker_8a8f0bb21c897d80f53f832a262dd8ed.bindPopup(popup_2ec089db9fe5d44b2f397e9e1d709457)
+        ;
+
+        
+    
+    
+            marker_8a8f0bb21c897d80f53f832a262dd8ed.bindTooltip(
+                `<div>
+                     Case: 8043
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_731159b4e66c55f1c9ed24cdf36fd8bd = L.marker(
+                [37.905725450549426, -86.1999365203996],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_0fc2b012c829aa5ddbd36e0842d8fd0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_731159b4e66c55f1c9ed24cdf36fd8bd.setIcon(icon_0fc2b012c829aa5ddbd36e0842d8fd0d);
+        
+    
+        var popup_e01057b9658398acaa3102b35e72108c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ed7bba96c2051802dc63250714edaf4 = $(`<div id="html_1ed7bba96c2051802dc63250714edaf4" style="width: 100.0%; height: 100.0%;">Date: 1928-07-28<br>Type: Provoked<br>Shark: Bull</div>`)[0];
+                popup_e01057b9658398acaa3102b35e72108c.setContent(html_1ed7bba96c2051802dc63250714edaf4);
+            
+        
+
+        marker_731159b4e66c55f1c9ed24cdf36fd8bd.bindPopup(popup_e01057b9658398acaa3102b35e72108c)
+        ;
+
+        
+    
+    
+            marker_731159b4e66c55f1c9ed24cdf36fd8bd.bindTooltip(
+                `<div>
+                     Case: 5423
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d1708548d61702303982b213ff08986 = L.marker(
+                [45.26888852490866, -112.47672953571102],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_c2dfd31c02fca0910aacf470571493d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0d1708548d61702303982b213ff08986.setIcon(icon_c2dfd31c02fca0910aacf470571493d4);
+        
+    
+        var popup_8d437f687ebcaba0a4f50e2655a21d06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dc0507f587198b66ba3f424344da3a6 = $(`<div id="html_2dc0507f587198b66ba3f424344da3a6" style="width: 100.0%; height: 100.0%;">Date: 1928-04-02<br>Type: Provoked<br>Shark: Great White</div>`)[0];
+                popup_8d437f687ebcaba0a4f50e2655a21d06.setContent(html_2dc0507f587198b66ba3f424344da3a6);
+            
+        
+
+        marker_0d1708548d61702303982b213ff08986.bindPopup(popup_8d437f687ebcaba0a4f50e2655a21d06)
+        ;
+
+        
+    
+    
+            marker_0d1708548d61702303982b213ff08986.bindTooltip(
+                `<div>
+                     Case: 8588
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60eeccf130bbccac2054c9776df592d4 = L.marker(
+                [46.75629857385361, -83.84643436533403],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_f7bf5d176a210e22d30d12836abb06d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_60eeccf130bbccac2054c9776df592d4.setIcon(icon_f7bf5d176a210e22d30d12836abb06d1);
+        
+    
+        var popup_6523add02e17c6fc3f6b269ecc594780 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a920d37b70276d9d518dc56cd5cca0d = $(`<div id="html_0a920d37b70276d9d518dc56cd5cca0d" style="width: 100.0%; height: 100.0%;">Date: 1929-03-13<br>Type: Unprovoked<br>Shark: Mako</div>`)[0];
+                popup_6523add02e17c6fc3f6b269ecc594780.setContent(html_0a920d37b70276d9d518dc56cd5cca0d);
+            
+        
+
+        marker_60eeccf130bbccac2054c9776df592d4.bindPopup(popup_6523add02e17c6fc3f6b269ecc594780)
+        ;
+
+        
+    
+    
+            marker_60eeccf130bbccac2054c9776df592d4.bindTooltip(
+                `<div>
+                     Case: 234
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0dcb0617b63c48dd97664aa8118a68d3 = L.marker(
+                [35.116032205748326, -96.24910399592696],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_2e0b981703b1631d84ee672f1d42e694 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0dcb0617b63c48dd97664aa8118a68d3.setIcon(icon_2e0b981703b1631d84ee672f1d42e694);
+        
+    
+        var popup_4c0900f0e1acd051af32423602a82f8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c84fb81c9dda4426055338a7e60fec00 = $(`<div id="html_c84fb81c9dda4426055338a7e60fec00" style="width: 100.0%; height: 100.0%;">Date: 1929-08-02<br>Type: Provoked<br>Shark: Hammerhead</div>`)[0];
+                popup_4c0900f0e1acd051af32423602a82f8b.setContent(html_c84fb81c9dda4426055338a7e60fec00);
+            
+        
+
+        marker_0dcb0617b63c48dd97664aa8118a68d3.bindPopup(popup_4c0900f0e1acd051af32423602a82f8b)
+        ;
+
+        
+    
+    
+            marker_0dcb0617b63c48dd97664aa8118a68d3.bindTooltip(
+                `<div>
+                     Case: 3173
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0e3c8b4b96828541a63564809d88a52 = L.marker(
+                [38.92031773881931, -76.70715352923743],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_5ad87a84eaf06fa7b2a915ce992069c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0e3c8b4b96828541a63564809d88a52.setIcon(icon_5ad87a84eaf06fa7b2a915ce992069c9);
+        
+    
+        var popup_e387574e6a194b95b7098562e33ce08c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25df021467746bcf99908d2c16deee8c = $(`<div id="html_25df021467746bcf99908d2c16deee8c" style="width: 100.0%; height: 100.0%;">Date: 1930-07-28<br>Type: Provoked<br>Shark: Hammerhead</div>`)[0];
+                popup_e387574e6a194b95b7098562e33ce08c.setContent(html_25df021467746bcf99908d2c16deee8c);
+            
+        
+
+        marker_b0e3c8b4b96828541a63564809d88a52.bindPopup(popup_e387574e6a194b95b7098562e33ce08c)
+        ;
+
+        
+    
+    
+            marker_b0e3c8b4b96828541a63564809d88a52.bindTooltip(
+                `<div>
+                     Case: 3923
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b113d0f64708f61b9c5a61ee708d1d69 = L.marker(
+                [41.4939570781371, -117.54473037330175],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_73cecb3713838087f9c353943cc8610b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b113d0f64708f61b9c5a61ee708d1d69.setIcon(icon_73cecb3713838087f9c353943cc8610b);
+        
+    
+        var popup_b9504978f1b5ac87b238f6d356195bb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e724c5b9cf583ab229359a169cbafa61 = $(`<div id="html_e724c5b9cf583ab229359a169cbafa61" style="width: 100.0%; height: 100.0%;">Date: 1934-04-15<br>Type: Provoked<br>Shark: Bull</div>`)[0];
+                popup_b9504978f1b5ac87b238f6d356195bb9.setContent(html_e724c5b9cf583ab229359a169cbafa61);
+            
+        
+
+        marker_b113d0f64708f61b9c5a61ee708d1d69.bindPopup(popup_b9504978f1b5ac87b238f6d356195bb9)
+        ;
+
+        
+    
+    
+            marker_b113d0f64708f61b9c5a61ee708d1d69.bindTooltip(
+                `<div>
+                     Case: 3423
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3db12748b57f51b95e7b16cfaddfacf2 = L.marker(
+                [39.137200655007916, -105.43800098562022],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_c99926efd7c433e8c52bd7020e783017 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3db12748b57f51b95e7b16cfaddfacf2.setIcon(icon_c99926efd7c433e8c52bd7020e783017);
+        
+    
+        var popup_6b8077033d9000e933d4a617313be3ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18a87fef71d3c9c3babcc06249f9e32e = $(`<div id="html_18a87fef71d3c9c3babcc06249f9e32e" style="width: 100.0%; height: 100.0%;">Date: 1938-09-25<br>Type: Unprovoked<br>Shark: Hammerhead</div>`)[0];
+                popup_6b8077033d9000e933d4a617313be3ca.setContent(html_18a87fef71d3c9c3babcc06249f9e32e);
+            
+        
+
+        marker_3db12748b57f51b95e7b16cfaddfacf2.bindPopup(popup_6b8077033d9000e933d4a617313be3ca)
+        ;
+
+        
+    
+    
+            marker_3db12748b57f51b95e7b16cfaddfacf2.bindTooltip(
+                `<div>
+                     Case: 7997
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85369cc19bd314b721659c990f4e1ec0 = L.marker(
+                [25.255610085053135, -80.8051506693281],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_40c0048bc92fd9bbdba5c0f353215ed4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_85369cc19bd314b721659c990f4e1ec0.setIcon(icon_40c0048bc92fd9bbdba5c0f353215ed4);
+        
+    
+        var popup_0c1eb0ef500643d791cc23610d16f675 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b9f65e82be9b1152c18e31d41fc4aa7 = $(`<div id="html_5b9f65e82be9b1152c18e31d41fc4aa7" style="width: 100.0%; height: 100.0%;">Date: 1940-04-04<br>Type: Provoked<br>Shark: Bull</div>`)[0];
+                popup_0c1eb0ef500643d791cc23610d16f675.setContent(html_5b9f65e82be9b1152c18e31d41fc4aa7);
+            
+        
+
+        marker_85369cc19bd314b721659c990f4e1ec0.bindPopup(popup_0c1eb0ef500643d791cc23610d16f675)
+        ;
+
+        
+    
+    
+            marker_85369cc19bd314b721659c990f4e1ec0.bindTooltip(
+                `<div>
+                     Case: 9689
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7f89437f5f2378b18370aa53b77facc = L.marker(
+                [37.502824828151006, -68.91912090910898],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_ae52a0b1af545167e7783a8ad8385a57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c7f89437f5f2378b18370aa53b77facc.setIcon(icon_ae52a0b1af545167e7783a8ad8385a57);
+        
+    
+        var popup_2c1e3acbcdc899c8bd721c71de23c6c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7857fc5faf676e6407a7926dc4f50cb4 = $(`<div id="html_7857fc5faf676e6407a7926dc4f50cb4" style="width: 100.0%; height: 100.0%;">Date: 1940-08-14<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_2c1e3acbcdc899c8bd721c71de23c6c9.setContent(html_7857fc5faf676e6407a7926dc4f50cb4);
+            
+        
+
+        marker_c7f89437f5f2378b18370aa53b77facc.bindPopup(popup_2c1e3acbcdc899c8bd721c71de23c6c9)
+        ;
+
+        
+    
+    
+            marker_c7f89437f5f2378b18370aa53b77facc.bindTooltip(
+                `<div>
+                     Case: 3490
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5f1e39f56ebc76cb53ed5e6e03250ed = L.marker(
+                [29.554373059817543, -95.53366782805153],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_d446a7cbea704b7a922aa6d2359b152b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a5f1e39f56ebc76cb53ed5e6e03250ed.setIcon(icon_d446a7cbea704b7a922aa6d2359b152b);
+        
+    
+        var popup_1a55976c85189c911ba77c5de17b2bc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ce45631e77aa9c5bd619b741385c627 = $(`<div id="html_6ce45631e77aa9c5bd619b741385c627" style="width: 100.0%; height: 100.0%;">Date: 1940-11-19<br>Type: Provoked<br>Shark: Great White</div>`)[0];
+                popup_1a55976c85189c911ba77c5de17b2bc5.setContent(html_6ce45631e77aa9c5bd619b741385c627);
+            
+        
+
+        marker_a5f1e39f56ebc76cb53ed5e6e03250ed.bindPopup(popup_1a55976c85189c911ba77c5de17b2bc5)
+        ;
+
+        
+    
+    
+            marker_a5f1e39f56ebc76cb53ed5e6e03250ed.bindTooltip(
+                `<div>
+                     Case: 6871
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea89be5a763b9b3015ac74df4f59beac = L.marker(
+                [35.068898777582326, -77.2345458713463],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_5e7e8c7ac7aa2a37f8eb142786a7f329 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea89be5a763b9b3015ac74df4f59beac.setIcon(icon_5e7e8c7ac7aa2a37f8eb142786a7f329);
+        
+    
+        var popup_9c4d43652ef5522c1e6fe07a3eb50b5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_178f9c9766f108d56e74e341923063a5 = $(`<div id="html_178f9c9766f108d56e74e341923063a5" style="width: 100.0%; height: 100.0%;">Date: 1942-08-28<br>Type: Unprovoked<br>Shark: Hammerhead</div>`)[0];
+                popup_9c4d43652ef5522c1e6fe07a3eb50b5f.setContent(html_178f9c9766f108d56e74e341923063a5);
+            
+        
+
+        marker_ea89be5a763b9b3015ac74df4f59beac.bindPopup(popup_9c4d43652ef5522c1e6fe07a3eb50b5f)
+        ;
+
+        
+    
+    
+            marker_ea89be5a763b9b3015ac74df4f59beac.bindTooltip(
+                `<div>
+                     Case: 4595
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c56095497bcf1232d9d7de387fb5529e = L.marker(
+                [29.015460377394646, -92.1917550251843],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_bd12723a1cf7dcbe477bb82df70e816c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c56095497bcf1232d9d7de387fb5529e.setIcon(icon_bd12723a1cf7dcbe477bb82df70e816c);
+        
+    
+        var popup_64586b6eff375e5cfe3678ed77d56842 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec9754b5255d3e5bce23faa7aba01015 = $(`<div id="html_ec9754b5255d3e5bce23faa7aba01015" style="width: 100.0%; height: 100.0%;">Date: 1942-06-24<br>Type: Unprovoked<br>Shark: Mako</div>`)[0];
+                popup_64586b6eff375e5cfe3678ed77d56842.setContent(html_ec9754b5255d3e5bce23faa7aba01015);
+            
+        
+
+        marker_c56095497bcf1232d9d7de387fb5529e.bindPopup(popup_64586b6eff375e5cfe3678ed77d56842)
+        ;
+
+        
+    
+    
+            marker_c56095497bcf1232d9d7de387fb5529e.bindTooltip(
+                `<div>
+                     Case: 7236
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ff3fc31d012af4e912282708850c265 = L.marker(
+                [36.95727656639395, -80.97255686569738],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_322e1e7c8c3e791b5f93cb8cd2ee3321 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0ff3fc31d012af4e912282708850c265.setIcon(icon_322e1e7c8c3e791b5f93cb8cd2ee3321);
+        
+    
+        var popup_f4bfead9102e849639d01d9035a80a2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb86d317d39ae2773f655084934a1df9 = $(`<div id="html_eb86d317d39ae2773f655084934a1df9" style="width: 100.0%; height: 100.0%;">Date: 1943-06-20<br>Type: Unprovoked<br>Shark: Mako</div>`)[0];
+                popup_f4bfead9102e849639d01d9035a80a2a.setContent(html_eb86d317d39ae2773f655084934a1df9);
+            
+        
+
+        marker_0ff3fc31d012af4e912282708850c265.bindPopup(popup_f4bfead9102e849639d01d9035a80a2a)
+        ;
+
+        
+    
+    
+            marker_0ff3fc31d012af4e912282708850c265.bindTooltip(
+                `<div>
+                     Case: 1518
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de8ad69b43921de34e281b343ab5ee67 = L.marker(
+                [44.45805011623954, -112.32699415194327],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_73ee8e270c1a816db51ac295ac5f649a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_de8ad69b43921de34e281b343ab5ee67.setIcon(icon_73ee8e270c1a816db51ac295ac5f649a);
+        
+    
+        var popup_5e6e5e16965eb8a1f85d140f164e0b25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe61fc0c69e16a93a9fd80f8991c2b40 = $(`<div id="html_fe61fc0c69e16a93a9fd80f8991c2b40" style="width: 100.0%; height: 100.0%;">Date: 1944-01-19<br>Type: Provoked<br>Shark: Tiger</div>`)[0];
+                popup_5e6e5e16965eb8a1f85d140f164e0b25.setContent(html_fe61fc0c69e16a93a9fd80f8991c2b40);
+            
+        
+
+        marker_de8ad69b43921de34e281b343ab5ee67.bindPopup(popup_5e6e5e16965eb8a1f85d140f164e0b25)
+        ;
+
+        
+    
+    
+            marker_de8ad69b43921de34e281b343ab5ee67.bindTooltip(
+                `<div>
+                     Case: 7619
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bf446a0a9821966ec56708d3a428ead = L.marker(
+                [25.687733432647228, -118.58527311715692],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_367aad1f4148505821f736c4b4861bc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8bf446a0a9821966ec56708d3a428ead.setIcon(icon_367aad1f4148505821f736c4b4861bc7);
+        
+    
+        var popup_45eab913c27f12cbea5dda6b786582a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_401063d2f99624752531c6e327b3d055 = $(`<div id="html_401063d2f99624752531c6e327b3d055" style="width: 100.0%; height: 100.0%;">Date: 1944-09-13<br>Type: Provoked<br>Shark: Great White</div>`)[0];
+                popup_45eab913c27f12cbea5dda6b786582a1.setContent(html_401063d2f99624752531c6e327b3d055);
+            
+        
+
+        marker_8bf446a0a9821966ec56708d3a428ead.bindPopup(popup_45eab913c27f12cbea5dda6b786582a1)
+        ;
+
+        
+    
+    
+            marker_8bf446a0a9821966ec56708d3a428ead.bindTooltip(
+                `<div>
+                     Case: 2461
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba0a2245794287d01dd3e72db127bc8d = L.marker(
+                [43.19668036031522, -122.5558408436931],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_620e3108abe513f957a1ce2c6efad59d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba0a2245794287d01dd3e72db127bc8d.setIcon(icon_620e3108abe513f957a1ce2c6efad59d);
+        
+    
+        var popup_76e17a890b0f19e31df4cc0c79c40a71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dce237d08d63d0bcaadf6d8582a35e4 = $(`<div id="html_9dce237d08d63d0bcaadf6d8582a35e4" style="width: 100.0%; height: 100.0%;">Date: 1944-09-04<br>Type: Unprovoked<br>Shark: Tiger</div>`)[0];
+                popup_76e17a890b0f19e31df4cc0c79c40a71.setContent(html_9dce237d08d63d0bcaadf6d8582a35e4);
+            
+        
+
+        marker_ba0a2245794287d01dd3e72db127bc8d.bindPopup(popup_76e17a890b0f19e31df4cc0c79c40a71)
+        ;
+
+        
+    
+    
+            marker_ba0a2245794287d01dd3e72db127bc8d.bindTooltip(
+                `<div>
+                     Case: 816
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c2844c3175fe9940e06e8c41f1420ea = L.marker(
+                [37.39778284556903, -79.59120281734134],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_ed8d0b978cf7a16f96f01fbe406ab20f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c2844c3175fe9940e06e8c41f1420ea.setIcon(icon_ed8d0b978cf7a16f96f01fbe406ab20f);
+        
+    
+        var popup_0a60c251d42f3b664a1f745c49e188f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06da197b6704696b73ad99e28dce9850 = $(`<div id="html_06da197b6704696b73ad99e28dce9850" style="width: 100.0%; height: 100.0%;">Date: 1945-01-28<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_0a60c251d42f3b664a1f745c49e188f6.setContent(html_06da197b6704696b73ad99e28dce9850);
+            
+        
+
+        marker_5c2844c3175fe9940e06e8c41f1420ea.bindPopup(popup_0a60c251d42f3b664a1f745c49e188f6)
+        ;
+
+        
+    
+    
+            marker_5c2844c3175fe9940e06e8c41f1420ea.bindTooltip(
+                `<div>
+                     Case: 294
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c05f50d05862b259f621e3f673a2f6b = L.marker(
+                [45.547500188476725, -78.84904178372938],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_61a60f0bbcce876529d7051aed7d0dfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c05f50d05862b259f621e3f673a2f6b.setIcon(icon_61a60f0bbcce876529d7051aed7d0dfa);
+        
+    
+        var popup_73213f78dc74940c0f36d6c9824db6f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14cd813391cf817ff690746a151fbe43 = $(`<div id="html_14cd813391cf817ff690746a151fbe43" style="width: 100.0%; height: 100.0%;">Date: 1947-06-11<br>Type: Provoked<br>Shark: Reef</div>`)[0];
+                popup_73213f78dc74940c0f36d6c9824db6f4.setContent(html_14cd813391cf817ff690746a151fbe43);
+            
+        
+
+        marker_8c05f50d05862b259f621e3f673a2f6b.bindPopup(popup_73213f78dc74940c0f36d6c9824db6f4)
+        ;
+
+        
+    
+    
+            marker_8c05f50d05862b259f621e3f673a2f6b.bindTooltip(
+                `<div>
+                     Case: 8033
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cf88c24d5d11c5b39357fae4b982571 = L.marker(
+                [26.836943668397222, -110.03753227495432],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_575550529471e56283afd58f97ccd23e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2cf88c24d5d11c5b39357fae4b982571.setIcon(icon_575550529471e56283afd58f97ccd23e);
+        
+    
+        var popup_836acfefdbd2893e357e8a3d3d51143c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6edb8705993d1c49df57c9392f04d7a5 = $(`<div id="html_6edb8705993d1c49df57c9392f04d7a5" style="width: 100.0%; height: 100.0%;">Date: 1948-06-18<br>Type: Unprovoked<br>Shark: Mako</div>`)[0];
+                popup_836acfefdbd2893e357e8a3d3d51143c.setContent(html_6edb8705993d1c49df57c9392f04d7a5);
+            
+        
+
+        marker_2cf88c24d5d11c5b39357fae4b982571.bindPopup(popup_836acfefdbd2893e357e8a3d3d51143c)
+        ;
+
+        
+    
+    
+            marker_2cf88c24d5d11c5b39357fae4b982571.bindTooltip(
+                `<div>
+                     Case: 3074
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f24345529ac5d21bf80e8b0b626434f = L.marker(
+                [40.68754855051395, -78.6223170144747],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_686752389f6d548a49ba9869ab6baac6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f24345529ac5d21bf80e8b0b626434f.setIcon(icon_686752389f6d548a49ba9869ab6baac6);
+        
+    
+        var popup_4621c32dea438be5776906a53e89337e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_422ade9ed211378e11f29d81fe3d2280 = $(`<div id="html_422ade9ed211378e11f29d81fe3d2280" style="width: 100.0%; height: 100.0%;">Date: 1948-01-10<br>Type: Provoked<br>Shark: Great White</div>`)[0];
+                popup_4621c32dea438be5776906a53e89337e.setContent(html_422ade9ed211378e11f29d81fe3d2280);
+            
+        
+
+        marker_3f24345529ac5d21bf80e8b0b626434f.bindPopup(popup_4621c32dea438be5776906a53e89337e)
+        ;
+
+        
+    
+    
+            marker_3f24345529ac5d21bf80e8b0b626434f.bindTooltip(
+                `<div>
+                     Case: 6121
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f4f8d6731b42e03fd7ab6ce664eb814 = L.marker(
+                [29.275049541246926, -70.61558773644538],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_2e1a351603c027bdc3349b3976415261 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f4f8d6731b42e03fd7ab6ce664eb814.setIcon(icon_2e1a351603c027bdc3349b3976415261);
+        
+    
+        var popup_3f82913f1e7de959c40c00516b2d17ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e250dc1829791ef72905d5b42a90518b = $(`<div id="html_e250dc1829791ef72905d5b42a90518b" style="width: 100.0%; height: 100.0%;">Date: 1949-06-01<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_3f82913f1e7de959c40c00516b2d17ed.setContent(html_e250dc1829791ef72905d5b42a90518b);
+            
+        
+
+        marker_7f4f8d6731b42e03fd7ab6ce664eb814.bindPopup(popup_3f82913f1e7de959c40c00516b2d17ed)
+        ;
+
+        
+    
+    
+            marker_7f4f8d6731b42e03fd7ab6ce664eb814.bindTooltip(
+                `<div>
+                     Case: 4757
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7417352594182be41fca2cd9adb8c548 = L.marker(
+                [48.256529376475925, -85.50228150232189],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_fd342e503dc233df1fd93b2dd86c1824 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7417352594182be41fca2cd9adb8c548.setIcon(icon_fd342e503dc233df1fd93b2dd86c1824);
+        
+    
+        var popup_b2147f17d34acc670dc478b886248bff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d4e7450f4d4baa120b6518ff80bb913 = $(`<div id="html_3d4e7450f4d4baa120b6518ff80bb913" style="width: 100.0%; height: 100.0%;">Date: 1952-07-24<br>Type: Provoked<br>Shark: Reef</div>`)[0];
+                popup_b2147f17d34acc670dc478b886248bff.setContent(html_3d4e7450f4d4baa120b6518ff80bb913);
+            
+        
+
+        marker_7417352594182be41fca2cd9adb8c548.bindPopup(popup_b2147f17d34acc670dc478b886248bff)
+        ;
+
+        
+    
+    
+            marker_7417352594182be41fca2cd9adb8c548.bindTooltip(
+                `<div>
+                     Case: 4927
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b303b5678a3d9224db85d2e22d072124 = L.marker(
+                [41.50640477633496, -120.38848018932583],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_7c8c50d5863890f01f2413547aed4f3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b303b5678a3d9224db85d2e22d072124.setIcon(icon_7c8c50d5863890f01f2413547aed4f3d);
+        
+    
+        var popup_1b4e7a747c4b470f9df2b01d1aae0f9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98b4f0dc6077c4cc53cc6cebfbfadd14 = $(`<div id="html_98b4f0dc6077c4cc53cc6cebfbfadd14" style="width: 100.0%; height: 100.0%;">Date: 1955-12-09<br>Type: Provoked<br>Shark: Reef</div>`)[0];
+                popup_1b4e7a747c4b470f9df2b01d1aae0f9b.setContent(html_98b4f0dc6077c4cc53cc6cebfbfadd14);
+            
+        
+
+        marker_b303b5678a3d9224db85d2e22d072124.bindPopup(popup_1b4e7a747c4b470f9df2b01d1aae0f9b)
+        ;
+
+        
+    
+    
+            marker_b303b5678a3d9224db85d2e22d072124.bindTooltip(
+                `<div>
+                     Case: 3893
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a3db67be911092e2e5b6de6205dd95a = L.marker(
+                [25.54582431897166, -88.7732199905164],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_553bcc42e611c8772e0ba90392fb568b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5a3db67be911092e2e5b6de6205dd95a.setIcon(icon_553bcc42e611c8772e0ba90392fb568b);
+        
+    
+        var popup_713b37896d15b81b9ed3799a6d7dc902 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e593d2e1b9a0820ad0c16be034f293f = $(`<div id="html_8e593d2e1b9a0820ad0c16be034f293f" style="width: 100.0%; height: 100.0%;">Date: 1955-06-12<br>Type: Unprovoked<br>Shark: Hammerhead</div>`)[0];
+                popup_713b37896d15b81b9ed3799a6d7dc902.setContent(html_8e593d2e1b9a0820ad0c16be034f293f);
+            
+        
+
+        marker_5a3db67be911092e2e5b6de6205dd95a.bindPopup(popup_713b37896d15b81b9ed3799a6d7dc902)
+        ;
+
+        
+    
+    
+            marker_5a3db67be911092e2e5b6de6205dd95a.bindTooltip(
+                `<div>
+                     Case: 2581
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d79b8a8204150fc75c91ab2bb2eb8a8 = L.marker(
+                [48.45101471839273, -117.35111212598828],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_b8b3ecfe836f522310d2db16e5220b37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5d79b8a8204150fc75c91ab2bb2eb8a8.setIcon(icon_b8b3ecfe836f522310d2db16e5220b37);
+        
+    
+        var popup_d92092b674bde909490e5b5fc144c8db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb1517e76c03b08654d0469cce8fdf34 = $(`<div id="html_fb1517e76c03b08654d0469cce8fdf34" style="width: 100.0%; height: 100.0%;">Date: 1956-09-04<br>Type: Provoked<br>Shark: Tiger</div>`)[0];
+                popup_d92092b674bde909490e5b5fc144c8db.setContent(html_fb1517e76c03b08654d0469cce8fdf34);
+            
+        
+
+        marker_5d79b8a8204150fc75c91ab2bb2eb8a8.bindPopup(popup_d92092b674bde909490e5b5fc144c8db)
+        ;
+
+        
+    
+    
+            marker_5d79b8a8204150fc75c91ab2bb2eb8a8.bindTooltip(
+                `<div>
+                     Case: 5167
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a458c1a844807516a5aa03b95f2d566 = L.marker(
+                [25.0592960370092, -78.88459045454366],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_35ea20b8c9be71723603aa01e7d9c02c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a458c1a844807516a5aa03b95f2d566.setIcon(icon_35ea20b8c9be71723603aa01e7d9c02c);
+        
+    
+        var popup_34332d6771c526240869cc120de5b42f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_869bfae3b059d94a0b450782821234f1 = $(`<div id="html_869bfae3b059d94a0b450782821234f1" style="width: 100.0%; height: 100.0%;">Date: 1957-11-07<br>Type: Provoked<br>Shark: Hammerhead</div>`)[0];
+                popup_34332d6771c526240869cc120de5b42f.setContent(html_869bfae3b059d94a0b450782821234f1);
+            
+        
+
+        marker_1a458c1a844807516a5aa03b95f2d566.bindPopup(popup_34332d6771c526240869cc120de5b42f)
+        ;
+
+        
+    
+    
+            marker_1a458c1a844807516a5aa03b95f2d566.bindTooltip(
+                `<div>
+                     Case: 8235
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_640081b2527e26658490698951f536f6 = L.marker(
+                [34.86056681452936, -106.11769908906547],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_17cc182e1ac8617d0dbcb66bc3edf1cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_640081b2527e26658490698951f536f6.setIcon(icon_17cc182e1ac8617d0dbcb66bc3edf1cf);
+        
+    
+        var popup_c71d58e352eda13305ce1dc5c4137d5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97c179e686830d3f5b4e6045a1862ccb = $(`<div id="html_97c179e686830d3f5b4e6045a1862ccb" style="width: 100.0%; height: 100.0%;">Date: 1957-08-08<br>Type: Unprovoked<br>Shark: Reef</div>`)[0];
+                popup_c71d58e352eda13305ce1dc5c4137d5d.setContent(html_97c179e686830d3f5b4e6045a1862ccb);
+            
+        
+
+        marker_640081b2527e26658490698951f536f6.bindPopup(popup_c71d58e352eda13305ce1dc5c4137d5d)
+        ;
+
+        
+    
+    
+            marker_640081b2527e26658490698951f536f6.bindTooltip(
+                `<div>
+                     Case: 53
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3546b9725d569388f411f48ec6dcd59c = L.marker(
+                [28.253531247407533, -105.18529815232135],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_82833900b54d83ab82e5ac35d9097fde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3546b9725d569388f411f48ec6dcd59c.setIcon(icon_82833900b54d83ab82e5ac35d9097fde);
+        
+    
+        var popup_67aa8230261343d976616a62ad5308bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a4a830005e56b80e74aae22141cd035 = $(`<div id="html_2a4a830005e56b80e74aae22141cd035" style="width: 100.0%; height: 100.0%;">Date: 1958-02-16<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_67aa8230261343d976616a62ad5308bf.setContent(html_2a4a830005e56b80e74aae22141cd035);
+            
+        
+
+        marker_3546b9725d569388f411f48ec6dcd59c.bindPopup(popup_67aa8230261343d976616a62ad5308bf)
+        ;
+
+        
+    
+    
+            marker_3546b9725d569388f411f48ec6dcd59c.bindTooltip(
+                `<div>
+                     Case: 1837
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1886cfde5fef14d74f04417f94e9d67b = L.marker(
+                [33.11384568778969, -104.6406964697585],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_829c5f12d60abefbde084a1b9b4f9ebe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1886cfde5fef14d74f04417f94e9d67b.setIcon(icon_829c5f12d60abefbde084a1b9b4f9ebe);
+        
+    
+        var popup_a57f8d66f97851cbf5026b41c59a4d54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fe8700b8e06363731713407f447cf72 = $(`<div id="html_3fe8700b8e06363731713407f447cf72" style="width: 100.0%; height: 100.0%;">Date: 1960-10-20<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_a57f8d66f97851cbf5026b41c59a4d54.setContent(html_3fe8700b8e06363731713407f447cf72);
+            
+        
+
+        marker_1886cfde5fef14d74f04417f94e9d67b.bindPopup(popup_a57f8d66f97851cbf5026b41c59a4d54)
+        ;
+
+        
+    
+    
+            marker_1886cfde5fef14d74f04417f94e9d67b.bindTooltip(
+                `<div>
+                     Case: 5232
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb2531dc51db171648d9edde428f927a = L.marker(
+                [27.231790022435902, -85.7179593540883],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_6077bfe292d3054f2c2d77074f54cb66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fb2531dc51db171648d9edde428f927a.setIcon(icon_6077bfe292d3054f2c2d77074f54cb66);
+        
+    
+        var popup_64200cc2d8d1e45ba1be4bc35e142e40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08486dacb35f14d08aa9cc73870baa04 = $(`<div id="html_08486dacb35f14d08aa9cc73870baa04" style="width: 100.0%; height: 100.0%;">Date: 1961-09-27<br>Type: Unprovoked<br>Shark: Great White</div>`)[0];
+                popup_64200cc2d8d1e45ba1be4bc35e142e40.setContent(html_08486dacb35f14d08aa9cc73870baa04);
+            
+        
+
+        marker_fb2531dc51db171648d9edde428f927a.bindPopup(popup_64200cc2d8d1e45ba1be4bc35e142e40)
+        ;
+
+        
+    
+    
+            marker_fb2531dc51db171648d9edde428f927a.bindTooltip(
+                `<div>
+                     Case: 3414
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fd56619ab2f7c55f2b14253759c3abe = L.marker(
+                [44.62066502115487, -107.65437111757124],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_4d0a7b223d7397decd888920b64d8564 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7fd56619ab2f7c55f2b14253759c3abe.setIcon(icon_4d0a7b223d7397decd888920b64d8564);
+        
+    
+        var popup_0d16d5555eb90454e7079f188e21b4e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a276bd36e0f01eac6432862651d302fa = $(`<div id="html_a276bd36e0f01eac6432862651d302fa" style="width: 100.0%; height: 100.0%;">Date: 1964-03-12<br>Type: Provoked<br>Shark: Tiger</div>`)[0];
+                popup_0d16d5555eb90454e7079f188e21b4e8.setContent(html_a276bd36e0f01eac6432862651d302fa);
+            
+        
+
+        marker_7fd56619ab2f7c55f2b14253759c3abe.bindPopup(popup_0d16d5555eb90454e7079f188e21b4e8)
+        ;
+
+        
+    
+    
+            marker_7fd56619ab2f7c55f2b14253759c3abe.bindTooltip(
+                `<div>
+                     Case: 529
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_442d8091a49214ba17a2a5fea5d9e9ac = L.marker(
+                [35.39486052118984, -99.03299218849429],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_b9fc4b7f724d825047654d77dd5b369f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_442d8091a49214ba17a2a5fea5d9e9ac.setIcon(icon_b9fc4b7f724d825047654d77dd5b369f);
+        
+    
+        var popup_c9be942d93a8b947d43d5f8ffb9ed561 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af42376be6011fbaf3172c78c13c2d3c = $(`<div id="html_af42376be6011fbaf3172c78c13c2d3c" style="width: 100.0%; height: 100.0%;">Date: 1964-07-07<br>Type: Unprovoked<br>Shark: Great White</div>`)[0];
+                popup_c9be942d93a8b947d43d5f8ffb9ed561.setContent(html_af42376be6011fbaf3172c78c13c2d3c);
+            
+        
+
+        marker_442d8091a49214ba17a2a5fea5d9e9ac.bindPopup(popup_c9be942d93a8b947d43d5f8ffb9ed561)
+        ;
+
+        
+    
+    
+            marker_442d8091a49214ba17a2a5fea5d9e9ac.bindTooltip(
+                `<div>
+                     Case: 6974
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42b60f1790ed5752b372dd1e2977f426 = L.marker(
+                [46.804727268836345, -85.05761974374268],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_5eaa67f8cb3ea301a7dc9c3472b7a057 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_42b60f1790ed5752b372dd1e2977f426.setIcon(icon_5eaa67f8cb3ea301a7dc9c3472b7a057);
+        
+    
+        var popup_b6bed50ad3b3bce7a30481aee30bbf2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec99a0a78b21c14da0800d9dd8c77e87 = $(`<div id="html_ec99a0a78b21c14da0800d9dd8c77e87" style="width: 100.0%; height: 100.0%;">Date: 1965-06-04<br>Type: Provoked<br>Shark: Reef</div>`)[0];
+                popup_b6bed50ad3b3bce7a30481aee30bbf2d.setContent(html_ec99a0a78b21c14da0800d9dd8c77e87);
+            
+        
+
+        marker_42b60f1790ed5752b372dd1e2977f426.bindPopup(popup_b6bed50ad3b3bce7a30481aee30bbf2d)
+        ;
+
+        
+    
+    
+            marker_42b60f1790ed5752b372dd1e2977f426.bindTooltip(
+                `<div>
+                     Case: 1881
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3be8b5b73f1fed6b6b40ceed9965890 = L.marker(
+                [33.72457986066428, -70.18278849558072],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_9e915f9cb9b4ea54ad47e317c7509b82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b3be8b5b73f1fed6b6b40ceed9965890.setIcon(icon_9e915f9cb9b4ea54ad47e317c7509b82);
+        
+    
+        var popup_b82286b5c6dfb7a663be7e51ccd2435c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39231f21b2a4437cba899c0bb999ec03 = $(`<div id="html_39231f21b2a4437cba899c0bb999ec03" style="width: 100.0%; height: 100.0%;">Date: 1967-02-22<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_b82286b5c6dfb7a663be7e51ccd2435c.setContent(html_39231f21b2a4437cba899c0bb999ec03);
+            
+        
+
+        marker_b3be8b5b73f1fed6b6b40ceed9965890.bindPopup(popup_b82286b5c6dfb7a663be7e51ccd2435c)
+        ;
+
+        
+    
+    
+            marker_b3be8b5b73f1fed6b6b40ceed9965890.bindTooltip(
+                `<div>
+                     Case: 886
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c2c521d3f3222850bd18c249a5a5f6d = L.marker(
+                [29.76724892724476, -90.26379106331255],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_a038157d94ea455e960840d9be7e4399 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9c2c521d3f3222850bd18c249a5a5f6d.setIcon(icon_a038157d94ea455e960840d9be7e4399);
+        
+    
+        var popup_3339bd251aef77aa2e0cd30055252446 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0441d25b2502fd6352b3f868fec261f = $(`<div id="html_d0441d25b2502fd6352b3f868fec261f" style="width: 100.0%; height: 100.0%;">Date: 1968-09-15<br>Type: Provoked<br>Shark: Reef</div>`)[0];
+                popup_3339bd251aef77aa2e0cd30055252446.setContent(html_d0441d25b2502fd6352b3f868fec261f);
+            
+        
+
+        marker_9c2c521d3f3222850bd18c249a5a5f6d.bindPopup(popup_3339bd251aef77aa2e0cd30055252446)
+        ;
+
+        
+    
+    
+            marker_9c2c521d3f3222850bd18c249a5a5f6d.bindTooltip(
+                `<div>
+                     Case: 3791
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78452f0fbab7549095bd83db4a47c43d = L.marker(
+                [26.914553737319206, -97.09453373529993],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_40718866db3f08c159ab8560fe58fde9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78452f0fbab7549095bd83db4a47c43d.setIcon(icon_40718866db3f08c159ab8560fe58fde9);
+        
+    
+        var popup_924181dde15c81e644d9e3854a869e4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5fd5cffe70c59909fe1274f590f54dd = $(`<div id="html_c5fd5cffe70c59909fe1274f590f54dd" style="width: 100.0%; height: 100.0%;">Date: 1969-06-08<br>Type: Unprovoked<br>Shark: Bull</div>`)[0];
+                popup_924181dde15c81e644d9e3854a869e4f.setContent(html_c5fd5cffe70c59909fe1274f590f54dd);
+            
+        
+
+        marker_78452f0fbab7549095bd83db4a47c43d.bindPopup(popup_924181dde15c81e644d9e3854a869e4f)
+        ;
+
+        
+    
+    
+            marker_78452f0fbab7549095bd83db4a47c43d.bindTooltip(
+                `<div>
+                     Case: 8690
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8de849ee1ea0b6009a4d075d48ee6cb = L.marker(
+                [34.21905359885924, -117.37920974207476],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_ca9dff8189dafa5a9106268c37bf91de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f8de849ee1ea0b6009a4d075d48ee6cb.setIcon(icon_ca9dff8189dafa5a9106268c37bf91de);
+        
+    
+        var popup_a5ccb280e88877dec0babd6b1daf8f66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b948e25b710b903d0979dbc152263ff = $(`<div id="html_8b948e25b710b903d0979dbc152263ff" style="width: 100.0%; height: 100.0%;">Date: 1969-04-26<br>Type: Provoked<br>Shark: Great White</div>`)[0];
+                popup_a5ccb280e88877dec0babd6b1daf8f66.setContent(html_8b948e25b710b903d0979dbc152263ff);
+            
+        
+
+        marker_f8de849ee1ea0b6009a4d075d48ee6cb.bindPopup(popup_a5ccb280e88877dec0babd6b1daf8f66)
+        ;
+
+        
+    
+    
+            marker_f8de849ee1ea0b6009a4d075d48ee6cb.bindTooltip(
+                `<div>
+                     Case: 2105
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49856ead65a09c4e002a18bcd6a78b51 = L.marker(
+                [31.820800286077677, -82.12162913166173],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_388a9d369f4898343ea38908828e2869 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49856ead65a09c4e002a18bcd6a78b51.setIcon(icon_388a9d369f4898343ea38908828e2869);
+        
+    
+        var popup_1169824eda7b70ce396a0d5787493187 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d87520c3ba03c60e103094b3a2bc1e9 = $(`<div id="html_6d87520c3ba03c60e103094b3a2bc1e9" style="width: 100.0%; height: 100.0%;">Date: 1969-01-10<br>Type: Provoked<br>Shark: Hammerhead</div>`)[0];
+                popup_1169824eda7b70ce396a0d5787493187.setContent(html_6d87520c3ba03c60e103094b3a2bc1e9);
+            
+        
+
+        marker_49856ead65a09c4e002a18bcd6a78b51.bindPopup(popup_1169824eda7b70ce396a0d5787493187)
+        ;
+
+        
+    
+    
+            marker_49856ead65a09c4e002a18bcd6a78b51.bindTooltip(
+                `<div>
+                     Case: 4891
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_707a87a039c42e54ee1b91118d463fd9 = L.marker(
+                [25.76469456896686, -76.86866655978703],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_7f05ffc0ed29c92b652bb0675f613a55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_707a87a039c42e54ee1b91118d463fd9.setIcon(icon_7f05ffc0ed29c92b652bb0675f613a55);
+        
+    
+        var popup_607c59f7f3a0f660a20829f317245893 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1d0d20c5d70eec060c9d43512171890 = $(`<div id="html_f1d0d20c5d70eec060c9d43512171890" style="width: 100.0%; height: 100.0%;">Date: 1973-11-16<br>Type: Provoked<br>Shark: Hammerhead</div>`)[0];
+                popup_607c59f7f3a0f660a20829f317245893.setContent(html_f1d0d20c5d70eec060c9d43512171890);
+            
+        
+
+        marker_707a87a039c42e54ee1b91118d463fd9.bindPopup(popup_607c59f7f3a0f660a20829f317245893)
+        ;
+
+        
+    
+    
+            marker_707a87a039c42e54ee1b91118d463fd9.bindTooltip(
+                `<div>
+                     Case: 584
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1b0c451f9b99fcc13bd455d629cc6ff = L.marker(
+                [45.6906619390347, -94.0535769520485],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_da9b053b0d2aad494e98b55c118db57a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d1b0c451f9b99fcc13bd455d629cc6ff.setIcon(icon_da9b053b0d2aad494e98b55c118db57a);
+        
+    
+        var popup_1553258d66f8f1153ef36010f75ba785 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_813ed089cc6d8e3d3fb753088e78c8b9 = $(`<div id="html_813ed089cc6d8e3d3fb753088e78c8b9" style="width: 100.0%; height: 100.0%;">Date: 1974-04-25<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_1553258d66f8f1153ef36010f75ba785.setContent(html_813ed089cc6d8e3d3fb753088e78c8b9);
+            
+        
+
+        marker_d1b0c451f9b99fcc13bd455d629cc6ff.bindPopup(popup_1553258d66f8f1153ef36010f75ba785)
+        ;
+
+        
+    
+    
+            marker_d1b0c451f9b99fcc13bd455d629cc6ff.bindTooltip(
+                `<div>
+                     Case: 6686
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b74d9b7edefaf269cb02a06690cd50a1 = L.marker(
+                [36.10803611161471, -87.18587715790562],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_ff11bfd56b635c9c6ed102d87e793d11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b74d9b7edefaf269cb02a06690cd50a1.setIcon(icon_ff11bfd56b635c9c6ed102d87e793d11);
+        
+    
+        var popup_4b99bf3cecd3d91f73bfd1836fe9ba09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_345a8abd9574e399752285d5c42ebf67 = $(`<div id="html_345a8abd9574e399752285d5c42ebf67" style="width: 100.0%; height: 100.0%;">Date: 1977-02-18<br>Type: Provoked<br>Shark: Great White</div>`)[0];
+                popup_4b99bf3cecd3d91f73bfd1836fe9ba09.setContent(html_345a8abd9574e399752285d5c42ebf67);
+            
+        
+
+        marker_b74d9b7edefaf269cb02a06690cd50a1.bindPopup(popup_4b99bf3cecd3d91f73bfd1836fe9ba09)
+        ;
+
+        
+    
+    
+            marker_b74d9b7edefaf269cb02a06690cd50a1.bindTooltip(
+                `<div>
+                     Case: 2618
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ecd8bb55b9dfb9f427dd5837f441ff5 = L.marker(
+                [48.51044869508035, -98.94641186416503],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_b2bb2a43e2f3fa66d6003847e8e11b0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5ecd8bb55b9dfb9f427dd5837f441ff5.setIcon(icon_b2bb2a43e2f3fa66d6003847e8e11b0b);
+        
+    
+        var popup_46cdcf0cad8b1538d7196d1d420d88d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f90c9572894a36924db3f0aad93295c = $(`<div id="html_4f90c9572894a36924db3f0aad93295c" style="width: 100.0%; height: 100.0%;">Date: 1980-02-13<br>Type: Provoked<br>Shark: Tiger</div>`)[0];
+                popup_46cdcf0cad8b1538d7196d1d420d88d8.setContent(html_4f90c9572894a36924db3f0aad93295c);
+            
+        
+
+        marker_5ecd8bb55b9dfb9f427dd5837f441ff5.bindPopup(popup_46cdcf0cad8b1538d7196d1d420d88d8)
+        ;
+
+        
+    
+    
+            marker_5ecd8bb55b9dfb9f427dd5837f441ff5.bindTooltip(
+                `<div>
+                     Case: 2971
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4521449df3abe98b431d12d96316e7a3 = L.marker(
+                [27.29673694461885, -96.74135864852981],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_0c481537d63c35d7334294955d46f2cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4521449df3abe98b431d12d96316e7a3.setIcon(icon_0c481537d63c35d7334294955d46f2cb);
+        
+    
+        var popup_76d546bd0143f52624f4bd5fab41fedc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a63422345fe586a3e2ddb627b797affb = $(`<div id="html_a63422345fe586a3e2ddb627b797affb" style="width: 100.0%; height: 100.0%;">Date: 1980-10-23<br>Type: Unprovoked<br>Shark: Great White</div>`)[0];
+                popup_76d546bd0143f52624f4bd5fab41fedc.setContent(html_a63422345fe586a3e2ddb627b797affb);
+            
+        
+
+        marker_4521449df3abe98b431d12d96316e7a3.bindPopup(popup_76d546bd0143f52624f4bd5fab41fedc)
+        ;
+
+        
+    
+    
+            marker_4521449df3abe98b431d12d96316e7a3.bindTooltip(
+                `<div>
+                     Case: 9208
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef3a462ea677d0169842977e306b441a = L.marker(
+                [46.004033973980086, -93.38400639659115],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_fa05f4e029df8e5c15c405d3cf255d43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef3a462ea677d0169842977e306b441a.setIcon(icon_fa05f4e029df8e5c15c405d3cf255d43);
+        
+    
+        var popup_64505f766004686f6927a04872fa5057 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_226475493a595d5eeb3142e2aa111bc2 = $(`<div id="html_226475493a595d5eeb3142e2aa111bc2" style="width: 100.0%; height: 100.0%;">Date: 1980-06-27<br>Type: Unprovoked<br>Shark: Bull</div>`)[0];
+                popup_64505f766004686f6927a04872fa5057.setContent(html_226475493a595d5eeb3142e2aa111bc2);
+            
+        
+
+        marker_ef3a462ea677d0169842977e306b441a.bindPopup(popup_64505f766004686f6927a04872fa5057)
+        ;
+
+        
+    
+    
+            marker_ef3a462ea677d0169842977e306b441a.bindTooltip(
+                `<div>
+                     Case: 9169
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41a9c7c2468ffe9e0dcd1cd8ff58c109 = L.marker(
+                [26.67537066328583, -80.81081472557867],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_e46e8be315ac00fa5772b7f67d1f92cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41a9c7c2468ffe9e0dcd1cd8ff58c109.setIcon(icon_e46e8be315ac00fa5772b7f67d1f92cf);
+        
+    
+        var popup_be7b3a31947a1001f1969c548b1ffa86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0e811c915eb0d9edd76931b24b9b307 = $(`<div id="html_b0e811c915eb0d9edd76931b24b9b307" style="width: 100.0%; height: 100.0%;">Date: 1984-02-28<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_be7b3a31947a1001f1969c548b1ffa86.setContent(html_b0e811c915eb0d9edd76931b24b9b307);
+            
+        
+
+        marker_41a9c7c2468ffe9e0dcd1cd8ff58c109.bindPopup(popup_be7b3a31947a1001f1969c548b1ffa86)
+        ;
+
+        
+    
+    
+            marker_41a9c7c2468ffe9e0dcd1cd8ff58c109.bindTooltip(
+                `<div>
+                     Case: 129
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96607606b6fa5463163b42279913aef0 = L.marker(
+                [41.787346260579625, -116.50073120428237],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_0cb0860389d2252d7723cd28d32c5af1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_96607606b6fa5463163b42279913aef0.setIcon(icon_0cb0860389d2252d7723cd28d32c5af1);
+        
+    
+        var popup_72e0c44b25372c19d169f5c58eeea04f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86c53f2a0be5ec54fb99fba62508248a = $(`<div id="html_86c53f2a0be5ec54fb99fba62508248a" style="width: 100.0%; height: 100.0%;">Date: 1986-01-22<br>Type: Provoked<br>Shark: Tiger</div>`)[0];
+                popup_72e0c44b25372c19d169f5c58eeea04f.setContent(html_86c53f2a0be5ec54fb99fba62508248a);
+            
+        
+
+        marker_96607606b6fa5463163b42279913aef0.bindPopup(popup_72e0c44b25372c19d169f5c58eeea04f)
+        ;
+
+        
+    
+    
+            marker_96607606b6fa5463163b42279913aef0.bindTooltip(
+                `<div>
+                     Case: 2842
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2101f5f40a1586f7a4173fc62a1739d = L.marker(
+                [42.44399129163436, -99.23345270348577],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_656400c52ca49956406f0b4b3154dd05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a2101f5f40a1586f7a4173fc62a1739d.setIcon(icon_656400c52ca49956406f0b4b3154dd05);
+        
+    
+        var popup_a2f376ea23409050d74b77d36c8603ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_003593d98e1004f354737cb125f289db = $(`<div id="html_003593d98e1004f354737cb125f289db" style="width: 100.0%; height: 100.0%;">Date: 1986-04-06<br>Type: Provoked<br>Shark: Reef</div>`)[0];
+                popup_a2f376ea23409050d74b77d36c8603ab.setContent(html_003593d98e1004f354737cb125f289db);
+            
+        
+
+        marker_a2101f5f40a1586f7a4173fc62a1739d.bindPopup(popup_a2f376ea23409050d74b77d36c8603ab)
+        ;
+
+        
+    
+    
+            marker_a2101f5f40a1586f7a4173fc62a1739d.bindTooltip(
+                `<div>
+                     Case: 2077
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95723083db187c9a1bdd31652ceae890 = L.marker(
+                [38.41305407962481, -121.98226506712528],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_a86539ea9ed15453d9f519f75aa0f85a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_95723083db187c9a1bdd31652ceae890.setIcon(icon_a86539ea9ed15453d9f519f75aa0f85a);
+        
+    
+        var popup_5252dd951a5c3eff859de00a6b8b0272 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00277eeefe230b8a3dc157d106f7ddce = $(`<div id="html_00277eeefe230b8a3dc157d106f7ddce" style="width: 100.0%; height: 100.0%;">Date: 1986-08-01<br>Type: Unprovoked<br>Shark: Mako</div>`)[0];
+                popup_5252dd951a5c3eff859de00a6b8b0272.setContent(html_00277eeefe230b8a3dc157d106f7ddce);
+            
+        
+
+        marker_95723083db187c9a1bdd31652ceae890.bindPopup(popup_5252dd951a5c3eff859de00a6b8b0272)
+        ;
+
+        
+    
+    
+            marker_95723083db187c9a1bdd31652ceae890.bindTooltip(
+                `<div>
+                     Case: 297
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_972f4fcc0a9ca74b2a0bbc6b0e783d77 = L.marker(
+                [36.192340427755916, -80.97112147520704],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_ff3f0b8afcca07f11e551e697f80303b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_972f4fcc0a9ca74b2a0bbc6b0e783d77.setIcon(icon_ff3f0b8afcca07f11e551e697f80303b);
+        
+    
+        var popup_ca4e792d8a63d1e2694a66587bb8d32b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd397cd3c7368d713aca149eaddbc03d = $(`<div id="html_dd397cd3c7368d713aca149eaddbc03d" style="width: 100.0%; height: 100.0%;">Date: 1986-09-02<br>Type: Provoked<br>Shark: Hammerhead</div>`)[0];
+                popup_ca4e792d8a63d1e2694a66587bb8d32b.setContent(html_dd397cd3c7368d713aca149eaddbc03d);
+            
+        
+
+        marker_972f4fcc0a9ca74b2a0bbc6b0e783d77.bindPopup(popup_ca4e792d8a63d1e2694a66587bb8d32b)
+        ;
+
+        
+    
+    
+            marker_972f4fcc0a9ca74b2a0bbc6b0e783d77.bindTooltip(
+                `<div>
+                     Case: 5593
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc843e133a797e428d448104f7b04603 = L.marker(
+                [39.543430074390315, -77.5344311730843],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_8d64af92f8486916d3a97e00e065ef1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc843e133a797e428d448104f7b04603.setIcon(icon_8d64af92f8486916d3a97e00e065ef1e);
+        
+    
+        var popup_99adf4b251d56ab40282b9fc086a628d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a94ca69a0a7f4d03d1419bb18469984 = $(`<div id="html_8a94ca69a0a7f4d03d1419bb18469984" style="width: 100.0%; height: 100.0%;">Date: 1993-10-16<br>Type: Unprovoked<br>Shark: Hammerhead</div>`)[0];
+                popup_99adf4b251d56ab40282b9fc086a628d.setContent(html_8a94ca69a0a7f4d03d1419bb18469984);
+            
+        
+
+        marker_fc843e133a797e428d448104f7b04603.bindPopup(popup_99adf4b251d56ab40282b9fc086a628d)
+        ;
+
+        
+    
+    
+            marker_fc843e133a797e428d448104f7b04603.bindTooltip(
+                `<div>
+                     Case: 4399
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc4537e95eb7d584b45d0efc2ba62ddb = L.marker(
+                [46.686811923093465, -119.11095598514001],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_007792305aa8d06560824118fbb21dee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc4537e95eb7d584b45d0efc2ba62ddb.setIcon(icon_007792305aa8d06560824118fbb21dee);
+        
+    
+        var popup_e431d4085df9d2c9325d16051220b480 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62e28e101389acb22f8ceacbea0a2fe5 = $(`<div id="html_62e28e101389acb22f8ceacbea0a2fe5" style="width: 100.0%; height: 100.0%;">Date: 1993-05-25<br>Type: Provoked<br>Shark: Tiger</div>`)[0];
+                popup_e431d4085df9d2c9325d16051220b480.setContent(html_62e28e101389acb22f8ceacbea0a2fe5);
+            
+        
+
+        marker_cc4537e95eb7d584b45d0efc2ba62ddb.bindPopup(popup_e431d4085df9d2c9325d16051220b480)
+        ;
+
+        
+    
+    
+            marker_cc4537e95eb7d584b45d0efc2ba62ddb.bindTooltip(
+                `<div>
+                     Case: 7933
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61ebb4be5ee759e69b3ebc6464680597 = L.marker(
+                [32.16714980414705, -86.23842805118406],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_74bfc06a338a3cba5de14822bbe168a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_61ebb4be5ee759e69b3ebc6464680597.setIcon(icon_74bfc06a338a3cba5de14822bbe168a5);
+        
+    
+        var popup_6f1cc0011b74ff367011c01ce0bdb8bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fceb0542cb5f9ecdc6cbd00d9fd6aea5 = $(`<div id="html_fceb0542cb5f9ecdc6cbd00d9fd6aea5" style="width: 100.0%; height: 100.0%;">Date: 1994-12-06<br>Type: Provoked<br>Shark: Great White</div>`)[0];
+                popup_6f1cc0011b74ff367011c01ce0bdb8bc.setContent(html_fceb0542cb5f9ecdc6cbd00d9fd6aea5);
+            
+        
+
+        marker_61ebb4be5ee759e69b3ebc6464680597.bindPopup(popup_6f1cc0011b74ff367011c01ce0bdb8bc)
+        ;
+
+        
+    
+    
+            marker_61ebb4be5ee759e69b3ebc6464680597.bindTooltip(
+                `<div>
+                     Case: 1473
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bde3a7fd1f3c1786bb4bcd20721bab2 = L.marker(
+                [30.113527999212938, -87.61142263930522],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_4903ed10f9e24d3f439f1b16b8978f7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9bde3a7fd1f3c1786bb4bcd20721bab2.setIcon(icon_4903ed10f9e24d3f439f1b16b8978f7b);
+        
+    
+        var popup_f525911135fcbe649a671373f90a8f1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e3c0499a5f9e0135712a159d9a91dd1 = $(`<div id="html_5e3c0499a5f9e0135712a159d9a91dd1" style="width: 100.0%; height: 100.0%;">Date: 1998-11-06<br>Type: Unprovoked<br>Shark: Reef</div>`)[0];
+                popup_f525911135fcbe649a671373f90a8f1f.setContent(html_5e3c0499a5f9e0135712a159d9a91dd1);
+            
+        
+
+        marker_9bde3a7fd1f3c1786bb4bcd20721bab2.bindPopup(popup_f525911135fcbe649a671373f90a8f1f)
+        ;
+
+        
+    
+    
+            marker_9bde3a7fd1f3c1786bb4bcd20721bab2.bindTooltip(
+                `<div>
+                     Case: 2387
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c21f1de14fd564fe840c279d023d4a98 = L.marker(
+                [45.62733948061669, -101.6617086709865],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_7a15256718e733c4c87312f384e47a3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c21f1de14fd564fe840c279d023d4a98.setIcon(icon_7a15256718e733c4c87312f384e47a3e);
+        
+    
+        var popup_3bf1cf839a7d40950c91d4397323a7e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d4586dff18a507f7c4527f9005b7b87 = $(`<div id="html_6d4586dff18a507f7c4527f9005b7b87" style="width: 100.0%; height: 100.0%;">Date: 1999-12-17<br>Type: Provoked<br>Shark: Tiger</div>`)[0];
+                popup_3bf1cf839a7d40950c91d4397323a7e0.setContent(html_6d4586dff18a507f7c4527f9005b7b87);
+            
+        
+
+        marker_c21f1de14fd564fe840c279d023d4a98.bindPopup(popup_3bf1cf839a7d40950c91d4397323a7e0)
+        ;
+
+        
+    
+    
+            marker_c21f1de14fd564fe840c279d023d4a98.bindTooltip(
+                `<div>
+                     Case: 6772
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9051a4d6f65cfdb620061e01289c2e7 = L.marker(
+                [43.69503858860974, -124.69634024089694],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_ddcdb32b5c9a25ee38f31a0047e5e0e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e9051a4d6f65cfdb620061e01289c2e7.setIcon(icon_ddcdb32b5c9a25ee38f31a0047e5e0e3);
+        
+    
+        var popup_9fe336b403c3baf7528ffb9fd5210712 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65b200a691b25e15e9e52a833953843b = $(`<div id="html_65b200a691b25e15e9e52a833953843b" style="width: 100.0%; height: 100.0%;">Date: 1999-09-06<br>Type: Unprovoked<br>Shark: Reef</div>`)[0];
+                popup_9fe336b403c3baf7528ffb9fd5210712.setContent(html_65b200a691b25e15e9e52a833953843b);
+            
+        
+
+        marker_e9051a4d6f65cfdb620061e01289c2e7.bindPopup(popup_9fe336b403c3baf7528ffb9fd5210712)
+        ;
+
+        
+    
+    
+            marker_e9051a4d6f65cfdb620061e01289c2e7.bindTooltip(
+                `<div>
+                     Case: 9713
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3390aad1dca39b4ab43115e1899ef774 = L.marker(
+                [48.74453417370255, -103.38996172905453],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_760e2c68f976f408c2ce6088a4a5b82b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3390aad1dca39b4ab43115e1899ef774.setIcon(icon_760e2c68f976f408c2ce6088a4a5b82b);
+        
+    
+        var popup_0a1bc3c65e62a7e43ae076833e260afb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebdc74b0a8777ba1a416db1c2525aeed = $(`<div id="html_ebdc74b0a8777ba1a416db1c2525aeed" style="width: 100.0%; height: 100.0%;">Date: 2001-03-23<br>Type: Unprovoked<br>Shark: Mako</div>`)[0];
+                popup_0a1bc3c65e62a7e43ae076833e260afb.setContent(html_ebdc74b0a8777ba1a416db1c2525aeed);
+            
+        
+
+        marker_3390aad1dca39b4ab43115e1899ef774.bindPopup(popup_0a1bc3c65e62a7e43ae076833e260afb)
+        ;
+
+        
+    
+    
+            marker_3390aad1dca39b4ab43115e1899ef774.bindTooltip(
+                `<div>
+                     Case: 9953
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a39bb26d471aab0e5751f71b8424fcc4 = L.marker(
+                [28.830176191944904, -109.11174996288857],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_7d0267a249b0f23c9164c30acca83747 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a39bb26d471aab0e5751f71b8424fcc4.setIcon(icon_7d0267a249b0f23c9164c30acca83747);
+        
+    
+        var popup_bb50874a8a3856cd27a5af2c93d76af1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8153400ef33918162c92832ecd4785b7 = $(`<div id="html_8153400ef33918162c92832ecd4785b7" style="width: 100.0%; height: 100.0%;">Date: 2001-08-09<br>Type: Unprovoked<br>Shark: Tiger</div>`)[0];
+                popup_bb50874a8a3856cd27a5af2c93d76af1.setContent(html_8153400ef33918162c92832ecd4785b7);
+            
+        
+
+        marker_a39bb26d471aab0e5751f71b8424fcc4.bindPopup(popup_bb50874a8a3856cd27a5af2c93d76af1)
+        ;
+
+        
+    
+    
+            marker_a39bb26d471aab0e5751f71b8424fcc4.bindTooltip(
+                `<div>
+                     Case: 515
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02458021facb20e783ad3e95e31b50f3 = L.marker(
+                [34.41280324466067, -109.91383431453983],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_cd6848f346854a73f54e7b194c044c4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_02458021facb20e783ad3e95e31b50f3.setIcon(icon_cd6848f346854a73f54e7b194c044c4a);
+        
+    
+        var popup_fe24f63bd112c4f69cb292ed7f12907e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02893e0cd30c60c7956a2adb8d55b087 = $(`<div id="html_02893e0cd30c60c7956a2adb8d55b087" style="width: 100.0%; height: 100.0%;">Date: 2002-10-19<br>Type: Unprovoked<br>Shark: Tiger</div>`)[0];
+                popup_fe24f63bd112c4f69cb292ed7f12907e.setContent(html_02893e0cd30c60c7956a2adb8d55b087);
+            
+        
+
+        marker_02458021facb20e783ad3e95e31b50f3.bindPopup(popup_fe24f63bd112c4f69cb292ed7f12907e)
+        ;
+
+        
+    
+    
+            marker_02458021facb20e783ad3e95e31b50f3.bindTooltip(
+                `<div>
+                     Case: 1174
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8732a3efaeafe4a46392a103cf0ea58b = L.marker(
+                [39.40205333435915, -78.19969602050904],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_d0a5c2233e81049ffd6357e8e2263f7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8732a3efaeafe4a46392a103cf0ea58b.setIcon(icon_d0a5c2233e81049ffd6357e8e2263f7c);
+        
+    
+        var popup_44af71f38ce29cad27760ff5b125f8aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bedfa61992ed7c0726bb2828857c6f3e = $(`<div id="html_bedfa61992ed7c0726bb2828857c6f3e" style="width: 100.0%; height: 100.0%;">Date: 2003-08-09<br>Type: Provoked<br>Shark: Hammerhead</div>`)[0];
+                popup_44af71f38ce29cad27760ff5b125f8aa.setContent(html_bedfa61992ed7c0726bb2828857c6f3e);
+            
+        
+
+        marker_8732a3efaeafe4a46392a103cf0ea58b.bindPopup(popup_44af71f38ce29cad27760ff5b125f8aa)
+        ;
+
+        
+    
+    
+            marker_8732a3efaeafe4a46392a103cf0ea58b.bindTooltip(
+                `<div>
+                     Case: 1390
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66d6363be67ff865f6f5b7ff57f8f865 = L.marker(
+                [31.721498141148714, -118.24313506922874],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_ddeb774d902cd85183adda740292ba5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_66d6363be67ff865f6f5b7ff57f8f865.setIcon(icon_ddeb774d902cd85183adda740292ba5c);
+        
+    
+        var popup_76994b843a50f3c864a2bb9522d12159 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a7df9d514bbe8357f8cd8d26b0a3100 = $(`<div id="html_7a7df9d514bbe8357f8cd8d26b0a3100" style="width: 100.0%; height: 100.0%;">Date: 2006-06-27<br>Type: Unprovoked<br>Shark: Reef</div>`)[0];
+                popup_76994b843a50f3c864a2bb9522d12159.setContent(html_7a7df9d514bbe8357f8cd8d26b0a3100);
+            
+        
+
+        marker_66d6363be67ff865f6f5b7ff57f8f865.bindPopup(popup_76994b843a50f3c864a2bb9522d12159)
+        ;
+
+        
+    
+    
+            marker_66d6363be67ff865f6f5b7ff57f8f865.bindTooltip(
+                `<div>
+                     Case: 3183
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fa7782169a4adcb8a0b251f41953f31 = L.marker(
+                [38.97355587068608, -101.2318449096943],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_0a288ca82b4c54cbf647dbc4a535ce82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fa7782169a4adcb8a0b251f41953f31.setIcon(icon_0a288ca82b4c54cbf647dbc4a535ce82);
+        
+    
+        var popup_018f4f2cacda688bde7871c3c1ff3e03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d3ae7213c8871d6994abff5a04f7a44 = $(`<div id="html_0d3ae7213c8871d6994abff5a04f7a44" style="width: 100.0%; height: 100.0%;">Date: 2006-08-07<br>Type: Unprovoked<br>Shark: Bull</div>`)[0];
+                popup_018f4f2cacda688bde7871c3c1ff3e03.setContent(html_0d3ae7213c8871d6994abff5a04f7a44);
+            
+        
+
+        marker_0fa7782169a4adcb8a0b251f41953f31.bindPopup(popup_018f4f2cacda688bde7871c3c1ff3e03)
+        ;
+
+        
+    
+    
+            marker_0fa7782169a4adcb8a0b251f41953f31.bindTooltip(
+                `<div>
+                     Case: 3829
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fad66618b8a79a194d557904dd72b49f = L.marker(
+                [26.2591832118023, -99.03299218849429],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_43e16370623b3ae150075be56cd977be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fad66618b8a79a194d557904dd72b49f.setIcon(icon_43e16370623b3ae150075be56cd977be);
+        
+    
+        var popup_db9d8cfb3a53abaa6b92533f8fa954fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5f86a5af7498a042dfcb22e978afc6d = $(`<div id="html_a5f86a5af7498a042dfcb22e978afc6d" style="width: 100.0%; height: 100.0%;">Date: 2010-02-06<br>Type: Unprovoked<br>Shark: Reef</div>`)[0];
+                popup_db9d8cfb3a53abaa6b92533f8fa954fe.setContent(html_a5f86a5af7498a042dfcb22e978afc6d);
+            
+        
+
+        marker_fad66618b8a79a194d557904dd72b49f.bindPopup(popup_db9d8cfb3a53abaa6b92533f8fa954fe)
+        ;
+
+        
+    
+    
+            marker_fad66618b8a79a194d557904dd72b49f.bindTooltip(
+                `<div>
+                     Case: 6054
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5de20af561c5af4de594ebdaf4348a63 = L.marker(
+                [38.12796318794962, -123.50122052385805],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_3cfef8d94758b1ef29a98cb0dbba1a4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5de20af561c5af4de594ebdaf4348a63.setIcon(icon_3cfef8d94758b1ef29a98cb0dbba1a4c);
+        
+    
+        var popup_b65648972d554238ceb3e960a8617ae0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_819b44b1e5e6d03da08b7eea149ee0bd = $(`<div id="html_819b44b1e5e6d03da08b7eea149ee0bd" style="width: 100.0%; height: 100.0%;">Date: 2010-03-09<br>Type: Unprovoked<br>Shark: Reef</div>`)[0];
+                popup_b65648972d554238ceb3e960a8617ae0.setContent(html_819b44b1e5e6d03da08b7eea149ee0bd);
+            
+        
+
+        marker_5de20af561c5af4de594ebdaf4348a63.bindPopup(popup_b65648972d554238ceb3e960a8617ae0)
+        ;
+
+        
+    
+    
+            marker_5de20af561c5af4de594ebdaf4348a63.bindTooltip(
+                `<div>
+                     Case: 1551
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_972b0236716e657bdadc46e67692add2 = L.marker(
+                [38.24853478185751, -118.12875818947141],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_b6898c96c3a317a3c971cd7c1f8739b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_972b0236716e657bdadc46e67692add2.setIcon(icon_b6898c96c3a317a3c971cd7c1f8739b8);
+        
+    
+        var popup_85bde6fe58d1b5ece5516890c8467252 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26e97ca17085a5c8e308f84e2ac7b381 = $(`<div id="html_26e97ca17085a5c8e308f84e2ac7b381" style="width: 100.0%; height: 100.0%;">Date: 2010-06-27<br>Type: Provoked<br>Shark: Tiger</div>`)[0];
+                popup_85bde6fe58d1b5ece5516890c8467252.setContent(html_26e97ca17085a5c8e308f84e2ac7b381);
+            
+        
+
+        marker_972b0236716e657bdadc46e67692add2.bindPopup(popup_85bde6fe58d1b5ece5516890c8467252)
+        ;
+
+        
+    
+    
+            marker_972b0236716e657bdadc46e67692add2.bindTooltip(
+                `<div>
+                     Case: 9654
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f29a4c55565bb1524a5ca0f5c0d40a6 = L.marker(
+                [26.429055398118823, -92.02201597151243],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_6701e015ac348ced48d09aaf30e2de49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f29a4c55565bb1524a5ca0f5c0d40a6.setIcon(icon_6701e015ac348ced48d09aaf30e2de49);
+        
+    
+        var popup_ffd1f231a210576185dca9b997b9e1a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0443f28c57ee25b02edff52fad7ae839 = $(`<div id="html_0443f28c57ee25b02edff52fad7ae839" style="width: 100.0%; height: 100.0%;">Date: 2013-10-24<br>Type: Provoked<br>Shark: Reef</div>`)[0];
+                popup_ffd1f231a210576185dca9b997b9e1a0.setContent(html_0443f28c57ee25b02edff52fad7ae839);
+            
+        
+
+        marker_1f29a4c55565bb1524a5ca0f5c0d40a6.bindPopup(popup_ffd1f231a210576185dca9b997b9e1a0)
+        ;
+
+        
+    
+    
+            marker_1f29a4c55565bb1524a5ca0f5c0d40a6.bindTooltip(
+                `<div>
+                     Case: 6001
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b4b34e30b2d248515c4c3712cb4e2ee = L.marker(
+                [27.969391300720368, -89.4093995784349],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_5595dcc8d5518bb592270afd4dc3ed7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5b4b34e30b2d248515c4c3712cb4e2ee.setIcon(icon_5595dcc8d5518bb592270afd4dc3ed7e);
+        
+    
+        var popup_5509a1970476d9d8aed3ecd0265e31de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a22e10c8d9b217227df054fc6e442d0 = $(`<div id="html_5a22e10c8d9b217227df054fc6e442d0" style="width: 100.0%; height: 100.0%;">Date: 2013-05-26<br>Type: Provoked<br>Shark: Bull</div>`)[0];
+                popup_5509a1970476d9d8aed3ecd0265e31de.setContent(html_5a22e10c8d9b217227df054fc6e442d0);
+            
+        
+
+        marker_5b4b34e30b2d248515c4c3712cb4e2ee.bindPopup(popup_5509a1970476d9d8aed3ecd0265e31de)
+        ;
+
+        
+    
+    
+            marker_5b4b34e30b2d248515c4c3712cb4e2ee.bindTooltip(
+                `<div>
+                     Case: 2410
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c10860608b6cd8c4d4fde98eafcc276 = L.marker(
+                [35.116032205748326, -92.0759569888169],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_bd503394e8da691c6db307800b59ba0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c10860608b6cd8c4d4fde98eafcc276.setIcon(icon_bd503394e8da691c6db307800b59ba0f);
+        
+    
+        var popup_a5a47e4436f41f3c833f710f294443f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdba5ba3f0ade9732ac40ebe7447c360 = $(`<div id="html_fdba5ba3f0ade9732ac40ebe7447c360" style="width: 100.0%; height: 100.0%;">Date: 2014-02-23<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_a5a47e4436f41f3c833f710f294443f8.setContent(html_fdba5ba3f0ade9732ac40ebe7447c360);
+            
+        
+
+        marker_3c10860608b6cd8c4d4fde98eafcc276.bindPopup(popup_a5a47e4436f41f3c833f710f294443f8)
+        ;
+
+        
+    
+    
+            marker_3c10860608b6cd8c4d4fde98eafcc276.bindTooltip(
+                `<div>
+                     Case: 2159
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98b7d0f810e1ff393084315c0ce97ec9 = L.marker(
+                [27.31736208612264, -94.85929294089789],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_1e3d1f0ee68f57094ef3e791c938a34d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_98b7d0f810e1ff393084315c0ce97ec9.setIcon(icon_1e3d1f0ee68f57094ef3e791c938a34d);
+        
+    
+        var popup_af6ff6b8d764942ab218d8778cf961dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db7b2f97ab0bf373558cdd74b3e3a524 = $(`<div id="html_db7b2f97ab0bf373558cdd74b3e3a524" style="width: 100.0%; height: 100.0%;">Date: 2016-06-09<br>Type: Provoked<br>Shark: Mako</div>`)[0];
+                popup_af6ff6b8d764942ab218d8778cf961dd.setContent(html_db7b2f97ab0bf373558cdd74b3e3a524);
+            
+        
+
+        marker_98b7d0f810e1ff393084315c0ce97ec9.bindPopup(popup_af6ff6b8d764942ab218d8778cf961dd)
+        ;
+
+        
+    
+    
+            marker_98b7d0f810e1ff393084315c0ce97ec9.bindTooltip(
+                `<div>
+                     Case: 1861
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e07ddc0834a0bb8f7ad08ea27de60aa = L.marker(
+                [48.45101471839273, -90.37733310989184],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_53abf66fa2f9f8ba1c006065f2ac2cc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e07ddc0834a0bb8f7ad08ea27de60aa.setIcon(icon_53abf66fa2f9f8ba1c006065f2ac2cc6);
+        
+    
+        var popup_0013dc42df5035b485b46f1379007b08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da2f78a1d64c0f820cb5db44fd13d7a1 = $(`<div id="html_da2f78a1d64c0f820cb5db44fd13d7a1" style="width: 100.0%; height: 100.0%;">Date: 2017-02-01<br>Type: Unprovoked<br>Shark: Bull</div>`)[0];
+                popup_0013dc42df5035b485b46f1379007b08.setContent(html_da2f78a1d64c0f820cb5db44fd13d7a1);
+            
+        
+
+        marker_7e07ddc0834a0bb8f7ad08ea27de60aa.bindPopup(popup_0013dc42df5035b485b46f1379007b08)
+        ;
+
+        
+    
+    
+            marker_7e07ddc0834a0bb8f7ad08ea27de60aa.bindTooltip(
+                `<div>
+                     Case: 2460
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb1a6ff0c339db648bcbda70245ee4da = L.marker(
+                [34.305138871783015, -108.06448695233546],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_1220e8bee81145cd5ae815344e50d06e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb1a6ff0c339db648bcbda70245ee4da.setIcon(icon_1220e8bee81145cd5ae815344e50d06e);
+        
+    
+        var popup_fb4e0350c6f350daa7af42e41182840d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d2bf7aa55552da9295f56e696b2682f = $(`<div id="html_2d2bf7aa55552da9295f56e696b2682f" style="width: 100.0%; height: 100.0%;">Date: 2017-02-11<br>Type: Unprovoked<br>Shark: Great White</div>`)[0];
+                popup_fb4e0350c6f350daa7af42e41182840d.setContent(html_2d2bf7aa55552da9295f56e696b2682f);
+            
+        
+
+        marker_cb1a6ff0c339db648bcbda70245ee4da.bindPopup(popup_fb4e0350c6f350daa7af42e41182840d)
+        ;
+
+        
+    
+    
+            marker_cb1a6ff0c339db648bcbda70245ee4da.bindTooltip(
+                `<div>
+                     Case: 6430
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ed2ad3634731c83ff30c2d38406c15a = L.marker(
+                [35.23741470374093, -116.3863882485599],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_ec975416a9cdd036405b376a20df7320 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ed2ad3634731c83ff30c2d38406c15a.setIcon(icon_ec975416a9cdd036405b376a20df7320);
+        
+    
+        var popup_614e9a10ac5347a0df045a1383411b87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba778225121d0b2ecbf221d756c069e4 = $(`<div id="html_ba778225121d0b2ecbf221d756c069e4" style="width: 100.0%; height: 100.0%;">Date: 2019-11-21<br>Type: Provoked<br>Shark: Reef</div>`)[0];
+                popup_614e9a10ac5347a0df045a1383411b87.setContent(html_ba778225121d0b2ecbf221d756c069e4);
+            
+        
+
+        marker_3ed2ad3634731c83ff30c2d38406c15a.bindPopup(popup_614e9a10ac5347a0df045a1383411b87)
+        ;
+
+        
+    
+    
+            marker_3ed2ad3634731c83ff30c2d38406c15a.bindTooltip(
+                `<div>
+                     Case: 2223
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a79745f9765f0cb7dfc45c3d9ec7f16f = L.marker(
+                [45.798318976105854, -82.81768813342586],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_a008fdcf01a933de83d8f8c12347c518 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a79745f9765f0cb7dfc45c3d9ec7f16f.setIcon(icon_a008fdcf01a933de83d8f8c12347c518);
+        
+    
+        var popup_f530479cf200b4805b447513fc5c5021 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a32cf09e60e461817f03ac967ee436f1 = $(`<div id="html_a32cf09e60e461817f03ac967ee436f1" style="width: 100.0%; height: 100.0%;">Date: 2019-01-24<br>Type: Unprovoked<br>Shark: Tiger</div>`)[0];
+                popup_f530479cf200b4805b447513fc5c5021.setContent(html_a32cf09e60e461817f03ac967ee436f1);
+            
+        
+
+        marker_a79745f9765f0cb7dfc45c3d9ec7f16f.bindPopup(popup_f530479cf200b4805b447513fc5c5021)
+        ;
+
+        
+    
+    
+            marker_a79745f9765f0cb7dfc45c3d9ec7f16f.bindTooltip(
+                `<div>
+                     Case: 4704
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ed7ed2787e684c3bcd8e431b72aa831 = L.marker(
+                [44.478506041158916, -80.3347271548252],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_9a57175a1dcd9751c8ea65f35c7498db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2ed7ed2787e684c3bcd8e431b72aa831.setIcon(icon_9a57175a1dcd9751c8ea65f35c7498db);
+        
+    
+        var popup_cec583e2be0a43b0ad4e8269a123492e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_188ffb8eba534df7dfb1b00e3391d220 = $(`<div id="html_188ffb8eba534df7dfb1b00e3391d220" style="width: 100.0%; height: 100.0%;">Date: 2019-08-09<br>Type: Provoked<br>Shark: Great White</div>`)[0];
+                popup_cec583e2be0a43b0ad4e8269a123492e.setContent(html_188ffb8eba534df7dfb1b00e3391d220);
+            
+        
+
+        marker_2ed7ed2787e684c3bcd8e431b72aa831.bindPopup(popup_cec583e2be0a43b0ad4e8269a123492e)
+        ;
+
+        
+    
+    
+            marker_2ed7ed2787e684c3bcd8e431b72aa831.bindTooltip(
+                `<div>
+                     Case: 9533
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_367d6d607fc0ad9442e58fe277aa36ae = L.marker(
+                [38.41305407962481, -86.1999365203996],
+                {}
+            ).addTo(map_7df6cd8ed498ffc43ad5abeb67f2c6ec);
+        
+    
+            var icon_44a534998744861cce18e912dfae3845 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_367d6d607fc0ad9442e58fe277aa36ae.setIcon(icon_44a534998744861cce18e912dfae3845);
+        
+    
+        var popup_3904cf9d17308856a94ee5e8099da3dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_504a23d6ad110fe0471630e2b5d22291 = $(`<div id="html_504a23d6ad110fe0471630e2b5d22291" style="width: 100.0%; height: 100.0%;">Date: 2019-08-10<br>Type: Unprovoked<br>Shark: Tiger</div>`)[0];
+                popup_3904cf9d17308856a94ee5e8099da3dd.setContent(html_504a23d6ad110fe0471630e2b5d22291);
+            
+        
+
+        marker_367d6d607fc0ad9442e58fe277aa36ae.bindPopup(popup_3904cf9d17308856a94ee5e8099da3dd)
+        ;
+
+        
+    
+    
+            marker_367d6d607fc0ad9442e58fe277aa36ae.bindTooltip(
+                `<div>
+                     Case: 924
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
