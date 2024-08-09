@@ -72,12 +72,61 @@ class SQLHelper():
                     longitude as longitude,
                     count(year) as attacks
                 FROM combined_attacks
-                WHERE year <> 'NaN'
-                    AND animal_type = '{animal_type_param}'
-                    AND sex = '{sex_param}'
+                WHERE year <> 'NaN' 
+                """
+        
+        if animal_type_param.lower() != "all":
+            query = query + f"""
+                    AND animal_type = '{animal_type_param}' 
+                    """
+        
+        if sex_param.lower() != "all":
+            query = query + f"""
+                    AND sex = '{sex_param}' 
+                    """
+        
+        query = query + f"""
                 GROUP BY location
                 ORDER BY location desc
                 LIMIT 20;
+                """
+
+        # Save the query results as a Pandas DataFrame
+        df = pd.read_sql(text(query), con=self.engine)
+        data = df.to_dict(orient="records")
+        return (data)    
+    
+
+    def map_places(self, animal_type_param, sex_param):
+        # Find the most recent date in the data set.
+        query = f"""
+                SELECT 
+                    location as location,
+                    area as area, 
+                    country as country, 
+                    latitude as latitude,
+                    longitude as longitude,
+                    count(year) as attacks, 
+                    sex as sex,
+                    animal_type as animal_type
+                FROM combined_attacks
+                WHERE year <> 'NaN' 
+                """
+        
+        if animal_type_param.lower() != "all":
+            query = query + f"""
+                    AND animal_type = '{animal_type_param}' 
+                    """
+        
+        if sex_param.lower() != "all":
+            query = query + f"""
+                    AND sex = '{sex_param}' 
+                    """
+        
+        query = query + f"""
+                GROUP BY location
+                ORDER BY location desc
+                ;
                 """
 
         # Save the query results as a Pandas DataFrame
