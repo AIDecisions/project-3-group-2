@@ -53,6 +53,12 @@ def map_places(animal_type, sex):
     return (jsonify(data))
 
 
+@app.route("/api/v1.0/injuries/<animal_type>/<sex>")
+def injuries(animal_type, sex):
+    data = sql.injuries(animal_type, sex)
+    return (jsonify(data))
+
+
 # Run the App
 if __name__ == '__main__':
     app.run(debug=True)
