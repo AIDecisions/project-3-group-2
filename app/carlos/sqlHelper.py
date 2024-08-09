@@ -68,6 +68,8 @@ class SQLHelper():
                     location as location,
                     area as area, 
                     country as country, 
+                    latitude as latitude,
+                    longitude as longitude,
                     count(year) as attacks
                 FROM combined_attacks
                 WHERE year <> 'NaN'
