@@ -1,4 +1,4 @@
-
+console.log("app.js isloaded");
 function make_table() {
     // Get filter requests from the form
     var animal_filter = d3.select("#animal_filter").property("value");
@@ -7,7 +7,7 @@ function make_table() {
     console.log("Gender Filter: " + gender_filter);
 
     // Make a request to the table data route
-    let url = "http://127.0.0.1:5000/api/v1.0/table_data/" + animal_filter + "/" + gender_filter;
+    let url = "/api/v1.0/table_data/" + animal_filter + "/" + gender_filter;
     console.log(url);
 
     // Make a request to the table data route
@@ -62,11 +62,15 @@ function make_table() {
 
 // Initialize the page with a default plot
 function init() {
-    console.log("Initializing page...");
+    // console.log("Initializing page...");
     // Create charts
     make_table();
 }
 
+function updateChart() {
+    make_table();
+    
+}
     
 // // Event listener for the filter button
 // d3.select("#filter").on("click", init());
