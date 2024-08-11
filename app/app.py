@@ -1,12 +1,12 @@
 from flask import Flask, jsonify
 from sqlHelper import SQLHelper
-
+from flask_cors import CORS
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
 sql = SQLHelper()
-
+CORS(app)
 #################################################
 # Flask Routes
 #################################################
