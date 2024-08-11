@@ -15,16 +15,16 @@ class SQLHelper():
     # define properties
     def __init__(self):
         self.engine = create_engine("sqlite:///app/Resources/combined_attacks.sqlite")
-        self.Base = None
+    #     self.Base = None
 
-        # automap Base classes
-        self.init_base()
+    #     # automap Base classes
+    #     self.init_base()
 
-    def init_base(self):
-        # reflect an existing database into a new model
-        self.Base = automap_base()
-        # reflect the tables
-        self.Base.prepare(autoload_with=self.engine)
+    # def init_base(self):
+    #     # reflect an existing database into a new model
+    #     self.Base = automap_base()
+    #     # reflect the tables
+    #     self.Base.prepare(autoload_with=self.engine)
 
     #################################################
     # Database Queries
@@ -172,6 +172,45 @@ class SQLHelper():
         query = query + f"""
                 GROUP BY year, attack_type, country, species
                 ORDER BY year
+                ;
+                """
+
+        # Save the query results as a Pandas DataFrame
+        df = pd.read_sql(text(query), con=self.engine)
+        data = df.to_dict(orient="records")
+        return (data)    
+    
+
+    def table_data(self, animal_type_param, sex_param):
+        # Find the most recent date in the data set.
+        query = f"""
+                SELECT 
+                    animal_type as animal_type,
+                    date as date,
+                    year as year,
+                    area as area,
+                    country as country,
+                    fatal_y_n as fatal_y_n,
+                    sex as sex, 
+                    injury as injury,
+                    species as species,
+                    href as href
+                FROM combined_attacks
+                WHERE year <> 'NaN' 
+                """
+        
+        if animal_type_param.lower() != "all":
+            query = query + f"""
+                    AND animal_type = '{animal_type_param}' 
+                    """
+        
+        if sex_param.lower() != "all":
+            query = query + f"""
+                    AND sex = '{sex_param}' 
+                    """
+        
+        query = query + f"""
+                ORDER BY animal_type, date
                 ;
                 """
 
