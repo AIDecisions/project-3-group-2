@@ -31,35 +31,9 @@ function make_table() {
 }
  
 // line graph funtion MC
-async function make_line() {
-const url = "/api/v1.0/get_line"
-const response = await d3.json(url)
-console.log("make_line:", response);
- 
-var trace1 = {
-  x: response.Year,
-  y: response.Number of Attacks,
-  mode: 'markers',
-  type: 'line',
-  name: 'Team A',
-  // text: ['A-1', 'A-2', 'A-3', 'A-4', ],
-  marker: { size: 7 }
-};
- 
-var data = [ trace1, ];
- 
-var layout = {
-  // xaxis: {
-  //   range: [ 0.50, 5.25 ]
-  // },
-  // yaxis: {
-  //   range: [0, 8]
-  // },
-  title:'Area Chart of Attack Counts Over Time'
-};
- 
-Plotly.newPlot('line_chart', data, layout);
-}
+df = px.data.stocks()
+fig = px.line(df, x='Year', y="Number of Attacks")
+fig_html = fig.to_html(full_html=False)
 
     // Make a request to the table data route
     // d3.json(url).then(function(data) {
@@ -76,7 +50,7 @@ Plotly.newPlot('line_chart', data, layout);
         //     });
         // });
     // });  
-}
+
 
 
 //     // Make a request to the table data route
