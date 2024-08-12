@@ -1,20 +1,41 @@
 from flask import Flask, jsonify, render_template
 from sqlHelper import SQLHelper
-# from flask_cors import CORS
+
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
 sql = SQLHelper()
-#CORS(app)
+
 #################################################
 # Flask Routes
 #################################################
 
+# HTML Routes
 
 @app.route('/')
 def welcome():
     return render_template('index.html')
+
+
+@app.route('/dashboard.html')
+def dashboard():
+    return render_template('dashboard.html')
+
+
+@app.route('/map.html')
+def map():
+    return render_template('map.html')
+
+
+@app.route('/aboutus.html')
+def aboutus():
+    return render_template('aboutus.html')
+
+
+# Database Routes
+
+
     # return ('''
     #         Welcome to the Climate Analysis API!                                                                                                                                            <br/>
     #         Available Routes:                                                                                                                                                               <br/>

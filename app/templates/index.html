@@ -3,154 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jaws Themed Dashboard</title>
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Jaws vs. Claws</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #E0F7FA; /* Light blue ocean-like color */
+            background-color: #f0f8ff;
             color: #333;
-            font-family: 'Roboto', sans-serif;
-        }
-        h1 {
-            font-family: 'Anton', sans-serif;
-            color: #D32F2F; /* Blood red color */
+            font-family: 'Arial', sans-serif;
         }
         .navbar {
-            background-color: #004D40; /* Dark ocean green */
+            background-color: #005f73;
         }
-        .nav-link {
-            color: #FFFFFF;
+        .navbar-brand, .nav-link {
+            color: #fff !important;
         }
-        .nav-link:hover {
-            color: #D32F2F; /* Blood red color */
+        .header {
+            background-image: url('https://example.com/jaws-claws-banner.jpg');
+            background-size: cover;
+            color: #e63946;
+            text-shadow: 2px 2px 4px #000;
+            padding: 50px 0;
+            text-align: center;
         }
-        .filter-section, .table-section, .charts-section {
-            margin: 20px 0;
+        .section-title {
+            font-size: 1.5rem;
+            margin-top: 30px;
         }
-        #filter {
-            background-color: #D32F2F;
-            color: #FFFFFF;
+        .card {
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
-        #filter:hover {
-            background-color: #B71C1C;
-        }
-        .table-striped tbody tr:nth-of-type(odd) {
-            background-color: rgba(0, 0, 0, 0.05);
-        }
-        .table-hover tbody tr:hover {
-            background-color: rgba(211, 47, 47, 0.1);
+        .card-header {
+            background-color: #e63946;
+            color: #fff;
         }
         .footer {
-            background-color: #004D40;
-            color: #FFFFFF;
-            padding: 10px 0;
+            background-color: #005f73;
+            color: #fff;
             text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a {
+            color: #e63946;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="font-family: 'Anton', sans-serif;">JAWS VS CLAWS</a>
+            <a class="navbar-brand" href="index.html" style="font-family: 'Anton', sans-serif;">JAWS VS CLAWS</a>
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Page 2</a>
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Page 3</a>
+                    <a class="nav-link" href="map.html">Map</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Page 4</a>
+                    <a class="nav-link" href="aboutus.html">About us</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Dashboard Header -->
-    <div class="container text-center filter-section">
-        <h1>JAWS Dashboard</h1>
+<!--
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Jaws vs. Claws</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#motivation">Motivation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#questions">Research Questions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#inspiration">Inspiration</a>
+            </li>
+        </ul>
     </div>
-    <hr />
-<!-- Filters and Description -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="filter-section">
-                <label for="animal_filter">Select Animal Type:</label>
-                <select id="animal_filter" class="form-control mb-3">
-                    <option value="all">All</option>
-                    <option value="bear" selected>Bear</option>
-                    <option value="shark">Shark</option>
-                </select>
-                <label for="gender_filter">Select Gender</label>
-                <select id="gender_filter" class="form-select mb-3">
-                    <option value="all">All</option>
-                    <option value="M">Male</option>
-                    <option value="F" selected>Female</option>
-                    <option value="U">Unspecified</option>
-                </select>
-                <button id="filter"onclick="updateChart()" class="btn btn-danger">Filter</button>
-            </div>
-        </div>
-        <div class="col-md-9">
-            <p class="lead">
-                Dive into the deep waters of data with our Jaws-themed dashboard, where every byte is a bite and every chart tells a story beneath the surface.
-            </p>
-        </div>
+</nav>
+-->
+<header class="header">
+    <div class="container">
+        <h1 class="display-4">Jaws vs. Claws: A Data-Driven Exploration</h1>
+        <p class="lead">Bridging the gap between fiction and reality with real-world data.</p>
     </div>
-    <hr />
-</div>
-        <!-- Charts Section -->
-        <div class="row charts-section">
-            <div class="col-md-6">
-                <div id="bar_chart">Bar Chart Placeholder</div>
+</header>
+
+<section id="motivation" class="container">
+    <h2 class="section-title">Project Motivation</h2>
+    <div class="card">
+        <div class="card-body">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/screenshots.png') }}" alt="movie poster">
             </div>
-            <div class="col-md-6">
-                <div id="pie_chart">Pie Chart Placeholder</div>
-            </div>
-        </div>
-        <hr />
-        <!-- Launch Data Table -->
-        <div class="row table-section">
-            <div class="col-md-12 text-center">
-                <h4>Placeholder</h4>
-                <table id="data_table" class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th>Animal Type</th>
-                            <th>Date</th>
-                            <th>Attack Type</th>
-                            <th>Area</th>
-                            <th>Country</th>
-                            <th>Fatal (Y/N)</th>
-                            <th>Sex</th>
-                            <th>Injury</th>
-                            <th>Species</th>
-                            <th>href</th>
-                            <!-- location,activity,name,age,time,investigator_or_source,pdf,href_formula,case_number1,case_number2,original_order,unnamed_22,unnamed_23,details,month,day -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Dynamic Data Goes Here -->
-                    </tbody>
-                </table>
-            </div>
+            <p>Our team has a strong interest in nature and wildlife, and this fascination has been further fueled by iconic films like "Jaws" and "The Revenant." In "Jaws," we see a dramatic portrayal of a shark terrorizing a small town, which captures the intense and often terrifying nature of human-shark encounters. On the other hand, "The Revenant" offers a raw and gripping depiction of bear attacks in the wilderness, showcasing the power and unpredictability of these animals.</p>
+            <p>These cinematic portrayals, while compelling, are dramatized for entertainment. To get a clearer, more factual picture of how these interactions play out in reality, we’re turning to real-world data. By analyzing datasets on bear and shark attacks, we aim to bridge the gap between fiction and fact. We’re interested in understanding how often these encounters occur, the conditions under which they happen, and what commonalities or differences exist between them.</p>
+            <p>Our goal is to move beyond the sensationalized stories and get a data-driven perspective on these wildlife interactions. This will not only satisfy our curiosity but also provide valuable insights into animal behavior and human safety.</p>
         </div>
     </div>
-    <!-- Footer -->
-    <div class="footer">
-        <p>© 2024 Jaws Dashboard - Swim with the Data</p>
+</section>
+
+<section id="questions" class="container">
+    <h2 class="section-title">Research Guiding Questions</h2>
+    <div class="card">
+        <div class="card-header">Guiding Questions</div>
+        <div class="card-body">
+            <ul>
+                <li>How have bear and shark attacks changed over the years?</li>
+                <li>Where are the main spots for these attacks?</li>
+                <li>Who are the typical victims in these attacks?</li>
+            </ul>
+            <p>These questions will help guide our project, and we’ll use our dashboard and maps to answer them.</p>
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-    <!-- <script type="text/javascript" src="../static/js/app.js"></script> -->
+</section>
+
+<section id="inspiration" class="container">
+    <h2 class="section-title">Inspiration</h2>
+    <div class="card">
+        <div class="card-header">Sources of Inspiration</div>
+        <div class="card-body">
+            <p>We got some ideas from Kaggle projects and articles that look at wildlife attack data:</p>
+            <ul>
+                <li><a href="https://www.kaggle.com/datasets/danela/fatal-bear-attacks-north-america" target="_blank">Bear Attack Analysis</a></li>
+                <li><a href="https://www.kaggle.com/datasets/ncsaayali/shark-attack-dataset" target="_blank">Shark Attack Trends</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy;JAWS vs. CLAWS .</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@ class SQLHelper():
 
     # define properties
     def __init__(self):
-        self.engine = create_engine("sqlite:///Resources/combined_attacks.sqlite")
+        self.engine = create_engine("sqlite:///app/Resources/combined_attacks.sqlite")
     #     self.Base = None
 
     #     # automap Base classes
@@ -98,7 +98,7 @@ class SQLHelper():
         
         query = query + f"""
                 GROUP BY location, area, country, latitude, longitude
-                ORDER BY location desc
+                ORDER BY attacks desc
                 LIMIT 20;
                 """
 
@@ -217,4 +217,4 @@ class SQLHelper():
         # Save the query results as a Pandas DataFrame
         df = pd.read_sql(text(query), con=self.engine)
         data = df.to_dict(orient="records")
-        return (data)    
+        return (data)
