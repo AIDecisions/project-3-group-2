@@ -76,6 +76,9 @@ function make_main_places_bar_chart() {
 
 // Function to make the table - descriptive information
 function make_table() {
+    // re-init the datatable
+    $('#data_table_container').DataTable().clear().destroy();
+
     // Get filter requests from the form
     var animal_filter = d3.select("#animal_filter").property("value");
     var gender_filter = d3.select("#gender_filter").property("value");
@@ -110,10 +113,12 @@ function make_table() {
             if (data[i].href == null) {
                 row.append("td").text("N/A");
             } else
-                row.append("td").html('<a href="' + data[i].href + '">' + data[i].href + '</a>');
+                row.append("td").html('<a href="' + data[i].href + '">Link</a>');
         
         }
     });
+    // Create the datatable
+    $('#data_table_container').DataTable();
 }
 
 // Initialize the page with a default plot
