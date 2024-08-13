@@ -99,6 +99,12 @@ def scatter_data(animal_type, sex):
     return (jsonify(data))
 
 
+@app.route("/api/v1.0/attack_metrics/<animal_type>/<sex>")
+def attack_metrics(animal_type, sex):
+    data = sql.attack_metrics(animal_type, sex)
+    return (jsonify(data))
+
+
 # Run the App
 if __name__ == '__main__':
     app.run(debug=True)

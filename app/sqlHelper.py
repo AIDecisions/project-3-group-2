@@ -252,3 +252,34 @@ class SQLHelper():
         df = pd.read_sql(text(query), con=self.engine)
         data = df.to_dict(orient="records")
         return (data)
+
+    def attack_metrics(self, animal_type_param, sex_param):
+        # Find the most recent date in the data set.
+        query = f"""
+                SELECT 
+                    count(animal_type) as attacks,
+                    sum(case when fatal_y_n = 'Y' THEN 1 ELSE 0 END) as fetalities
+                FROM combined_attacks
+                WHERE year <> 'NaN' 
+                    AND age <> 'NaN'
+                """
+        
+        if animal_type_param.lower() != "all":
+            query = query + f"""
+                    AND animal_type = '{animal_type_param}' 
+                    """
+        
+        if sex_param.lower() != "all":
+            query = query + f"""
+                    AND sex = '{sex_param}' 
+                    """
+        
+        query = query + f"""
+                ORDER BY animal_type, date
+                ;
+                """
+
+        # Save the query results as a Pandas DataFrame
+        df = pd.read_sql(text(query), con=self.engine)
+        data = df.to_dict(orient="records")
+        return (data)

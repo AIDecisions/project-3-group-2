@@ -65,3 +65,11 @@ a {
     border-radius: 10px;
     box-shadow: 0 4px 8px #000000;
 }
+.metrics_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
