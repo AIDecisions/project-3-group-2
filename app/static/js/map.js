@@ -6,14 +6,14 @@ function make_main_places_bar_chart() {
 
     // Make a request to the bar chart data route
     let url = `/api/v1.0/main_places/${animal_filter}/${gender_filter}`;
-    console.log(url);
+    // console.log(url);
 
     let bar_chart = d3.select("#main_places_container");
     bar_chart.html(""); // Clear the chart
 
     // Make a request to the bar chart data route
     d3.json(url).then(function(data) {
-        console.log(data);
+        // console.log(data);
 
         // Create the bar chart
         let trace1 = {
@@ -70,6 +70,8 @@ function createMap(data) {
       // make marker
       let marker = L.marker(point);
       let popup = `<h1>${row.location}</h1><hr><h2>${row.animal_type}</h2><hr><h3>${row.sex} | ${row.attacks}</h3>`;
+    //   console.log(popup);
+
       marker.bindPopup(popup);
       markers.addLayer(marker);
   
@@ -99,10 +101,10 @@ function createMap(data) {
     // Step 4: INIT the Map
   
     // Destroy the old map
-    d3.select("#map-container").html("");
+    d3.select("#map_container").html("");
   
     // rebuild the map
-    d3.select("#map-container").html("<div id='map'></div>");
+    d3.select("#map_container").html("<div id='map'></div>");
   
     let myMap = L.map("map", {
       center: [40.7128, -74.0059],
