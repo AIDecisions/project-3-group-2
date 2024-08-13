@@ -77,7 +77,7 @@ function make_main_places_bar_chart() {
 // Function to make the table - descriptive information
 function make_table() {
     // re-init the datatable
-    $('#data_table_container').DataTable().clear().destroy();
+    // $('#data_table_container').DataTable().clear().destroy();
 
     // Get filter requests from the form
     var animal_filter = d3.select("#animal_filter").property("value");
@@ -118,7 +118,7 @@ function make_table() {
         }
     });
     // Create the datatable
-    $('#data_table_container').DataTable();
+    // $('#data_table_container').DataTable();
 }
 
 // Initialize the page with a default plot

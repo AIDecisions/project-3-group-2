@@ -5,3 +5,63 @@
 #map {
     height: 100%;
 }
+
+body {
+    background-color: #4083f7;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+}
+.navbar {
+    background-color: #c0392b;
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+.header {
+    background-image: url('https://example.com/jaws-claws-banner.jpg');
+    background-size: cover;
+    color: #e63946;
+    text-shadow: 2px 2px 4px #000000;;
+    padding: 50px 0;
+    text-align: center;
+}
+.section-title {
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px #000000;
+}
+.card-header {
+    background-color: #e63946;
+    color: #000000;
+}
+.footer {
+    background-color:  #4083f7;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+a {
+    color: #e63946;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #000000;
+}
