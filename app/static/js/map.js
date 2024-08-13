@@ -81,8 +81,9 @@ function createMap(data) {
   
     // create layer
     let heatLayer = L.heatLayer(heatArray, {
-      radius: 25,
-      blur: 20
+      radius: 50,
+      max: 0.06,
+      blur: 10
     });
   
     // Step 3: BUILD the Layer Controls
