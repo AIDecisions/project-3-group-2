@@ -37,42 +37,94 @@ function make_over_time_line_chart() {
     });
 }
 
-// Make a bar chart - top 20 locations
-function make_main_places_bar_chart() {
+// Make scatter plot - year vs age
+function make_year_age_scatter_plot() {
     // Get filter requests from the form
     var animal_filter = d3.select("#animal_filter").property("value");
     var gender_filter = d3.select("#gender_filter").property("value");
 
-    // Make a request to the bar chart data route
-    let url = `/api/v1.0/main_places/${animal_filter}/${gender_filter}`;
+    // Make a request to the scatter plot data route
+    let url = `/api/v1.0/scatter_data/${animal_filter}/${gender_filter}`;
     console.log(url);
 
-    let bar_chart = d3.select("#main_places_container");
-    bar_chart.html(""); // Clear the chart
+    let scatter_plot = d3.select("#main_places_container");
+    scatter_plot.html(""); // Clear the chart
 
-    // Make a request to the bar chart data route
+    // Make a request to the scatter plot data route
     d3.json(url).then(function(data) {
         console.log(data);
 
-        // Create the bar chart
+        // Create the scatter plot
         let trace1 = {
-            x: data.map(row => row.location),
-            y: data.map(row => row.attacks),
-            type: "bar",
+            x: data.map(row => row.year),
+            y: data.map(row => row.age),
+            mode: "markers",
+            type: "scatter",
             marker: {
-                color: "#17BECF"
+                size: 10,
+                color: data.map(row => row.age),
+                colorscale: "thermal",
+                colorbar: {
+                    title: "Age"
+                }
             }
         };
 
         let layout = {
-            title: "Top 20 Locations",
-            xaxis: { title: "Location" },
-            yaxis: { title: "Number of Attacks" }
+            title: "Year vs Age",
+            xaxis: { title: "Year" },
+            yaxis: { title: "Age" },
+            legend: {
+                x: 1,
+                y: 1,
+                xanchor: "right",
+                yanchor: "top"
+            }
         };
 
         Plotly.newPlot("main_places_container", [trace1], layout);
     });
 }
+
+// // Make a bar chart - top 20 locations
+// function make_main_places_bar_chart() {
+//     // Get filter requests from the form
+//     var animal_filter = d3.select("#animal_filter").property("value");
+//     var gender_filter = d3.select("#gender_filter").property("value");
+
+//     // Make a request to the bar chart data route
+//     let url = `/api/v1.0/main_places/${animal_filter}/${gender_filter}`;
+//     console.log(url);
+
+//     let bar_chart = d3.select("#main_places_container");
+//     bar_chart.html(""); // Clear the chart
+
+//     // Make a request to the bar chart data route
+//     d3.json(url).then(function(data) {
+//         console.log(data);
+
+//         // Create the bar chart
+//         let trace1 = {
+//             x: data.map(row => row.location.substring(0, 20)+"..."),
+//             y: data.map(row => row.attacks),
+//             type: "bar",
+//             marker: {
+//             color: "#17BECF"
+//             },
+//             hovertext: data.map(row => row.location)
+//         };
+
+//         let layout = {
+//             title: "Top 20 Locations",
+//             xaxis: { title: "Location" },
+//             yaxis: { title: "Number of Attacks" },
+//             margin: { t: 100, l: 50, r: 30, b: 125 }
+//         };
+
+
+//         Plotly.newPlot("main_places_container", [trace1], layout);
+//     });
+// }
 
 // Function to make the table - descriptive information
 function make_table() {
@@ -126,13 +178,13 @@ function init() {
     // console.log("Initializing page...");
     // Create charts
     make_over_time_line_chart();
-    make_main_places_bar_chart();
+    make_year_age_scatter_plot();
     make_table();
 }
 
 function updateChart() {
     make_main_places_bar_chart();
-    make_over_time_line_chart();
+    make_year_age_scatter_plot();
     make_table();
 }
     

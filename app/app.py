@@ -93,6 +93,12 @@ def table_data(animal_type, sex):
     return (jsonify(data))
 
 
+@app.route("/api/v1.0/scatter_data/<animal_type>/<sex>")
+def scatter_data(animal_type, sex):
+    data = sql.scatter_data(animal_type, sex)
+    return (jsonify(data))
+
+
 # Run the App
 if __name__ == '__main__':
     app.run(debug=True)

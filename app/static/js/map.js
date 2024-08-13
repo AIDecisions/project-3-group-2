@@ -17,18 +17,20 @@ function make_main_places_bar_chart() {
 
         // Create the bar chart
         let trace1 = {
-            x: data.map(row => row.location),
+            x: data.map(row => row.location.substring(0, 20)+"..."),
             y: data.map(row => row.attacks),
             type: "bar",
             marker: {
-                color: "#17BECF"
-            }
+            color: "#17BECF"
+            },
+            hovertext: data.map(row => row.location)
         };
 
         let layout = {
             title: "Top 20 Locations",
             xaxis: { title: "Location" },
-            yaxis: { title: "Number of Attacks" }
+            yaxis: { title: "Number of Attacks" },
+            margin: { t: 40, l: 50, r: 30, b: 125 }
         };
 
         Plotly.newPlot("main_places_container", [trace1], layout);
