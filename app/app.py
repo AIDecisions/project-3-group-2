@@ -69,9 +69,9 @@ def over_time(animal_type, sex):
     return (jsonify(data))
 
 
-@app.route("/api/v1.0/main_places/<animal_type>/<sex>")
-def main_places(animal_type, sex):
-    data = sql.main_places(animal_type, sex)
+@app.route("/api/v1.0/main_places/<animal_type>/<sex>/<row_limit>")
+def main_places(animal_type, sex, row_limit):
+    data = sql.main_places(animal_type, sex, row_limit)
     return (jsonify(data))
 
 

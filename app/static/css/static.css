@@ -2,6 +2,10 @@
     height: 800px;
 }
 
+.main_places_container {
+    height: 100px;
+}
+
 #map {
     height: 100%;
 }

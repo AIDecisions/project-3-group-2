@@ -1,11 +1,13 @@
-// Make a bar chart - top 20 locations
+// Make a bar chart - top N locations
 function make_main_places_bar_chart() {
+    // Set the number of rows to limit the data
+    var row_limit = 20;
     // Get filter requests from the form
     var animal_filter = d3.select("#animal_filter").property("value");
     var gender_filter = d3.select("#gender_filter").property("value");
 
     // Make a request to the bar chart data route
-    let url = `/api/v1.0/main_places/${animal_filter}/${gender_filter}`;
+    let url = `/api/v1.0/main_places/${animal_filter}/${gender_filter}/${row_limit}`;
     // console.log(url);
 
     let bar_chart = d3.select("#main_places_container");
@@ -27,7 +29,7 @@ function make_main_places_bar_chart() {
         };
 
         let layout = {
-            title: "Top 20 Locations",
+            title: `Top ${row_limit} Locations`,
             xaxis: { title: "Location" },
             yaxis: { title: "Number of Attacks" },
             margin: { t: 40, l: 50, r: 30, b: 125 }

@@ -39,8 +39,8 @@ function make_metrics_chart() {
         display_text = '<div style="background-color: white; text-align: center;">' +
             '<h2>Attack Metrics</h2>' +
             '<p>Total Attacks: ' + data[0].attacks + '<br>' +
-            'Total Fatal Attacks: ' + data[0].fetalities + '<br>' +
-            'Fatality Rate: ' + (data[0].fetalities / data[0].attacks * 100).toFixed(3) + '%</p>' +
+            'Total Fatal Attacks: ' + data[0].fatalities + '<br>' +
+            'Fatality Rate: ' + (data[0].fatalities / data[0].attacks * 100).toFixed(3) + '%</p>' +
             '</div>';
 
         metrics_chart.html(display_text);
@@ -178,7 +178,7 @@ function make_year_age_scatter_plot() {
 // Function to make the table - descriptive information
 function make_table() {
     // re-init the datatable
-    // $('#data_table_container').DataTable().clear().destroy();
+    $('#data_table_container').DataTable().clear().destroy();
 
     // Get filter requests from the form
     var animal_filter = d3.select("#animal_filter").property("value");
@@ -217,9 +217,10 @@ function make_table() {
                 row.append("td").html('<a href="' + data[i].href + '">Link</a>');
         
         }
+        // Create the datatable
+        $('#data_table_container').DataTable();
     });
-    // Create the datatable
-    // $('#data_table_container').DataTable();
+
 }
 
 // Initialize the page with a default plot

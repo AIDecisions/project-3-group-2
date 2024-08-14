@@ -72,7 +72,7 @@ class SQLHelper():
         data = df.to_dict(orient="records")
         return (data)
 
-    def main_places(self, animal_type_param, sex_param):
+    def main_places(self, animal_type_param, sex_param, row_limit):
         # Find the most recent date in the data set.
         query = f"""
                 SELECT 
@@ -99,7 +99,7 @@ class SQLHelper():
         query = query + f"""
                 GROUP BY location, area, country, latitude, longitude
                 ORDER BY attacks desc
-                LIMIT 20;
+                LIMIT {row_limit};
                 """
 
         # Save the query results as a Pandas DataFrame
@@ -258,7 +258,7 @@ class SQLHelper():
         query = f"""
                 SELECT 
                     count(animal_type) as attacks,
-                    sum(case when fatal_y_n = 'Y' THEN 1 ELSE 0 END) as fetalities
+                    sum(case when fatal_y_n = 'Y' THEN 1 ELSE 0 END) as fatalities
                 FROM combined_attacks
                 WHERE year <> 'NaN' 
                     AND age <> 'NaN'
