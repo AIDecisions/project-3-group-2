@@ -36,27 +36,6 @@ def aboutus():
 # Database Routes
 
 
-    # return ('''
-    #         Welcome to the Climate Analysis API!                                                                                                                                            <br/>
-    #         Available Routes:                                                                                                                                                               <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;<a href="/api/v1.0/full_data_sql">/api/v1.0/full_data_sql</a>                                                                                           <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;<a href="/api/v1.0/over_time/&lt;animal_type&gt;/&lt;sex&gt;">/api/v1.0/over_time/&lt;animal_type&gt;/&lt;sex&gt;</a>                                   <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;<a href="/api/v1.0/main_places/&lt;animal_type&gt;/&lt;sex&gt;">/api/v1.0/main_places/&lt;animal_type&gt;/&lt;sex&gt;</a>                               <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;<a href="/api/v1.0/map_places/&lt;animal_type&gt;/&lt;sex&gt;">/api/v1.0/map_places/&lt;animal_type&gt;/&lt;sex&gt;</a>                                 <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;<a href="/api/v1.0/injuries/&lt;animal_type&gt;/&lt;sex&gt;">/api/v1.0/injuries/&lt;animal_type&gt;/&lt;sex&gt;</a>                                     <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;<a href="/api/v1.0/table_data">/api/v1.0/table_data/&lt;animal_type&gt;/&lt;sex&gt;</a>                                                                 <br/>
-    #                                                                                                                                                                                         <br/>
-    #                                                                                                                                                                                         <br/>
-    #         Explanation of the Routes:                                                                                                                                                      <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;full_data_sql: Returns all the data from the table using SQL.                                                                                           <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;over_time/&lt;animal_type&gt;/&lt;sex&gt;: Returns the number of attacks over time for a specific animal                                                <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;main_places/&lt;animal_type&gt;/&lt;sex&gt;: Returns the top 20 main places where the attacks happened for a specific animal.                           <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;map_places/&lt;animal_type&gt;/&lt;sex&gt;: Returns the places where the attacks happened for a specific animal.                                        <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;injuries/&lt;animal_type&gt;/&lt;sex&gt;: Returns the injuries that happened for a specific animal.                                                     <br/>
-    #         &nbsp;&nbsp;&nbsp;&nbsp;table_data/&lt;animal_type&gt;/&lt;sex&gt;: Returns the data for the table chart.                                                                       <br/>
-    #         ''')
-
-
 @app.route("/api/v1.0/full_data_sql")
 def full_data_sql():
     data = sql.full_data_sql()

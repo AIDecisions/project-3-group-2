@@ -1,10 +1,6 @@
 from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, text, func
+from sqlalchemy import create_engine, text
 import pandas as pd
-import datetime as dt
-
-
 
 # The Purpose of this Class is to separate out any Database logic
 class SQLHelper():
@@ -15,23 +11,23 @@ class SQLHelper():
     # define properties
     def __init__(self):
         self.engine = create_engine("sqlite:///app/Resources/combined_attacks.sqlite")
-    #     self.Base = None
+        self.Base = None
 
-    #     # automap Base classes
-    #     self.init_base()
+        # automap Base classes
+        self.init_base()
 
-    # def init_base(self):
-    #     # reflect an existing database into a new model
-    #     self.Base = automap_base()
-    #     # reflect the tables
-    #     self.Base.prepare(autoload_with=self.engine)
+    def init_base(self):
+        # reflect an existing database into a new model
+        self.Base = automap_base()
+        # reflect the tables
+        self.Base.prepare(autoload_with=self.engine)
 
     #################################################
     # Database Queries
     #################################################
 
     def full_data_sql(self):
-        # Find the most recent date in the data set.
+        # Do a Select * to get all the data from the combined_attacks table
         query = """
                 SELECT *
                 FROM combined_attacks;
@@ -73,7 +69,7 @@ class SQLHelper():
         return (data)
 
     def main_places(self, animal_type_param, sex_param, row_limit):
-        # Find the most recent date in the data set.
+        # Find the places with the most attacks and allow the user to limit the number of rows returned
         query = f"""
                 SELECT 
                     location as location,
@@ -109,7 +105,7 @@ class SQLHelper():
     
 
     def map_places(self, animal_type_param, sex_param):
-        # Find the most recent date in the data set.
+        # Find the locations based on latitude and longitude. Allow the user to filter by animal type and gender
         query = f"""
                 SELECT 
                     location as location,
@@ -147,7 +143,7 @@ class SQLHelper():
 
 
     def injuries(self, animal_type_param, sex_param):
-        # Find the most recent date in the data set.
+        # Find the injuries based on animal type and gender
         query = f"""
                 SELECT 
                     year as year,
@@ -182,7 +178,7 @@ class SQLHelper():
     
 
     def table_data(self, animal_type_param, sex_param):
-        # Find the most recent date in the data set.
+        # Return raw data for the table displayed at the bottom of the dashboard page
         query = f"""
                 SELECT 
                     animal_type as animal_type,
@@ -220,7 +216,7 @@ class SQLHelper():
         return (data)
     
     def scatter_data(self, animal_type_param, sex_param):
-        # Find the most recent date in the data set.
+        # Find the age and year for the scatter plot. Allow the user to filter by animal type and gender
         query = f"""
                 SELECT 
                     animal_type as animal_type,
@@ -254,7 +250,7 @@ class SQLHelper():
         return (data)
 
     def attack_metrics(self, animal_type_param, sex_param):
-        # Find the most recent date in the data set.
+        # Find the number of attacks and fatalities based on animal type and gender
         query = f"""
                 SELECT 
                     count(animal_type) as attacks,

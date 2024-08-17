@@ -8,14 +8,12 @@ function make_main_places_bar_chart() {
 
     // Make a request to the bar chart data route
     let url = `/api/v1.0/main_places/${animal_filter}/${gender_filter}/${row_limit}`;
-    // console.log(url);
 
     let bar_chart = d3.select("#main_places_container");
     bar_chart.html(""); // Clear the chart
 
     // Make a request to the bar chart data route
     d3.json(url).then(function(data) {
-        // console.log(data);
 
         // Create the bar chart
         let trace1 = {
@@ -42,8 +40,6 @@ function make_main_places_bar_chart() {
 // GOAL 1
 // Can I render a basic base map? - Set up Leaflet correctly
 // Can we fetch the data that we need to plot?
-
-
 function createMap(data) {
     // STEP 1: Init the Base Layers
   
@@ -69,12 +65,10 @@ function createMap(data) {
   
       // extract coord
       let point = [latitude, longitude];
-    //   console.log(point);
   
       // make marker
       let marker = L.marker(point);
-      let popup = `<h1>${row.location}</h1><hr><h2>${row.animal_type}</h2><hr><h3>${row.sex} | ${row.attacks}</h3>`;
-    //   console.log(popup);
+      let popup = `<h3>${row.location}</h3><hr><h4>Attach: ${row.animal_type}</h4><hr><h4>Gender: ${row.sex} <br/> Number of attacks: ${row.attacks}</h4>`;
 
       marker.bindPopup(popup);
       markers.addLayer(marker);

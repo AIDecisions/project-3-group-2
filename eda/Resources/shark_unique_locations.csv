@@ -9,6 +9,7 @@ location,area,country,count,latitude,longitude
 "10 miles off Redondo Beach, Los Angeles County",California,USA,1,33.8455911,-118.3886766
 "10 miles off Santa Barbara, Santa Barbara County",California,USA,1,34.4221319,-119.702667
 100 miles off Ft. Myers Beach,Florida,USA,1,26.4520248,-81.948145
+"100 miles off Ocean City, Maryland, in 7000' of water",Maryland,USA,1,37.756142,-89.848325
 100 miles offshore,Florida,USA,1,29.119856,-80.997424
 "11 miles off Dog Island in the Gulf of Mexico, Franklin County",Florida,USA,1,29.815611,-84.831566
 "12 miles northeast of Mayport,  Duval County",Florida,USA,1,30.3933366,-81.4305924
@@ -30,14 +31,13 @@ location,area,country,count,latitude,longitude
 "204s, San Clemente, Orange County",California,USA,1,33.4270275,-117.6124179
 275 miles northeast of Miami,Florida,USA,1,25.7741728,-80.19362
 "27th Avenue, New Smyrna Beach, Volusia County",Florida,USA,1,29.0094139,-80.8784575
-"3 days out of Old Saybrook, Connecticut, 37.04'N, 67.57'W, Southern fringe of Gulf Stream",Connecticut,USA,1,41.103601,-73.421044
+"3 days out of Old Saybrook, Connecticut, 37.04'N, 67.57'W, Southern fringe of Gulf Stream",Connecticut,USA,1,41.058865,-73.492318
 "3 miles east of Jacksonville Beach, Duval County",Florida,USA,1,30.2946859,-81.3931396
 "3 miles from shore off McGregor Point, Maui",Hawaii,USA,1,19.647634,-155.533256
 3 miles north of the inlet at Palm Beach,Florida,USA,1,26.7056172,-80.0361517
 "3 miles off Jupiter, Palm Beach County",Florida,USA,1,26.9342246,-80.0942087
 "3 miles south of Sebastian Inlet State Park, Indian River County",Florida,USA,1,28.5421109,-81.3790304
 30 miles east of Corpus Christi,Texas,USA,1,27.7635302,-97.4033191
-30 miles south of Lynn,Massachusetts,USA,1,42.466763,-70.9494939
 30 miles south of San Clemente Island,California,USA,1,45.19943,-96.018627
 "34th Avenue North, Myrtle Beach, Horry County",South Carolina,USA,1,33.7126537,-78.8598368
 40 miles off Cocodrie,Louisiana,USA,1,29.24689,-90.66148
@@ -63,7 +63,6 @@ location,area,country,count,latitude,longitude
 "90 miles east of Hilo, Hawai'i",Hawaii,USA,1,19.7073734,-155.08158
 A quarter mile north of Fort Pierce Inlet,Florida,USA,1,40.363605,-111.980453
 "Abalone Point, Westport Union Landing, Mendocino County",California,USA,1,39.675699,-123.791001
-"Absecon, Atlantic County",New Jersey,USA,2,39.4284503,-74.4957076
 "Adventure Aquarium, Camden",New Jersey,USA,1,39.94544275,-75.13149609390186
 "Airplane Beach, Lahina, West Maui",Hawaii,USA,1,33.713577,-88.017164
 "Ala Moana Beach Park, Oah'u",Hawaii,USA,1,21.291071,-157.842672
@@ -78,10 +77,9 @@ Alenuihaha Channel,Hawaii,USA,1,20.63333,-156.04167
 American Shoals off Key West,Florida,USA,1,24.560722,-81.769733
 "Anaehoomalu Bay, Hawaii",Hawaii,USA,1,19.9154922,-155.8897838
 "Anahola, Kaua'i",Hawaii,USA,1,22.1452778,-159.3155556
-Anastasia Island,Florida,USA,1,28.5421109,-81.3790304
 "Anini Beach, Kaua'i",Hawaii,USA,1,22.2247707,-159.44875198507845
 "Ano Nuevo Island, San Mateo, County",California,USA,1,37.496904,-122.3330573
-"Ano Nuevo, San Mateo County",California,USA,1,37.10829805,-122.33682377207748
+"Ano Nuevo, San Mateo County",California,USA,1,37.16480715,-122.32823505209385
 Apalachicola Bay,Florida,USA,1,29.7255084,-84.9827725
 "Aptos, Santa Cruz County",California,USA,1,36.96712285,-121.88966809668395
 Aquadilla,Puerto Rico,USA,1,26.6495,-98.34557
@@ -113,7 +111,7 @@ Assateague National Seashore,Maryland,USA,1,38.14859785,-75.18583328346526
 "Bald Head Island, Brunswick County",North Carolina,USA,4,33.8618933,-77.995528
 "Ballston Beach, Truro, Cape Cod",Massachusetts,USA,1,42.000570749999994,-70.02088163465946
 Baltimore Aquarium,Maryland,USA,1,39.05917865,-76.39899984450551
-"Barbers Point, O'ahu",Hawaii,USA,1,37.785314,-122.293105
+"Barbers Point, O'ahu",Hawaii,USA,1,37.788798,-122.294037
 "Barber’s Point, O'ahu",Hawaii,USA,2,33.756007,-118.012838
 "Barnegat Light, Ocean County",New Jersey,USA,1,39.7537149,-74.1088188
 "Bastendorf Beach, Coos County",Oregon,USA,1,43.3472071,-124.34409411437815
@@ -124,9 +122,8 @@ Bathtub Beach,Florida,USA,1,27.18588305,-80.16071626913461
 "Bay St. Louis, Hancock County",Mississippi,USA,1,30.3132453,-89.3343223
 Bay of Fundy,New Brunswick,CANADA,1,44.8512466,-66.19778170407118
 "Bayboro, Pinellas County",Florida,USA,1,35.1429445,-76.7702093
-"Bayonne, Hudson County",New Jersey,USA,1,40.6687141,-74.1143091
 "Bayport, Hernando County",Florida,USA,1,28.5458279,-82.6420452
-"Bayshore Garden, Sarasota Bay, Sarasota County",Florida,USA,1,27.332353,-82.578781
+"Bayshore Garden, Sarasota Bay, Sarasota County",Florida,USA,1,42.369199,-83.285116
 "Beach 103rd Street, Rockaway",New York,USA,1,40.897166,-74.5152
 "Beach Haven, Ocean County",New Jersey,USA,1,39.5630072,-74.2406089
 "Beachway Avenue Approach, New Smyrna Beach, Volusia County",Florida,USA,1,29.047109,-80.926829
@@ -144,8 +141,6 @@ Bethune Beach,Florida,USA,1,28.9491539,-80.83783
 "Between Ala Moana Channel & Kewalo Basin, O'ahu",Hawaii,USA,1,34.031211,-118.512369
 "Between False Klamath & mouth of Klamath River, Del Norte County",California,USA,1,41.54572,-124.068023
 "Between Keawakapu & Makena, Maui",Hawaii,USA,1,20.655027,-156.4424385
-"Between Lake Worth & Biscayne Bay, near Hillsboro",Florida,USA,1,27.97762,-81.769611
-Between Manhattan and The Bronx,New York ,USA,1,40.71651185,-74.00045445900378
 "Between Palm  & Salerno Inlets, Martin County",Florida,USA,1,27.139583,-80.210375
 Between Santa Cruz Island and Santa Barbara,California,USA,1,33.961633,-119.728609
 "Between Wrightsville Beach & Carolina Beach, New Hanover County",North Carolina,USA,1,34.039773,-77.897158
@@ -173,20 +168,15 @@ Bolivar Peninsula,Texas,USA,1,29.4782878,-94.5799145
 "Bonita Springs, Lee County",Florida,USA,1,26.339806,-81.7786972
 "Bouges Bank, Emerald Isle, Carteret County",North Carolina,USA,1,34.6653135,-77.0382187
 "Boynton Beach, Palm Beach County",Florida,USA,2,26.5256179,-80.0666026
-"Branford, New Haven County",Connecticut,USA,1,41.2795414,-72.8150989
-Brazos,Texas,USA,2,32.6615198,-98.1219883
-"Brenecke Beach, Po'ipu, Kaua'i",Hawaii,USA,1,19.470916,-155.920671
+"Brenecke Beach, Po'ipu, Kaua'i",Hawaii,USA,1,19.472667,-155.918231
 "Brennecke Beach, Po'ipu, Kaua'i",Hawaii,USA,1,21.873229,-159.451274
-"Bridgeport, Fairfield County",Connecticut,USA,2,41.1792695,-73.1887863
+"Bridgeport, Fairfield County",Connecticut,USA,1,41.1792695,-73.1887863
 "Brielle, Monmouth County (Offshore)",New Jersey,USA,1,40.1078931,-74.0565263
-Bristol Harbor,Rhode Island,USA,1,41.661213,-71.2822716
 "Broad Beach, Malibu, Los Angeles County",California,USA,1,34.035683,-118.856264
-Brooklyn,New York,USA,2,40.6526006,-73.9497211
 "Browns, Oahu",Hawaii,USA,1,41.1567621,-74.3482076
 "Brown’s Inlet on New River, Onslow Beach",North Carolina,USA,1,27.713137,-80.387618
 "Bryan Beach, Brazoria County",Texas,USA,1,28.8833061,-95.3785523
 Buck Island,US Virgin Islands,USA,1,40.91506,-80.74563
-"Bull’s Bay, near Charleston",South Carolina,USA,1,32.7884363,-79.9399309
 "Bunkers Eureka, Humboldt County",California,USA,1,40.793115,-124.177181
 "Bunkers, Humboldt Bay, Eureka, Humboldt County",California,USA,3,40.7906871,-124.1673746
 "Burkes Beach, Hilton Head, Beaufort County",South Carolina,USA,1,32.1933234,-80.69492145170693
@@ -197,23 +187,18 @@ Buck Island,US Virgin Islands,USA,1,40.91506,-80.74563
 Calibogue Sound,South Carolina,USA,1,32.078966199999996,-80.86201906551977
 "Caloosahatchee River, Lee County",Florida,USA,1,26.7214836,-81.692193
 "Cannons, at Ha'ena on the north shore of Kaua'i Island",Hawaii,USA,1,21.278075,-157.770357
-"Canova Beach, Brevard County",Florida,USA,1,28.1341798,-80.5786607
+"Canova Beach, Brevard County",Florida,USA,1,28.13918,-80.58033
 Cape Canaveral,Florida,USA,1,28.3881442,-80.6056464
 "Cape Canaveral, Brevard County",Florida,USA,2,28.3881442,-80.6056464
-Cape Canso,Nova Scotia,CANADA,1,45.3059797,-60.939572
-Cape Cod,Massachusetts,USA,1,42.358752,-71.531484
-Cape Hatteras,North Carolina,USA,1,35.2252064,-75.5279144
-"Cape Henlopen State Park, Sussex County",Delaware,USA,1,38.77564,-75.099208
+"Cape Henlopen State Park, Sussex County",Delaware,USA,1,38.76868,-75.08716
 Cape Kiwanda,Oregon,USA,1,45.2167126,-123.9803347
 "Cape Kiwanda, Tillamook County",Oregon,USA,1,45.215783900000005,-123.96959232271179
 "Cape Kiwanda,Tillamook County",Oregon,USA,1,45.215783900000005,-123.96959232271179
 Cape Lookout Bight,North Carolina,USA,1,34.088433,-81.166599
 "Cape Lookout, Carteret County",North Carolina,USA,1,34.6054423,-76.536312
-"Cape Sable, Monroe County",Florida,USA,1,25.1329,-81.0273
 "Cape San Blas, Gulf County",Florida,USA,2,30.08937,-85.60993
-"Capistrano, Orange County",California,USA,1,33.1683032,-117.29128233583884
 "Capitola, Santa Cruz County",California,USA,1,36.9762927,-121.954057
-"Carlin Park, Jupiter Inlet",Florida,USA,1,29.573247,-81.593015
+"Carlin Park, Jupiter Inlet",Florida,USA,1,28.394712,-82.516109
 "Carlin Park, Jupiter, Palm Beach County",Florida,USA,1,26.92914025,-80.07059498915211
 "Carmel, Monterey County",California,USA,1,39.3306563,-79.5544986
 Carolina Beach,North Carolina,USA,1,34.0351727,-77.8935966
@@ -227,17 +212,13 @@ Carter Cay,Florida,USA,1,36.27373,-82.141324
 Catalina Channel,California,USA,1,33.4305826,-118.5067462
 "Catalina Channel, Los Angeles County",California,USA,1,33.4305826,-118.5067462
 Catalina Island,California,USA,1,36.7014631,-118.755997
-"Cedar Island, Carteret County",North Carolina,USA,1,34.8496625,-76.5931208
 "Central Gulf Coast, St. John County",Florida,USA,1,28.598042,-81.351977
 Channel between South Padre Island & Padre Island National Seashore,Texas,USA,1,26.113549,-97.169865
-Charleston,South Carolina,USA,7,32.7884363,-79.9399309
-"Charleston Harbor, Charleston County",South Carolina,USA,4,32.763788,-79.8973093
+Charleston,South Carolina,USA,4,32.7884363,-79.9399309
 "Charlie Young Beach, Kihei, Maui",Hawaii,USA,1,20.724779,-156.449148
 Chatham Island,Massachusetts,USA,1,42.3788774,-72.032366
-"Chelsea Beach, Suffolk County",Massachusetts,USA,1,42.38642195,-71.01949822352273
 "Cherie Down Park, Brevard County",Florida,USA,1,28.5421109,-81.3790304
 Cherry Grove,South Carolina,USA,1,33.8273947,-78.6427922
-Chester River,Maryland,USA,1,39.2028931,-76.0624927
 Chicago (Lake Michigan),Illinois,USA,1,41.8755616,-87.6244212
 "Chun's Reef, Laniakea, O'ahu",Hawaii,USA,1,19.155147,-155.768898
 "Clam Beach, near Eureka, Humboldt County",California,USA,1,40.7906871,-124.1673746
@@ -248,7 +229,6 @@ Chicago (Lake Michigan),Illinois,USA,1,41.8755616,-87.6244212
 Coddington Cove,Rhode Island,USA,1,41.5232973,-71.3175071
 "Coligny Beach, Hilton Head, Beaufort County",South Carolina,USA,3,32.158801,-80.72248319561183
 "Condado Beach, San Juan",Puerto Rico,USA,3,18.454759,-66.072952
-Coney Island,New York,USA,1,44.6061711,-74.9715859
 "Coquina Beach, Anna Maria Island, Manatee County",Florida,USA,1,35.8340645,-75.5576681
 "Coral Cove Park, Jupiter Inlet, Palm Beach County",Florida,USA,1,26.97429,-80.087911
 "Coral Cove Park, Jupiter Island, Martin County",Florida,USA,1,27.03172,-80.1006
@@ -270,7 +250,6 @@ Crescent Beach St. Johns County,Florida,USA,2,29.7686294,-81.2533253
 "Croatan Beach, Virginia Beach,",Virginia,USA,1,36.82209,-75.96854
 Crystal Beach (east of Galveston),Texas,USA,1,29.311568,-94.76559
 "Crystal Beach, Galveston  County",Texas,USA,1,29.4572611,-94.6389136
-Cumberland Island,Georgia,USA,1,32.3293809,-83.1137366
 "Curlew Island, Breton Sound",Louisiana,USA,1,33.594836,-78.988125
 "Dana Point, Orange County",California,USA,1,33.4669721,-117.6981075
 "Dana Point, San Clemente, Orange County",California,USA,1,33.449613,-117.61144
@@ -280,7 +259,7 @@ Cumberland Island,Georgia,USA,1,32.3293809,-83.1137366
 "Davenport, Santa Cruz County",California,USA,1,37.0116166,-122.1919134
 "Davidson's Surf Break, Kekaha, Kaua'i",Hawaii,USA,1,21.970833,-159.715
 "Davidsons Beach, Kekaha, Kauai",Hawaii,USA,1,21.96058,-159.70488
-"Davis Shore, east of Beaufor, Carteret Countyt",North Carolina,USA,1,47.41725,-120.28083
+"Davis Shore, east of Beaufor, Carteret Countyt",North Carolina,USA,1,42.74824,-84.48346
 "Daws Island, Broad River (near Beaufort)",South Carolina,USA,1,32.4315813,-80.6698286
 "Daytona  Beach, Volusia County",Florida,USA,1,29.2108147,-81.0228331
 Daytona Beach Shores,Florida,USA,2,29.1760933,-80.9828323
@@ -302,19 +281,16 @@ Dewey Beach,Delaware,USA,1,38.691184,-75.0752724
 "Dillon Beach, Marin County",California,USA,4,38.2507515,-122.9652768
 "Disney / Vero Beach, Indian River County",Florida,USA,1,27.762296,-80.396568
 "Dog Patch, San Onofre",California,USA,1,33.3803575,-117.5736037
-"Drakes Estero, Point Reyes, Marin County",California,USA,1,38.160951,-122.687073
+"Drakes Estero, Point Reyes, Marin County",California,USA,1,38.076144,-122.791972
 "East Beach, Galveston",Texas,USA,1,29.3173116,-94.7534055
 East Moloka'i,Hawaii,USA,1,21.11002,-156.84
-East River,New York,USA,1,42.6478472,-76.1140932
 "Edisto Beach, Colleton County",South Carolina,USA,1,32.4793551,-80.3348229
 "Egg Harbor, Atlantic County",New Jersey,USA,1,39.5287282,-74.6479364
 "Egmont Key, Hillsborough County",Florida,USA,1,27.9184543,-82.3488057
 "Ehukai Beach Park, Sunset Beach, O'ahu",Hawaii,USA,1,21.664825,-158.050801
 "Eight Mile Beach, Galveston",Texas,USA,1,29.28592,-94.81164
-"El Pescador Beach, Los Angeles County",California,USA,1,34.707498,-118.08823
-"Elizabeth City, Pasquotank County",North Carolina,USA,1,36.3010192,-76.2203699
+"El Pescador Beach, Los Angeles County",California,USA,1,33.789328,-118.393397
 Elliot Key,Florida,USA,2,44.969524,-93.262118
-"Elliott Cut, Charleston County",South Carolina,USA,1,32.7688726,-79.993472
 "Emerald Isle Pier (near Morehead City), Carteret County",North Carolina,USA,2,38.698969,-75.225844
 "Emerald Isle, Carteret County",North Carolina,USA,5,34.6653135,-77.0382187
 "Englewood Beach, Charlotte County",Florida,USA,1,26.9233958,-82.3598179
@@ -328,7 +304,6 @@ Farallon Islands,California,USA,4,36.7014631,-118.755997
 Fenwick Island,Delaware,USA,1,38.4623346,-75.0512922
 "Fernandina Beach, Amelia Island, Nassau County",Florida,USA,1,30.6077379,-81.4600909
 "Fernandina Beach, Nassau County",Florida,USA,5,30.6696818,-81.4625919
-"Fernandina, Nassau County",Florida,USA,1,30.6696818,-81.4625919
 "Figure Eight Island,  New Hanover County",North Carolina,USA,1,34.2751052,-77.8818627
 "Figure Eight Island, Wilmington, New Hanover County",North Carolina,USA,1,34.2257282,-77.9447107
 "Flagler Beach, Flagler County",Florida,USA,5,29.4749927,-81.1269982
@@ -352,7 +327,6 @@ Fort Lauderdale,Florida,USA,3,26.1223084,-80.1433786
 Fort Moultrie,South Carolina,USA,1,32.7597937,-79.85777466479117
 Fort Myers,Florida,USA,1,26.640628,-81.8723084
 "Fort Myers Beach, Lee County",Florida,USA,1,26.4520248,-81.948145
-"Fort Pickens, Escambia County",Florida,USA,1,34.677991899999995,-82.83896114430829
 "Fort Pierce Inlet State Park, St Lucie County",Florida,USA,1,27.47869875,-80.3030766163625
 "Fort Pierce Inlet State Park, St. Lucie County",Florida,USA,1,27.47869875,-80.3030766163625
 "Fort Pierce Inlet, St Lucie County",Florida,USA,2,27.4727144,-80.2847782
@@ -360,7 +334,7 @@ Fort Myers,Florida,USA,1,26.640628,-81.8723084
 "Fort Pierce, St Lucie County",Florida,USA,2,27.4467056,-80.3256056
 "Fort Pierce, St. Lucie County",Florida,USA,3,27.4467056,-80.3256056
 "Fort Walton Beach, Okaloosa County",Florida,USA,1,30.4057552,-86.618842
-Fort Worth,Florida,USA,1,26.6259596,-80.0781702
+Fort Worth,Florida,USA,1,27.97762,-81.769611
 "Fourchu, Cape Breton Island",Nova Scotia,CANADA,1,45.7156331,-60.2593823
 "Fowey Rock Light, Miami",Florida,USA,1,25.59062,-80.09669
 "Fowey Rock, Key Biscayne",Florida,USA,1,42.6698053,-73.0201009
@@ -371,7 +345,7 @@ Fripp Island,South Carolina,USA,1,33.6874388,-80.4363743
 Frying Pan Shoals,North Carolina,USA,1,36.27403,-80.51117
 "Ft. Lauderdale, Broward County",Florida,USA,1,26.1223084,-80.1433786
 "Ft. Pierce, St Lucie County",Florida,USA,1,27.4467056,-80.3256056
-"Gadsden Point, Tampa Bay",Florida,USA,2,30.239876,-85.626748
+"Gadsden Point, Tampa Bay",Florida,USA,1,30.239876,-85.626748
 Galveston,Texas,USA,6,29.3056996,-94.7933252
 Galveston Bay,Texas,USA,2,29.3056996,-94.7933252
 Galveston Island,Texas,USA,3,29.2221833,-94.90881
@@ -392,7 +366,6 @@ Gold  Beach,Oregon,USA,1,42.4074459,-124.4217418
 "Grand Strand, Myrtle Beach, Horry County",South Carolina,USA,1,33.6672905,-78.9389542
 "Granite Pier, Rockport",Massachusetts,USA,1,42.66742,-70.62281
 "Grass Island, Aransas County",Texas,USA,1,28.1987876,-96.947708
-"Greenport Sound, Long Island",New York,USA,1,43.151860299999996,-76.06119317631908
 Gulf Island National Seashore Park,Florida,USA,1,27.97762,-81.769611
 Gulf Islands National Seashore,Florida,USA,1,30.2369736,-88.68042953504445
 "Gulf Shores Beach, Baldwin County",Alabama,USA,1,30.24555575,-87.70043742902558
@@ -408,11 +381,8 @@ Gulf of Mexico,Florida ,USA,1,27.400573,-82.648646
 "Hale'iwa, O'ahu",Hawaii,USA,1,21.586206,-158.111563
 "Halewia, Oahu",Hawaii,USA,1,19.647634,-155.533256
 Half mile north of Juno Beach Pier,Florida,USA,1,26.445743,-80.19606
-Halifax,Nova Scotia,CANADA,1,44.648618,-63.5859487
 "Hallandale Beach, Broward County",Florida,USA,1,25.9812025,-80.148379
-"Hamakua Homakua, Hawai'i",Hawaii,USA,1,21.3897895,-157.7416560935019
-"Hammocks Beach State Park, Bear Island, Onslow County",North Carolina,USA,1,26.725925,-80.101392
-Hampton Roads,Virginia,USA,1,36.9507552,-76.41141865690076
+"Hammocks Beach State Park, Bear Island, Onslow County",North Carolina,USA,1,43.906592,-70.56057
 "Hamstead, Pender County",North Carolina,USA,1,35.8544627,-78.70979046313411
 Hanalei Bay,Florida,USA,1,30.239876,-85.626748
 "Hanalei Bay, Kauai",Hawaii,USA,3,22.21,-159.5091667
@@ -431,13 +401,12 @@ Hawaii,Hawaii,USA,1,19.593801499999998,-155.42837009716908
 "Hermosa Beach, Los Angeles County",California,USA,3,33.86428,-118.39591
 "Hideaways Beach, Princeville, Kaua'i",Hawaii,USA,1,22.22334445,-159.49541413870637
 High Island,Texas,USA,1,29.5669502,-94.3935328
-Hillsborough Bay,Florida,USA,1,27.9981148,-82.3268048
 "Hilo Bay Yacht Club, Hilo, Hawai'i",Hawaii,USA,1,19.736774,-155.03349
 "Hilo, Hawai'i",Hawaii,USA,2,19.7073734,-155.08158
 "Hilo, off Kaua'i",Hawaii,USA,1,19.7073734,-155.08158
 "Hilton Head Island, Beaufort County",South Carolina,USA,4,32.1618488,-80.7512616
 "Hilton Head, Beaufort County",South Carolina,USA,1,32.1618488,-80.7512616
-"Ho'okipa Beach, Pa'ia, Maui",Hawaii,USA,3,20.932882,-156.358228
+"Ho'okipa Beach, Pa'ia, Maui",Hawaii,USA,3,20.934662,-156.355065
 Hobe Sound,Florida,USA,1,27.059498,-80.1364323
 "Hobe Sound Beach, Palm Beach County",Florida,USA,1,27.0664302,-80.11566357067827
 "Hobe Sound, Martin County",Florida,USA,3,27.059498,-80.1364323
@@ -452,11 +421,9 @@ Holden Beach. Brunswick County,North Carolina,USA,3,33.9135061,-78.3038892
 "Honokowai, Maui",Hawaii,USA,2,20.953821,-156.6862836
 Honoli'i in Hilo (west side of Big Island),Hawaii,USA,1,19.647634,-155.533256
 Honolua Bay,Hawaii,USA,1,21.01384,-156.639064
-Honolulu,Hawaii,USA,1,21.304547,-157.855676
-Honolulu Harbor,Hawaii,USA,1,21.3065436,-157.8694441
 "Honomu, Hawai'i",Hawaii,USA,1,19.8709075,-155.113434
-"Honomuni, Moloka'i",Hawaii,USA,1,21.09907,-156.79416
-"Hooipa Beach Park, Maui",Hawaii,USA,1,44.572828,-109.058803
+"Honomuni, Moloka'i",Hawaii,USA,1,19.412071,-154.965353
+"Hooipa Beach Park, Maui",Hawaii,USA,1,19.472667,-155.918231
 Horn Island,Mississippi,USA,1,45.5514941,-122.6755826
 "Horners, Wailua, Kaua'i",Hawaii,USA,1,20.849829,-156.138382
 "Horseshoe Reef, Scott Creek, Davenport, Santa Cruz County",California,USA,1,37.0116166,-122.1919134
@@ -471,7 +438,6 @@ Humboldt County,California,USA,1,40.5997415,-123.8997734
 "Huntington Beach, Orange County",California,USA,7,33.6783336,-118.000016
 Hutchinson Island,Florida,USA,1,27.2961557,-80.2161581
 "Hutchinson Island Beach, Martin County",Florida,USA,1,26.425813,-80.173191
-"Hutchinson Island, Martin County",Florida,USA,1,27.0673711,-80.3994412
 "Hutchinson Island, St. Lucie County",Florida,USA,3,27.3900897,-80.457904
 "Imperial Beach, San Diego County",California,USA,3,32.583893,-117.1130487
 In Gulf of Mexico 17 miles off Weeki Wachee,Florida,USA,1,28.516712,-82.577222
@@ -479,9 +445,8 @@ In Gulf of Mexico 17 miles off Weeki Wachee,Florida,USA,1,28.516712,-82.577222
 In a canal 10 miles north of St Augustine,Florida,USA,1,29.8946952,-81.3145395
 "In front of Key Biscayne Beach Club, Key Biscayne",Florida,USA,1,25.69087,-80.16565
 "In kelp beds off La Jolla, San Diego County",California,USA,1,33.860329,-117.868885
-"In the bay near the naval yard at Pensacola, Escambia County",Florida,USA,1,30.421309,-87.2169149
 "Indialantic, Brevard County",Florida,USA,4,28.0911921,-80.5679875
-"Indian Beach, Ecola State Park, Clatsop County",Oregon,USA,1,45.931291,-123.975903
+"Indian Beach, Ecola State Park, Clatsop County",Oregon,USA,1,45.925305,-123.966332
 "Indian Beach, Ecola State Park, just north of Cannon Beach, Clatsop County",Oregon,USA,1,45.9430675,-123.9858194008117
 "Indian Harbor Beach, Brevard County",Florida,USA,1,26.113214,-80.10577
 Indian River Inlet / Fort Pierce Inlet,Florida,USA,1,38.610403,-75.067793
@@ -503,9 +468,8 @@ Indian River area,Florida,USA,1,59.2989968,-161.8366519
 "J.P. Luby Surf Park, Corpus Christi",Texas,USA,1,27.7635302,-97.4033191
 Jacksonville,Florida,USA,1,30.3321838,-81.655651
 "Jacksonville Beach, Duval County",Florida,USA,12,30.2946859,-81.3931396
-"Jacksonville, Duval County",Florida,USA,7,30.3321838,-81.655651
+"Jacksonville, Duval County",Florida,USA,6,30.3321838,-81.655651
 "Jacksonvlle, Duval County",Florida,USA,1,30.35743,-81.618348
-Jamaica Bay,New York,USA,1,40.6039936,-73.8354124
 "James Island Sound, Charleston",South Carolina,USA,1,32.760432,-79.975652
 "Jekyll Island, Glynn County",Georgia,USA,2,31.2171726,-81.5012681
 Jensen Beach,Florida,USA,1,27.2500487,-80.2304161
@@ -531,7 +495,7 @@ Ka'anapali,Hawaii,USA,1,20.9150196,-156.6952588
 "Kahala, O'ahu",Hawaii,USA,2,21.269879,-157.786788
 "Kahana Beach, Maui",Hawaii,USA,2,21.5570121,-157.87542504576777
 "Kahe Point, O'ahu",Hawaii,USA,1,19.647634,-155.533256
-"Kahului, Maui",Hawaii,USA,3,20.8894101,-156.4727118
+"Kahului, Maui",Hawaii,USA,2,20.8894101,-156.4727118
 Kailua Bay,Hawaii,USA,1,20.8915677,-156.2153029
 "Kailua Bay, O'ahu",Hawaii,USA,1,19.647634,-155.533256
 "Kailua-Kona, Hawai'i",Hawaii,USA,1,19.641941,-155.996933
@@ -555,11 +519,9 @@ Kanahena Cove,Hawaii,USA,1,20.61806,-156.43611
 "Kapalua, Maui",Hawaii,USA,1,21.0008534,-156.663155
 "Kapehu Beach, Laupahoehoe, Hawai'i",Hawaii,USA,1,19.9845008,-155.236795
 "Katrina Cut, Dauphin Island, Mobile County",Alabama,USA,1,30.25621,-88.211363
-Kau District,Hawaii,USA,3,19.253311250000003,-155.6027561679108
 Kauai,Hawaii,USA,3,19.593801499999998,-155.42837009716908
 Kaula Rock near Niihau,Hawaii,USA,1,21.8922167,-160.15164215610804
 Kawa'a,Hawaii,USA,1,21.4185718,-157.8034148
-Kawahae,Hawaii,USA,1,20.08583,-155.84139
 Ka’anapali Shores,Hawaii,USA,1,20.929578,-156.683389
 "Ka’eleki’I Point, Maui",Hawaii,USA,1,20.993543,-156.669016
 "Kea'au Beach Park, O'ahu",Hawaii,USA,1,19.62988,-155.038386
@@ -580,7 +542,7 @@ Key Largo,Florida,USA,1,25.167201,-80.37424856462349
 Key Largo Sound,Florida,USA,1,25.14296835,-80.39869617651054
 "Key Largo, Monroe County",Florida,USA,1,25.167201,-80.37424856462349
 Key West Aquarium,Florida,USA,1,24.55907395,-81.80731969821272
-"Key West, Monroe County",Florida,USA,7,24.5548262,-81.8020722
+"Key West, Monroe County",Florida,USA,6,24.5548262,-81.8020722
 "Kiawah Island, Charleston County",South Carolina,USA,3,32.6082373,-80.0848166
 "Kibesillah, Mendocino County",California,USA,1,39.5901611,-123.7777947
 "Kihei, Maui",Hawaii,USA,3,20.7476261,-156.4549898
@@ -599,7 +561,7 @@ La'aloa Beach Park,Hawaii,USA,1,19.597152,-155.962033
 "La'au Point, Moloka'i",Hawaii,USA,1,21.285504,-157.822281
 "La'ie Point, O'ahu",Hawaii,USA,1,19.647634,-155.533256
 "LaJolla Shores, San Diego County",California,USA,1,32.995842,-116.770168
-"LaJolla, San Diego County",California,USA,2,34.64249,-119.4379
+"LaJolla, San Diego County",California,USA,1,34.64249,-119.4379
 "Laguna Beach, Bay County",Florida,USA,1,30.2396463,-85.9241025
 "Laguna Beach, Orange County",California,USA,1,33.5426975,-117.785366
 Lahaina,Hawaii,USA,1,20.8738769,-156.677678
@@ -609,7 +571,7 @@ Lahaina,Hawaii,USA,1,20.8738769,-156.677678
 Lake Pontchartrain,Louisiana,USA,2,30.021604,-90.196327
 "Lake Worth Beach, Palm Beach County",Florida,USA,1,26.616021,-80.061297
 "Lake Worth Inlet/West Palm Beach, Palm Beach County",Florida,USA,1,26.7703842,-80.0435956
-"Lakewood Campground, Grand Strand, Horry County",South Carolina,USA,1,44.297503,-88.464574
+"Lakewood Campground, Grand Strand, Horry County",South Carolina,USA,1,42.966406,-85.662014
 Lanai,Hawaii,USA,2,19.593801499999998,-155.42837009716908
 "Lanaikea, O'ahu",Hawaii,USA,1,21.43333,-157.96667
 "Lanikai Beach, Kailua, Oahu",Hawaii,USA,1,21.391734200000002,-157.71481210121263
@@ -639,26 +601,22 @@ Lanai,Hawaii,USA,2,19.593801499999998,-155.42837009716908
 "Loggerhead Park, Juno Beach, Palm Beach County",Florida,USA,2,26.88361965,-80.05530139257064
 "Long Beach, Los Angeles County",California,USA,3,33.7690164,-118.191604
 "Long Branch, Monmouth County (offshore)",New Jersey,USA,1,40.3042778,-73.9923596
-Long Island,New York,USA,2,43.151860299999996,-76.06119317631908
+Long Island,New York,USA,1,43.151860299999996,-76.06119317631908
 "Long Key, Monroe County",Florida,USA,1,25.0405135,-80.8337157
 "Longboat Key, Sarasota, Sarasota County",Florida,USA,1,27.4125417,-82.6589881
 "Longnook Beach, Truro, Barnstable County",Massachusetts,USA,1,42.020224150000004,-70.0378159644203
 "Lori Wilson Park, Cocoa Beach, Brevard  County",Florida,USA,3,28.33658225,-80.60851227500001
 "Lori Wilson Park, Cocoa Beach, Brevard County",Florida,USA,1,28.33658225,-80.60851227500001
-"Los Angeles, Los Angeles County",California,USA,1,34.0536909,-118.242766
-"Lost Tree Village, Palm Beach County",Florida,USA,1,33.5441031,-82.0555941
 "Lovers Key State Park, Bonita Springs, Lee County",Florida,USA,1,26.3914008,-81.8781418847581
 Lower Delaware Bay,New Jersey,USA,1,40.8928751,-75.0646194
 "Lyman Beach, Kailua-Kona",Hawaii,USA,2,19.641941,-155.996933
-"Ma'ili Beach, O'ahu",Hawaii,USA,1,30.396687,-89.347668
+"Ma'ili Beach, O'ahu",Hawaii,USA,1,21.414742,-158.176969
 "Maalaea, South Maui",Hawaii,USA,1,19.0885049,-155.7953426
 Macarthur State Park,Florida,USA,1,26.8239253,-80.04407871473353
-"Magwoods Wharf, Charleston Harbor, Charleston County",South Carolina,USA,1,32.792978,-79.948388
 "Maha'ulepu, Koloa, Kaua'i",Hawaii,USA,1,21.9042279,-159.465733
-Mahattan,New York,USA,1,40.75305755,-73.99812926756293
 "Maha‘ulepu Beach, Kauai",Hawaii,USA,1,22.009966,-159.338534
 "Maile Beach, O'ahu",Hawaii,USA,2,21.301451,-157.817739
-"Maile Point, O'ahu",Hawaii,USA,1,21.301753,-157.82039
+"Maile Point, O'ahu",Hawaii,USA,1,21.30201,-157.820778
 "Majors Bay, Kaua'i",Hawaii,USA,1,19.647634,-155.533256
 "Makaha Beach, Oahu",Hawaii,USA,1,21.476964950000003,-158.22090823320093
 Makaha Surf Beach,Hawaii,USA,1,21.48,-158.22417
@@ -673,7 +631,6 @@ Makaha Surf Beach,Hawaii,USA,1,21.48,-158.22417
 "Malaka, Oahu",Hawaii,USA,1,19.647634,-155.533256
 "Malibu, Los Angeles County",California,USA,3,34.035591,-118.689423
 "Maliko Point, Maui",Hawaii,USA,1,19.647634,-155.533256
-"Maliu, Hawai'i",Hawaii,USA,1,19.6702884,-156.0272759
 "Mana, Kaua'i",Hawaii,USA,1,20.0005556,-155.5602778
 "Manalapan, Palm Beach County",Florida,USA,1,26.5692364,-80.0447635
 "Manasota Beach, Sarasota County",Florida,USA,1,27.0106145,-82.4125962
@@ -722,7 +679,6 @@ Midnight Lump (38 miles offshore),Louisiana,USA,1,31.613314,-93.659796
 "Mispillion Light, Delaware Bay",Delaware,USA,1,38.9473346,-75.3149139
 "Mission Beach, San Diego County",California,USA,2,32.7825908,-117.2524943
 Mississippi City,Mississippi,USA,1,30.3818646,-89.0439248
-Mobile Bay,Alabama,USA,3,30.6913462,-88.0437509
 "Mokapu, Kane'ohe Marine Air Corps Station, O'ahu",Hawaii,USA,1,21.44825245,-157.7705286209139
 Moloka'i,Hawaii,USA,2,21.0786135,-156.99606019191356
 "Mona Island, 40 miles west of the mainland",Puerto Rico,USA,1,26.6495,-98.34557
@@ -733,17 +689,13 @@ Montauk,New York,USA,1,41.0347223,-71.9442623
 "Montaña de Oro State Park, San Luis Obispo County",California,USA,1,35.2880417,-120.8462264
 "Montera Beach, San Mateo County",California,USA,1,36.597843,-121.703305
 Monterey Bay,California,USA,1,36.600256,-121.8946388
-"Monterey Bay, Monterey County",California,USA,2,36.7999557,-121.9010668
+"Monterey Bay, Monterey County",California,USA,1,36.7999557,-121.9010668
 "Monterey, Monterey County",California,USA,1,36.600256,-121.8946388
-"Monterey, Montery County",California,USA,1,36.600256,-121.8946388
 "Moonstone Beach, Humboldt County",California,USA,4,33.388633049999996,-118.36764852881066
 "Moonstone Beach, South Kingstown, Washington County",Rhode Island,USA,1,41.398406,-71.576296
-"Morehead, Carteret County",North Carolina,USA,2,34.7229391,-76.7260436
 "Morro Bay, San Luis Obispo County",California,USA,1,35.3658075,-120.849901
 "Morro Rock, Morro Bay, San Obispo County",California,USA,1,35.369669,-120.8676994
 "Morro Strand State Beach, San Luis Obispo County",California,USA,1,35.39266105,-120.86503268374642
-"Mosquito Inlet (Ponce Inlet), Volusia County",Florida,USA,1,29.100094,-80.9315
-"Mount Pleasant, Charleston County",South Carolina,USA,1,32.7940651,-79.8625851
 "Mouth of Wallua River, Kaua'i",Hawaii,USA,1,19.647634,-155.533256
 "Mullet Key, Pinellas County",Florida,USA,1,27.8778904,-82.7329309
 "Municipal Bathing area, Riviera Beach, Palm Beach County",Florida,USA,1,26.785561,-80.031845
@@ -770,8 +722,6 @@ Naples,Florida,USA,1,26.1421976,-81.7942944
 "Near Boynton Beach, Palm Beach County",Florida,USA,1,26.5256179,-80.0666026
 "Near Cocoa Beach, Brevard  County",Florida,USA,1,28.3184107,-80.6094959
 "Near Encino, Los Angeles County",California,USA,1,34.1591324,-118.5016166
-"Near Fernandina Bar, Nassau County",Florida,USA,1,39.941481,-82.982233
-Near Havana,CUBA,USA,1,23.135305,-82.3589631
 Near Key West,Florida,USA,2,24.5548262,-81.8020722
 "Near New Smyrna Jetty, Volusia County",Florida,USA,1,39.941481,-82.982233
 "Near Panama City, Bay County",Florida,USA,1,30.1586518,-85.6602936
@@ -780,20 +730,17 @@ Near Key West,Florida,USA,2,24.5548262,-81.8020722
 Near Patrick Air Force Base Brevard County,Florida,USA,1,28.23809,-80.6079
 "Near Port Aransas, Nueces County",Texas,USA,1,27.8332175,-97.0618324
 Near Port Arthur,Texas,USA,1,29.8716577,-93.9332302
-Near Port Canaveral Coast Guard Base,Florida,USA,1,32.044154,-90.344745
+Near Port Canaveral Coast Guard Base,Florida,USA,1,34.644822,-93.331159
 "Near Port Lavaca, Calhoun County",Texas,USA,1,28.6149968,-96.6260892
 "Near Twin Islands off Lanikai, O'ahu (east coast)",Hawaii,USA,1,20.7000823,-155.997188
 "Near US Air Force Base at Elgin, Okaloosa County",Florida,USA,1,40.000184,-105.143448
-Near a small wreck in a channel at Indian Key,Florida,USA,1,24.88819,-80.68117
 "Near oil rig Hondo, 5 nm from Gaviota, Santa Barbara County",California,USA,1,32.0831732,-81.0265987935835
 "Near the Bahia Honda Bridge, Monroe County",Florida,USA,1,25.235142,-81.034042
-"Near the mouth of the Cape Fear River, Brunswick County",North Carolina,USA,1,35.054292700000005,-78.89295880121583
 "Neptune Avenue, Ormond Beach, Volusia County",Florida,USA,1,29.3000808,-81.0472097
 "Neptune Beach, Duval County",Florida,USA,2,30.311908,-81.3964734
 "Neptune, Duval County",Florida,USA,1,39.0753562,-81.7798545
 "Neskowin, Tillamook County",Oregon,USA,1,45.106302,-123.9834096
 "Nest Key, Monroe County",Florida,USA,1,25.154009,-80.5090292
-"New Bern, Craven County",North Carolina,USA,1,35.1084931,-77.0441143
 New Hanover County,North Carolina,USA,1,34.2751052,-77.8818627
 New Orleans,Louisiana,USA,2,29.9759983,-90.0782127
 "New Smyrna  Beach, Volusia County",Florida,USA,2,29.0258132,-80.9271271
@@ -803,23 +750,20 @@ New Smyrna Beach,Florida,USA,4,29.0258132,-80.9271271
 "New Smyrna Beach / Waveland, Volusia County",Florida,USA,2,29.047109,-80.926829
 "New Smyrna Beach,  Volusia County",Florida,USA,3,29.0258132,-80.9271271
 "New Smyrna Beach, Volusia County",Florida,USA,174,29.0258132,-80.9271271
-New York,New York,USA,1,40.7127281,-74.0060152
 "Newcomb Hollow Beach, Wellfleet, Barnstable County",Massachusetts,USA,1,41.96148525,-69.9939858892793
 "Newport Aquarium, Newport",Kentucky,USA,1,39.09437025,-84.49771605201767
 "Newport Beach, Orange County",California,USA,3,33.6170092,-117.9294401
 "Newport, Lincoln County",Oregon,USA,1,44.636755,-124.053442
-"Nimitz Beach, Barbers Point, O'ahu",Hawaii,USA,1,21.297071,-158.104298
+"Nimitz Beach, Barbers Point, O'ahu",Hawaii,USA,1,21.297214,-158.104296
 "Nimitz State Beach, Oahu",Hawaii,USA,1,35.111404,-120.626862
 "Ninole Bay, Hawaii County",Hawaii,USA,1,19.937851,-155.168152
 "Noreiga's, Maui",Hawaii,USA,1,21.3965849,-157.9771949
-Norfolk,Virginia,USA,2,36.8493695,-76.2899539
 "Normandy Beach, Hutchinson Island,  St. Lucie County",Florida,USA,1,27.381947,-80.445518
 North Beach,Maryland,USA,1,38.7048801,-76.5331735
 "North Beach Inlet, St. Lucie County",Florida,USA,1,33.8694151,-78.5196229
 "North Beach Jetty, St Lucie County",Florida,USA,1,27.381947,-80.445518
 "North Beach, Hutchinson Island, St. Lucie County",Florida,USA,1,27.381947,-80.445518
-"North Beach, Patrick AFB, Brevard County",Florida,USA,1,30.600002,-98.404763
-"North Beach, St. Augustine",Florida,USA,1,29.9604124,-81.3089445
+"North Beach, Patrick AFB, Brevard County",Florida,USA,1,41.714073,-86.692238
 "North Beach, St. Lucie County",Florida,USA,2,25.858401800000003,-80.12232176212325
 North Carolina Aquarium at Fort Fisher,North Carolina,USA,1,33.963331499999995,-77.92667234305969
 North Dade- Interama area of Biscayne Bay,Florida,USA,1,28.5421109,-81.3790304
@@ -845,12 +789,10 @@ North end of Morris Island at mouth of Charleston Harbor,South Carolina,USA,1,35
 "North of Pidgeon Point, San Mateo County",California,USA,1,37.589591,-122.323643
 "North of Point Sur, Monterey County",California,USA,1,39.2790164,-76.486926
 "North picnic area, Jekyll Island, Glynn County",Georgia,USA,1,31.169229,-81.439183
-Noyes Beach,Rhode Island,USA,1,41.587536,-71.514739
 O'ahu,Hawaii,USA,1,19.647634,-155.533256
-Oahu,Hawaii,USA,1,19.593801499999998,-155.42837009716908
 "Oak Beach, Fire Inlet",New York,USA,1,43.754729,-74.793205
 "Oak Island, Brunswick County",North Carolina,USA,2,33.9165623,-78.161106
-Occupasstuxet  (Patuxent) Cove,Rhode Island,USA,1,38.420148,-76.54971
+Occupasstuxet  (Patuxent) Cove,Rhode Island,USA,1,39.097196,-76.689866
 "Ocean Beach, Jaycee Park, Vero Beach, Indian River County",Florida,USA,1,27.6387163,-80.3975399
 "Ocean Beach, San Francisco, San Francisco County",California,USA,1,32.7448067,-117.2476067
 Ocean City (offshore),New Jersey,USA,2,39.896538,-74.226209
@@ -863,7 +805,6 @@ Ocean City (offshore),New Jersey,USA,2,39.896538,-74.226209
 "Oceano Dunes State Beach, San Luis Obispo County",California,USA,1,35.1123109,-120.62625990000001
 "Oceanside, San Diego County",California,USA,1,33.1958696,-117.379483
 Ocracoke, North Carolina,USA,1,35.1145966,-75.9809118
-Ocracoke Inlet,North Carolina,USA,1,35.06391455,-76.02669166944023
 "Ocracoke Inlet, Carteret County",North Carolina,USA,1,35.06391455,-76.02669166944023
 "Ocracoke Island, Hyde County",North Carolina,USA,1,35.64784655,-75.92069689734744
 "Ocracoke, Hyde County",North Carolina,USA,2,35.1145966,-75.9809118
@@ -875,10 +816,10 @@ Ocracoke Inlet,North Carolina,USA,1,35.06391455,-76.02669166944023
 "Off Boca Grande, Lee County",Florida,USA,1,26.74896,-82.26204
 "Off Boca Raton Hotel & Club, Boca Raton, Palm Beach County",Florida,USA,1,26.3586885,-80.0830984
 Off Brownsville,Texas,USA,1,25.924894,-97.470316
-Off Cape Hatteraa,North Carolina,USA,1,39.978047,-105.236336
+Off Cape Hatteraa,North Carolina,USA,1,45.932249,-89.813027
 "Off Cape Hatteras, Dare County",North Carolina,USA,1,35.219464,-75.690343
 Off Catalina Island,California,USA,1,35.814752,-75.56422
-Off Charleston,South Carolina,USA,3,32.795293,-79.948209
+Off Charleston,South Carolina,USA,2,32.795293,-79.948209
 "Off Crystal River, Citrus County",Florida,USA,1,28.900563,-82.599504
 "Off Diamond Head, Honolulu, O'ahu",Hawaii,USA,1,21.269557,-157.821018
 "Off Eames Monument, Bridgeport, Fairfield County",Connecticut,USA,1,41.1792695,-73.1887863
@@ -891,20 +832,16 @@ Off Florida coast,Florida,USA,1,26.148404,-80.32274
 "Off Hutchinson Island, St Lucie County",Florida,USA,1,39.739923,-77.932256
 Off Jupiter,Florida,USA,1,26.9342246,-80.0942087
 "Off Jupiter Inlet, Palm Beach County",Florida,USA,1,26.646149,-80.436499
-Off Kawaihae,Hawaii,USA,1,20.04111,-155.83056
 Off Key Biscayne,Florida,USA,1,25.69119,-80.165652
 "Off Key Largo, Monroe County",Florida,USA,1,25.167201,-80.37424856462349
 Off Key West,Florida,USA,1,24.560722,-81.769733
-Off Kohala,Hawaii,USA,1,41.1183758,-95.9101309
 "Off La Jolla Cove, San Diego County",California,USA,1,32.995842,-116.770168
 "Off Lahaina, Maui",Hawaii,USA,1,20.8738769,-156.677678
 "Off Lake Worth, Palm Beach County",Florida,USA,1,26.623628,-80.058728
-"Off Leffingwell Landing, San Luis Obispo County",California,USA,1,33.919923,-118.042386
+"Off Leffingwell Landing, San Luis Obispo County",California,USA,1,33.923889,-118.024377
 Off Long Island,New York,USA,1,43.151860299999996,-76.06119317631908
-"Off Longport, Atlantic County",New Jersey,USA,1,39.3142827,-74.5248756
 "Off Makapauu Point, O'ahu",Hawaii,USA,2,19.647634,-155.533256
 "Off Masonboro Island, New Hanover County",North Carolina,USA,2,34.994198299999994,-80.74198756654198
-"Off Normandie-by-the-Sea, Monmouth County",New Jersey,USA,1,40.370804,-73.97413
 "Off Ocean City, Cape May County",New Jersey,USA,1,39.287933,-74.586569
 "Off Palos Verdes Estates, Los Angeles",California,USA,1,33.792396,-118.396769
 "Off Palos Verdes peninsula, Los Angeles County",California,USA,1,33.794341,-118.390699
@@ -912,7 +849,6 @@ Off Panama City,Florida,USA,1,30.16731,-85.663712
 "Off Point Mugu, Ventura County",California,USA,1,34.458416,-119.090374
 "Off Port Everglades, Broward County",Florida,USA,1,26.08948495,-80.12815215168666
 "Off Pu'u Ola'l, Makena, Maui",Hawaii,USA,1,20.655027,-156.4424385
-Off Sable Island,Nova Scotia,CANADA,1,43.98786615,-59.74266325547831
 "Off San Clemente Island, Los Angeles County",California,USA,1,32.921423399999995,-118.51541236181541
 Off San Diego,California,USA,1,32.770854,-117.147585
 "Off San Diego, San Diego County",California,USA,1,32.770854,-117.147585
@@ -930,7 +866,6 @@ Off Umpqua River,Oregon,USA,1,43.36539,-123.46842
 "Off Waianae, O'ahu",Hawaii,USA,1,21.446323,-158.187203
 "Off Zelda Boulevard, Daytona Beach, Volusia Countyy",Florida,USA,1,29.249291,-81.023122
 Off shore,New Jersey,USA,1,47.683657499999995,-122.24953145347797
-Off the Battery,South Carolina,USA,1,36.498456,-79.147381
 "Off the Hanalei River, Kaua'i",Hawaii,USA,1,21.338375,-158.124092
 "Offshore, between Mantoloking & Point Pleasant, Ocean County",New Jersey,USA,1,40.0831714,-74.0681931
 Okaloosa County,Florida,USA,1,30.6765961,-86.6037748
@@ -965,12 +900,11 @@ Padre Island,Texas,USA,1,26.8445017,-97.3677593
 Padre Island National Seashore,Texas,USA,1,27.04553605,-97.39789075348415
 "Paia Bay, Maui",Hawaii,USA,2,20.9202778,-156.386388
 "Pajaro Dunes, Santa Cruz County",California,USA,1,36.8673852,-121.8183169
-Palama,Hawaii,USA,1,21.3259436,-157.8625624
 Palm Beach County,Florida,USA,5,26.6279798,-80.4494174
 "Palm Beach Inlet, Palm Beach County",Florida,USA,2,26.7725087,-80.0375238
 "Palm Beach Shores, Palm Beach County",Florida,USA,1,26.7781183,-80.0355962
 "Palm Beach Shores, Riviera Beach, Singer Island, Palm Beach County",Florida,USA,1,26.7781183,-80.0355962
-"Palm Beach, Palm Beach County",Florida,USA,11,26.7056172,-80.0361517
+"Palm Beach, Palm Beach County",Florida,USA,10,26.7056172,-80.0361517
 Palm Beach?,Florida,USA,1,26.6279798,-80.4494174
 "Palmetto Dunes, Hilton Head, Beaufort County",South Carolina,USA,1,32.1768014,-80.7175758
 Pamlico Sound,North Carolina,USA,1,35.0848861,-76.634929
@@ -982,8 +916,6 @@ Papaikou plantation,Hawaii,USA,1,19.78364,-155.09316
 "Paradise Beach Park, Brevard County",Florida,USA,1,30.401387,-87.422202
 "Paradise Beach, Melbourne, Brevard County",Florida,USA,1,28.12303205,-80.57537687455363
 Parris Island,South Carolina,USA,1,33.6874388,-80.4363743
-"Pass Christian, Hamilton County",Mississippi,USA,1,30.3157527,-89.247543
-Patapsco River,Maryland,USA,1,39.2213123,-76.687499
 "Patrick Air Force Base, Brevard County",Florida,USA,2,30.45907,-86.55026
 "Paukukalo, Maui",Hawaii,USA,2,20.909022,-156.4904386
 "Pawleys Island, Georgetown County",South Carolina,USA,4,33.4293486,-79.1215912
@@ -995,12 +927,11 @@ Patapsco River,Maryland,USA,1,39.2213123,-76.687499
 "Pecks Lake, Martin County",Florida,USA,1,27.081959,-80.398486
 "Pelican Beach Park, Satellite Beach, Brevard County",Florida,USA,2,28.168189599999998,-80.58789799176321
 "Pensacola  Beach, Escambia County",Florida,USA,1,30.3342348,-87.1350979
-"Pensacola Bay, Escambia County",Florida,USA,7,30.421309,-87.2169149
-"Pensacola Harbor, Escambia County",Florida,USA,1,30.5345169,-87.2733324
-"Pensacola, Escambia County",Florida,USA,3,30.421309,-87.2169149
+"Pensacola Bay, Escambia County",Florida,USA,4,30.421309,-87.2169149
+"Pensacola, Escambia County",Florida,USA,1,30.421309,-87.2169149
 "Pepe'ekeo, Honomu, Hawai'i",Hawaii,USA,1,19.8709075,-155.113434
 "Pepper Park Beach, St. Lucie County",Florida,USA,2,33.714249,-78.864112
-"Perch Rock, Point Conception, Santa Barbara County",California,USA,1,38.03675,-121.951818
+"Perch Rock, Point Conception, Santa Barbara County",California,USA,1,38.02909,-121.96163
 "Perdido Key near the Florida Panhandle, Escambia County",Florida,USA,1,30.85988,-87.436304
 "Perdido Key, Escambia County",Florida,USA,1,30.3002,-87.42748
 "Pet Den, Satellite Beach, Brevard County",Florida,USA,1,28.1760051,-80.5904623
@@ -1024,7 +955,6 @@ Pohoiki,Hawaii,USA,1,19.4598015,-154.8444875
 "Point Buchon, San Luis Obispo County",California,USA,1,35.2470865,-120.8956216
 "Point Comfort, Calhoun County",Texas,USA,1,28.6797169,-96.5602537
 "Point Conception, Santa Barbara County",California,USA,2,34.448613,-120.4717299
-Point Judith,Rhode Island,USA,1,41.3653803,-71.4867226
 "Point Purisima, Santa Barbara County",California,USA,1,34.755988,-120.6367767
 "Point Sur, Monterey County",California,USA,1,33.249626,-117.326118
 "Pompano Beach, Palm Beach County",Florida,USA,1,26.2378597,-80.1247667
@@ -1037,45 +967,36 @@ Point Judith,Rhode Island,USA,1,41.3653803,-71.4867226
 Pontchartrain Beach,Louisiana,USA,1,30.0318374,-90.0622941
 "Ponte Vedra Beach, St Johns County",Florida,USA,3,30.2396865,-81.3856384
 "Ponte Vedra Beach, St. Johns County",Florida,USA,2,30.2396865,-81.3856384
-"Ponte Vedra, St. Johns County",Florida,USA,3,30.2396865,-81.3856384
+"Ponte Vedra, St. Johns County",Florida,USA,3,30.0224671,-81.3236866
 Port Aransas,Texas,USA,1,27.8332175,-97.0618324
 "Port Bolivar, Galveston County",Texas,USA,1,29.3799791,-94.7645679
 "Port Lavaca, Calhoun County",Texas,USA,1,28.6149968,-96.6260892
 "Port of the Islands, Collier County",Florida,USA,1,25.970684,-81.506289
-"Portlock, Oahu",Hawaii,USA,1,19.593801499999998,-155.42837009716908
 "Pounders Beach, Oahu",Hawaii,USA,1,21.632069450000003,-157.9205814352748
 Prince William Sound,Alaska,USA,1,60.615,-147.1680556
-"Prince's Bay, Staten Island",New York,USA,1,40.5834557,-74.1496048
-Providence,Rhode Island,USA,1,41.8239891,-71.4128343
 "Puamana, Lahaina, Maui",Hawaii,USA,1,20.880053,-156.668693
 "Public Beach (Carlin Park), Jupiter, Palm Beach County",Florida,USA,1,26.9342246,-80.0942087
 "Public Beach, Siesta Key, Sarasota County",Florida,USA,1,27.2760559,-82.5690975
-Puna,Hawaii,USA,2,19.6319934,-155.0314017621605
 Punaluu,Hawaii,USA,1,21.588489,-157.892075
-"Quarter mile offshore in Kaanapali, West Maui",Hawaii,USA,1,34.908762,-82.973649
+"Quarter mile offshore in Kaanapali, West Maui",Hawaii,USA,1,36.035916,-78.375646
 "Quarter mile south of Ponce de Leon Inlet, Volusia County",Florida,USA,1,39.423808,-75.247646
 Quebradillas,Puerto Rico,USA,1,18.478319,-66.93792
-Ramshorn Creek,South Carolina,USA,1,32.1232263,-80.8970055
-Raritan Bay,New Jersey,USA,1,40.4742734,-74.1806989
 "Redondo, Los Angeles County",California,USA,1,33.8455911,-118.3886766
 "Reeds Bay, Brigantine, Atlantic County",New Jersey,USA,1,39.380778,-74.409045
 "Refugio State Beach, Santa Barbara County",California,USA,1,34.465078,-120.068415
 "Resident's Beach, Marco Island",Florida,USA,1,25.9359368,-81.73250012904145
-"Rhode River, Chesapeake Bay",Maryland,USA,1,39.157539,-76.780804
-River mouth,Mississippi,USA,1,34.944228,-89.984399
+"Rhode River, Chesapeake Bay",Maryland,USA,1,39.109492,-76.440528
 Riviera Beach,Florida,USA,1,26.784343,-80.0650293
-"Riviera Beach, Palm Beach County",Florida,USA,8,26.784343,-80.0650293
+"Riviera Beach, Palm Beach County",Florida,USA,7,26.784343,-80.0650293
 "Rock Harbor, Key Largo, Monroe County",Florida,USA,1,25.0767814,-80.4602875
 Rockaway,New York,USA,2,40.6415296,-73.6656011
 Rockaway Beach,New York,USA,1,40.5845085,-73.81679
-Rockport,Texas,USA,1,28.0205733,-97.0544341
 "Rockport, Aransas County",Texas,USA,1,28.0205733,-97.0544341
 "Rocky Point, north shore of O'ahu",Hawaii,USA,1,35.387362,-78.455056
 "Rodanthe, Dare County",North Carolina,USA,2,35.5934472,-75.4678084
 "Round Island Park, Indian River County",Florida,USA,2,35.462356,-114.342909
 "Running Waters Beach, Ninini Point, Kaua'i",Hawaii,USA,1,21.9546361,-159.3357369
 "Russian Gulch, Jenner, Sonoma County",California,USA,1,38.452118,-123.120477
-"Sag Harbor, Suffolk County",New York,USA,1,40.9978727,-72.2922292
 "Sailors Haven, Fire Island, Suffolk County",New York,USA,1,40.714522,-72.919395
 "Salmon Beach, Sonoma County",California,USA,1,33.675842,-118.0217
 "Salmon Creek Beach, Sonoma County",California,USA,1,38.35705175,-123.06787770071175
@@ -1087,23 +1008,22 @@ San Diego County,California,USA,1,32.9637838,-116.7706277
 "San Diego, San Diego County",California,USA,2,32.7174202,-117.162772
 San Francisco,California,USA,1,37.7792588,-122.4193286
 San Francisco Bay,California,USA,3,37.7792588,-122.4193286
-"San Francisco Bay (or San Leandro Bay), near cannery, Alameda County",California,USA,2,57.786736,-135.0908625
+"San Francisco Bay (or San Leandro Bay), near cannery, Alameda County",California,USA,1,57.786736,-135.0908625
 "San Gregorio Beach, San Mateo County",California,USA,1,37.483638,-122.350832
-San Juan,Puerto Rico,USA,2,18.402821,-66.05817
+San Juan,Puerto Rico,USA,2,18.46633,-66.10572
 San Mateo County,California,USA,1,37.496904,-122.3330573
 "San Miguel Island, Santa Barbara County",California,USA,3,34.7136533,-119.985823
-"San Nicholas Island, Santa Barbara County",California,USA,1,46.98605,-93.01354
+"San Nicholas Island, Santa Barbara County",California,USA,1,34.434941,-119.889276
 "San Onofre State Beach, San Diego County",California,USA,4,33.3488871,-117.52491479699033
 "San Onofre, San Diego County",California,USA,4,33.3803575,-117.5736037
 "Sand Key Beach, Clearwater, Pinellas County",Florida,USA,1,27.9658533,-82.8001026
 "Sandbridge Beach, Princess Anne County",Virginia,USA,1,36.745984,-75.9440944
 Sandridge Beach,Virginia,USA,1,36.745143,-75.943567
-"Sandridge Beach, Virginia Beach, Princess Anne County",Virginia,USA,1,36.75154,-76.05299
+"Sandridge Beach, Virginia Beach, Princess Anne County",Virginia,USA,1,36.751407,-76.052842
 "Sands Cut, Elliot Key",Florida,USA,1,25.730832,-80.158061
-"Sandspit Beach, Montaña de Oro State Park",California,USA,1,35.287988,-120.848649
+"Sandspit Beach, Montaña de Oro State Park",California,USA,1,35.346735,-120.839564
 "Sandy Beach, Oahu",Hawaii,USA,1,21.2852142,-157.6740780937729
 "Sandy Hook (ocean side), Monmouth County",New Jersey,USA,1,42.543815,-90.616628
-"Sandy Hook Bay, Highlands, Monmouth County",New Jersey,USA,2,40.410684,-74.000222
 "Sandy Hook, Monmouth County",New Jersey,USA,1,35.4834095,-87.2375109
 "Sanibel Island, Lee County",Florida,USA,8,26.5999265,-81.8823135
 Santa Barbara Channel,California,USA,2,33.96579515,-120.09189711105296
@@ -1115,7 +1035,7 @@ Santa Barbara County,California,USA,3,34.7136533,-119.985823
 "Santa Monica, Los Angeles County",California,USA,4,34.0194704,-118.491227
 "Santa Rosa Beach, Walton County",Florida,USA,1,30.3960324,-86.2288322
 "Santa Rosa Island, Escambia County",Florida,USA,1,30.6625885,-87.3451089
-Santa Rosa Sound Escambia County,Florida,USA,1,30.618832,-87.347976
+Santa Rosa Sound Escambia County,Florida,USA,1,30.610885,-87.357502
 Santurce,Puerto Rico,USA,1,18.19523,-67.14018
 Sarasota Bay,Florida,USA,1,27.3365805,-82.5308545
 Sarasota County,Florida,USA,2,27.1813609,-82.3609195
@@ -1124,7 +1044,7 @@ Sarasota County,Florida,USA,2,27.1813609,-82.3609195
 "Satellite  Beach, Brevard County",Florida,USA,1,28.1760051,-80.5904623
 "Savannah Beach, Savannah, Chatham County",Georgia,USA,1,32.0790074,-81.0921335
 Scofield - Sandy Point,Louisiana,USA,1,32.76903,-83.93963
-"Scripps, LaJolla, San Diego County",California,USA,1,34.104157,-117.709421
+"Scripps, LaJolla, San Diego County",California,USA,1,32.64377,-116.987041
 "Sea Bright, Monmouth County",New Jersey,USA,2,40.3615488,-73.9742051
 "Sea Girt, Monmouth County",New Jersey,USA,2,40.1320592,-74.0345813
 "Sea Pines Beach Club, Hilton Head, Beaufort County",South Carolina,USA,1,32.1249294,-80.78680687506075
@@ -1160,8 +1080,6 @@ Second Narrows in Burrard Inlet,Vancouver,CANADA,1,49.2608724,-123.113952
 "Shipyard Beach Club, Hilton Head Island, Beaufort County",South Carolina,USA,1,32.124931,-80.786687
 "Short Sand Beach, Oswald West State Park",Oregon,USA,1,43.928744,-124.101669
 "Shrewsbury River,  Monmouth County",New Jersey,USA,1,40.3612585,-73.9769405
-"Shrewsbury River, Highlands, Monmouth County", New Jersey,USA,1,40.402877,-73.98481
-"Shrewsbury River, Highlands, Monmouth County",New Jersey,USA,1,40.402877,-73.98481
 "Siesta Key, Sarasota County",Florida,USA,1,27.276201,-82.5642993
 "Siletz River mouth, Lincoln County",Oregon,USA,1,44.797345,-123.8987056
 "Silva's Channel, Mokuleia, O'ahu",Hawaii,USA,1,21.57805,-157.87276
@@ -1169,17 +1087,15 @@ Second Narrows in Burrard Inlet,Vancouver,CANADA,1,49.2608724,-123.113952
 "Singer Island, Riviera Beach",Florida,USA,1,26.7850625,-80.0375408
 "Singer Island, Riviera Beach, Palm Beach County",Florida,USA,10,26.7850625,-80.0375408
 "Singleton Beach, Hilton Head Island, Beaufort County",South Carolina,USA,1,32.188496349999994,-80.69951085954074
-"Slaunwhite's Ledge, Hubbard Cove",Halifax,CANADA,1,54.0503,-122.386324
+"Slaunwhite's Ledge, Hubbard Cove",Halifax,CANADA,1,31.942262,-92.667001
 Small creek near Coles Island,South Carolina,USA,1,43.343173,-88.783363
 "Smith Point, Long Island",New York,USA,1,43.151860299999996,-76.06119317631908
-"Smithville (now Southport), Brunswick County",North Carolina,USA,1,33.937128,-78.027729
 "Smyrna Dunes  Park, New Smyrna Beach, Volusia County",Florida,USA,1,29.0682964,-80.91369838288082
 "Smyrna Dunes Park, New Smyrna Beach, Volusia County",Florida,USA,1,29.0682964,-80.91369838288082
 "Snapper Point Jetty, Miami, Dade County",Florida,USA,1,25.61606,-80.490594
 "Snipes Point, Monroe County",Florida,USA,1,25.235142,-81.034042
 "Solana Beach, San Diego County",California,USA,2,32.9905597,-117.269131
 "Soldier Key, Miami-Dade County",Florida,USA,1,25.6364246,-80.4989467
-Somewhere between Hatteras and Beaufort,North Carolina ,USA,1,32.432796,-80.670509
 "South Beach Park, Indian River County",Florida,USA,1,28.5421109,-81.3790304
 "South Beach, Fort Pierce, St Lucie County",Florida,USA,1,27.3521421,-80.2806543
 "South Beach, Hunting Island State Park, Beaufort County",South Carolina,USA,1,32.35187585,-80.46341107493865
@@ -1205,7 +1121,7 @@ Southeast Farallon Island,California,USA,1,36.7014631,-118.755997
 "Southeast Farallon Island, Farallon Islands",California,USA,2,36.7014631,-118.755997
 "Southport, Brunswick County",North Carolina,USA,1,33.921563,-78.0202677
 Southwest of O'ahu,Hawaii,USA,1,21.428739,-157.805551
-"Spanish House Beach, Brevard County",Florida,USA,1,38.688937,-100.926736
+"Spanish House Beach, Brevard County",Florida,USA,1,38.613019,-75.133656
 "Spanish River Park Beach, Palm Beach County",Florida,USA,1,26.3821522,-80.06830011751708
 "Spessard Holland Park, Melbourne Beach, Brevard County",Florida,USA,1,28.0474995,-80.54754743557038
 "Spreckelsville, Maui",Hawaii,USA,1,20.89694,-156.415
@@ -1226,25 +1142,21 @@ St. Augustine  St. Johns County,Florida,USA,1,29.8946952,-81.3145395
 "St. Croix, Cane Bay",US Virgin Islands,USA,1,17.6972023,-64.8375204
 "St. George Island (near Apachicola), Franklin County",Florida,USA,1,29.64442,-84.91479
 "St. Helena Island, Beaufort County",South Carolina,USA,2,32.3850708,-80.6923169
-St. John's River,Florida,USA,1,37.3380256,-121.891247
-"St. John's River, Jacksonville, Duval County",Florida,USA,1,30.319997,-81.647967
 "St. John, Genti Bay",US Virgin Islands,USA,1,30.147884,-85.613628
 St. Louis,Missouri,USA,1,38.6280278,-90.1910154
 St. Lucie County,Florida,USA,3,27.3900897,-80.457904
-"St. Petersburg Beach, Pinellas County",Florida,USA,1,27.7496223,-82.75440861870078
+"St. Petersburg Beach, Pinellas County",Florida,USA,1,27.738983,-82.646322
 "St. Petersburg, Pinellas County",Florida,USA,2,27.7700475,-82.6359078
 "St. Petersburg, Pinnellas County",Florida,USA,1,27.7700475,-82.6359078
-St. Pierre Bank,Newfoundland,CANADA,1,45.420163,-75.700665
 "St. Simon Island, Glynn County",Georgia,USA,1,31.1362,-81.3874
 "St. Simons Island or Jeykll Island, Glynn County",Georgia,USA,1,31.15051,-81.36954
 Staten Island,New York,USA,1,40.5834557,-74.1496048
-"Staten Island, Richmond County",New York ,USA,2,40.5834557,-74.1496048
 "Stearns Wharf, Santa Barbara",California,USA,1,34.412162,-119.6890166
 "Steel Pier, Atlantic City, Atlantic County",New Jersey,USA,1,39.357738,-74.419246
 "Stillwater Cove, Monterey County",California,USA,1,33.25995355,-111.86255567380107
 "Stillwater Cove, Sonoma County",California,USA,1,33.25995355,-111.86255567380107
 "Stinson Beach, Marin County",California,USA,2,37.9008084,-122.6450801
-"Stono Inlet, near Charleston, Charleston County",South Carolina,USA,2,32.7884363,-79.9399309
+"Stono Inlet, near Charleston, Charleston County",South Carolina,USA,1,32.7884363,-79.9399309
 "Stuart Beach, Martin County",Florida,USA,5,27.19943375,-80.25018451409989
 "Stuart Park Beach, Martin County",Florida,USA,1,41.3098844,-72.09958560735673
 "Stuart Rocks, Martin County",Florida,USA,2,27.218844,-80.243101
@@ -1254,7 +1166,7 @@ Sullivan's Island,South Carolina,USA,4,33.6874388,-80.4363743
 "Sunday Beach, Matagorda Island, Calhoun  County",Texas,USA,1,28.319879,-96.457557
 "Sunglow Pier, Daytona Beach Shores, Volusia County",Florida,USA,1,29.1760933,-80.9828323
 "Sunset Beach, Brunswick County",North Carolina,USA,2,33.880728,-78.512231
-"Sunset Beach, O'ahu",Hawaii,USA,1,21.67084625,-158.0456707068182
+"Sunset Beach, O'ahu",Hawaii,USA,1,21.67011,-158.04567
 "Sunset Beach, Oahu",Hawaii,USA,1,21.6718715,-158.04039
 "Sunset Beach, Orange County",California,USA,1,33.7179231,-118.0706056
 "Sunset Cliffs, San Diego",California,USA,1,32.7305,-117.2532
@@ -1268,9 +1180,8 @@ Surfside Beach,Texas,USA,1,28.950706,-95.2874288
 "Surfside Beach, Brazoria County",Texas,USA,1,28.950706,-95.2874288
 "Surfside Beach, Horry  County",South Carolina,USA,1,33.6060031,-78.9730887
 "Surfside, Orange County",California,USA,1,33.7277995,-118.0823511
-"Swampscott, Essex County",Massachusetts,USA,1,42.4699241,-70.9171507
-"Table Beach, Brevard County",Florida,USA,1,26.54693,-80.113007
-"Tampa Bay, Hillsborough County",Florida,USA,2,27.6886419,-82.5723193
+"Table Beach, Brevard County",Florida,USA,1,28.306938,-80.701238
+"Tampa Bay, Hillsborough County",Florida,USA,1,27.6886419,-82.5723193
 "Tampa Bay, Manatee County",Florida,USA,1,27.6886419,-82.5723193
 "Tangier Sound, Somerset County",Maryland,USA,1,38.0626234,-75.9954899
 "Tavares Bay, Maui",Hawaii,USA,1,19.647634,-155.533256
@@ -1278,7 +1189,6 @@ Surfside Beach,Texas,USA,1,28.950706,-95.2874288
 "Ten Thousand Islands National Wildlife Refuge, Collier County",Florida,USA,1,28.5421109,-81.3790304
 "Terramar Beach, Carlsbad, San Diego County",California,USA,1,29.1357969,-95.0604822
 "Texas City, Galveston",Texas,USA,1,29.396013,-94.9175485
-The Narrows,New York,USA,1,42.3364535,-78.4869661
 "The Rocks, Hutchinson Island, Martin County",Florida,USA,1,27.081959,-80.398486
 "Thunderbolt, Chatham County",Georgia,USA,1,32.0335445,-81.0498342
 "Tiger Shores Beach, Martin County",Florida,USA,3,27.081959,-80.398486
@@ -1296,7 +1206,6 @@ The Narrows,New York,USA,1,42.3364535,-78.4869661
 "Trinidad Beach, Huboldt County",California,USA,1,28.331976,-80.6141982
 "Trinidad Head, Humboldt County",California,USA,1,41.054039,-124.151989
 "Trinidad State Beach, Humboldt County",California,USA,1,37.146496,-104.571865
-"Trout River, Panama Park",Florida,USA,1,30.3921571,-81.64755964594028
 "Truro (Cape Cod), Barnstable County",Massachusetts,USA,1,41.993437,-70.0497457
 "Tunitas Beach, San Mateo County",California,USA,1,37.35564545,-122.40101627412392
 "Tunnels surf break off Makua Beach, Kaua'i",Hawaii,USA,1,21.272584,-157.826433
@@ -1306,13 +1215,11 @@ The Narrows,New York,USA,1,42.3364535,-78.4869661
 "Two miles off Key Colony Beach, Monroe County",Florida,USA,1,24.7209744,-81.0186827
 "Tybee Island, Chatham County",Georgia,USA,3,31.9987321,-80.8469427
 "Ulua Beach, Maui",Hawaii,USA,1,20.6905308,-156.4436696461002
-"Uo, Lahaina, Maui",Hawaii,USA,1,20.8738769,-156.677678
 "Upolu Point, North Kohala, Big Island",Hawaii,USA,1,31.33713,-92.16541
 "Usal Creek, Bear Harbor, Mendocino County",California,USA,1,39.451963,-123.444134
 "Vaca Cut Channel & bridge under Marathon, Monroe County",Florida,USA,1,24.7137524,-81.0903512
 "Van Ness Municipal Pier, San Francisco",California,USA,1,37.7792588,-122.4193286
 "Vaughn Beach, Flagler County",Florida,USA,1,26.6325689,-80.8689519
-Velasco,Texas,USA,1,28.9619144,-95.360495
 Velzyland,Hawaii,USA,1,21.67569,-158.0397
 "Velzyland, north shore of O'ahu",Hawaii,USA,1,21.67569,-158.0397
 "Venice Beach, Los Angeles County",California,USA,4,38.9253912,-76.4652362
@@ -1332,11 +1239,10 @@ Volusia County,Florida,USA,3,29.0533409,-81.1310761
 "Wai'anae, O'ahu",Hawaii,USA,1,21.330022,-157.884853
 "Waialua Bay, O'ahu",Hawaii,USA,1,19.647634,-155.533256
 "Waialua Beach, Moloka'i",Hawaii,USA,1,21.576073,-158.106797
-"Waiau, Pearl Harbor, O'ahu",Hawaii,USA,1,41.204509,-73.158203
+"Waiau, Pearl Harbor, O'ahu",Hawaii,USA,1,45.106501,-85.349035
 "Waiehu, Maui",Hawaii,USA,1,20.9208377,-156.4956999
 "Waihe'e, Maui",Hawaii,USA,1,20.93389,-156.51472
 "Waihe'e, Wailuku, Maui",Hawaii,USA,1,20.909051,-156.557932
-Waikiki,Hawaii,USA,1,19.593801499999998,-155.42837009716908
 "Waikiki Beach, Oahu",Hawaii,USA,1,21.274180899999998,-157.82467108347416
 "Waikiki,",Hawaii,USA,1,19.593801499999998,-155.42837009716908
 "Waikiki, O'ahu",Hawaii,USA,1,21.265622,-157.821806
@@ -1356,10 +1262,9 @@ Waipo,Hawaii,USA,1,20.1156956,-155.5902085
 Water Island,US Virgin Islands,USA,1,18.31804345,-64.95392338622615
 "Waveland Beach, Hutchinson Island, St Lucie County",Florida,USA,1,27.26511365,-80.20123367260678
 "Waveland Beach, Hutchinson Island, St. Lucie County",Florida,USA,1,27.26511365,-80.20123367260678
-West Bay near Galveston,Texas,USA,1,29.3056996,-94.7933252
 "West Bay, 19 miles from Galveston",Texas,USA,1,29.2669638,-94.8408076
 "West Beach, Galveston",Texas,USA,1,29.217739,-94.9093656
-"West Cove, Catalina Island",California,USA,1,39.0677819,-76.50011192295082
+"West Cove, Catalina Island",California,USA,1,33.692556,-117.796077
 "West Palm Beach, Palm Beach County",Florida,USA,1,26.715364,-80.0532942
 "White Plains Beach, Barbers Point, O'ahu",Hawaii,USA,2,37.788798,-122.294037
 "White Plains Beach, Oahu",Hawaii,USA,2,20.037582,-155.621818
@@ -1376,15 +1281,12 @@ Windy Hill Beach,South Carolina,USA,1,33.7936159,-78.7301108
 "Winterhaven Park,           Ponce Inlet, Volusia County",Florida,USA,1,29.10432725,-80.9413695402376
 Winyah Bay,South Carolina,USA,1,33.2662776,-79.233105
 "Woodcliff Channel, Freeport, Long Island",New York,USA,1,43.151860299999996,-76.06119317631908
-"Woolsey's Point, East River",New York,USA,1,42.6478472,-76.1140932
 "World Typhoon Lagoon, Disney Water Park, Orange County",Florida,USA,1,28.5421109,-81.3790304
 "Wreck of the Navy Barge, 22 miles SE of Rudee",Virginia,USA,1,36.82709,-75.9766
 Wreck of the U-352,North Carolina ,USA,1,47.8937804,-89.2224499
 Wrightsville Beach,South Carolina,USA,1,34.2079917,-77.7955907
 "Wrightsville Beach, New Hanover County",North Carolina,USA,5,34.2079917,-77.7955907
 "Zuma Beach, Santa Monica, Los Angeles County",California,USA,1,34.0194704,-118.491227
-"a creek near Jacksonville, Duval County",Florida,USA,1,30.380617,-81.692739
 "a pier at the end of Caxambas Drive, Marco Island",Florida,USA,1,25.929066,-81.70202
 "off Grand Lake, Cameron Parish",Louisiana,USA,1,30.03077,-93.2721
 ½ mile offshore & 9 miles north of Fort Pierce,Florida,USA,1,27.454542500000002,-80.3397315
-“Southern Wharf”,South Carolina,USA,1,37.3292167,-86.3646994

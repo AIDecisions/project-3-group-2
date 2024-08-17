@@ -1,24 +1,3 @@
-// // function to make the metrics chart
-// function make_metrics_chart() {
-//     // Get filter requests from the form
-//     var animal_filter = d3.select("#animal_filter").property("value");
-//     var gender_filter = d3.select("#gender_filter").property("value");
-
-//     // Make a request to the metrics data route
-//     let url = `/api/v1.0/metrics/${animal_type}/${gender_filter}`;
-
-//     let metrics_chart = d3.select("#metrics_container");
-//     metrics_chart.html(""); // Clear the chart
-
-//     // Make a request to the metrics data route
-//     d3.json(url).then(function(data) {
-//         // console.log(data);
-
-//         // Display the metrics indicator
-
-//     });
-// }
-
 // function to make the metrics chart
 function make_metrics_chart() {
     // Get filter requests from the form
@@ -47,7 +26,7 @@ function make_metrics_chart() {
     });
 }
 
-// function to make line chart - overtime attacks
+// Function to make line chart - overtime attacks
 function make_over_time_line_chart() {
     // Get filter requests from the form
     var animal_filter = d3.select("#animal_filter").property("value");
@@ -55,14 +34,12 @@ function make_over_time_line_chart() {
 
     // Make a request to the line chart data route
     let url = `/api/v1.0/over_time/${animal_filter}/${gender_filter}`;
-    // console.log(url);
 
     let line_chart = d3.select("#over_time_container");
     line_chart.html(""); // Clear the chart
 
     // Make a request to the line chart data route
     d3.json(url).then(function(data) {
-        // console.log(data);
 
         // Create the line chart
         let trace1 = {
@@ -94,14 +71,12 @@ function make_year_age_scatter_plot() {
 
     // Make a request to the scatter plot data route
     let url = `/api/v1.0/scatter_data/${animal_filter}/${gender_filter}`;
-    // console.log(url);
 
     let scatter_plot = d3.select("#main_places_container");
     scatter_plot.html(""); // Clear the chart
 
     // Make a request to the scatter plot data route
     d3.json(url).then(function(data) {
-        // console.log(data);
 
         // Create the scatter plot
         let trace1 = {
@@ -135,46 +110,6 @@ function make_year_age_scatter_plot() {
     });
 }
 
-// // Make a bar chart - top 20 locations
-// function make_main_places_bar_chart() {
-//     // Get filter requests from the form
-//     var animal_filter = d3.select("#animal_filter").property("value");
-//     var gender_filter = d3.select("#gender_filter").property("value");
-
-//     // Make a request to the bar chart data route
-//     let url = `/api/v1.0/main_places/${animal_filter}/${gender_filter}`;
-//     console.log(url);
-
-//     let bar_chart = d3.select("#main_places_container");
-//     bar_chart.html(""); // Clear the chart
-
-//     // Make a request to the bar chart data route
-//     d3.json(url).then(function(data) {
-//         console.log(data);
-
-//         // Create the bar chart
-//         let trace1 = {
-//             x: data.map(row => row.location.substring(0, 20)+"..."),
-//             y: data.map(row => row.attacks),
-//             type: "bar",
-//             marker: {
-//             color: "#17BECF"
-//             },
-//             hovertext: data.map(row => row.location)
-//         };
-
-//         let layout = {
-//             title: "Top 20 Locations",
-//             xaxis: { title: "Location" },
-//             yaxis: { title: "Number of Attacks" },
-//             margin: { t: 100, l: 50, r: 30, b: 125 }
-//         };
-
-
-//         Plotly.newPlot("main_places_container", [trace1], layout);
-//     });
-// }
-
 // Function to make the table - descriptive information
 function make_table() {
     // re-init the datatable
@@ -183,13 +118,9 @@ function make_table() {
     // Get filter requests from the form
     var animal_filter = d3.select("#animal_filter").property("value");
     var gender_filter = d3.select("#gender_filter").property("value");
-    // console.log("Animal Filter: " + animal_filter);
-    // console.log("Gender Filter: " + gender_filter);
 
     // Make a request to the table data route
     let url = `/api/v1.0/table_data/${animal_filter}/${gender_filter}`;
-//    let url = "/api/v1.0/full_data_sql/";
-    // console.log(url);
 
     let table = d3.select("#data_table_container");
     let tbody = table.select("tbody");
@@ -197,7 +128,6 @@ function make_table() {
 
     // Make a request to the table data route
     d3.json(url).then(function(data) {
-        // console.log(data);
 
         // Loop through data and append to table
         for (let i = 0; i < data.length; i++) {
@@ -225,8 +155,6 @@ function make_table() {
 
 // Initialize the page with a default plot
 function init() {
-    // console.log("Initializing page...");
-    // Create charts
     make_metrics_chart();
     make_over_time_line_chart();
     make_year_age_scatter_plot();
